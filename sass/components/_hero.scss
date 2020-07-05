@@ -1,0 +1,41 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(../images/bg-hd.png);
+  // TODO : add animated shapes instead of image
+  background-size: cover;
+  background-position: top;
+
+  display: flex;
+  align-items: center;
+
+  animation: 60s background-mover infinite;
+
+  &__container {
+    margin: 4rem 8rem;
+  }
+
+  &__greet {
+    font-family: 'code-saver';
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    animation: .6s float-in-top;
+  }
+
+  &__title {
+    font-size: 6rem;
+    font-weight: 100;
+    margin-left: -.4rem;
+
+    animation: .6s float-in-left;
+  }
+
+  &__roles {
+    line-height: 1;
+    font-size: 2.4rem;
+
+    animation: .6s float-in-bottom;
+  }
+}

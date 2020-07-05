@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrishnaMoorthy12/portfolio.git"
+  },
+  "author": "KrishnaMoorthy12",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KrishnaMoorthy12/portfolio/issues"
+  },
+  "homepage": "https://github.com/KrishnaMoorthy12/portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

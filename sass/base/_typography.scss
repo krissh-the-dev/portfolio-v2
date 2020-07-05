@@ -1,0 +1,21 @@
+h1 {
+  font-family: 'megrim', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Manrope', sans-serif;
+}
+
+h6 {
+  font-family: 'code-saver', monospace;
+}
+
+body,
+input,
+button,
+select {
+  font-family: $font-family-secondary;
+}
