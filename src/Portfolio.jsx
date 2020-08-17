@@ -1,10 +1,8 @@
 import React from 'react';
 
-function App() {
+export default function Portfolio() {
   return (
     <>
     </>
   );
 }
-
-export default App;
