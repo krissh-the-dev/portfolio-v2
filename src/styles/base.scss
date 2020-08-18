@@ -9,13 +9,13 @@
 *::before {
   padding: 0;
   margin: 0;
-
   box-sizing: inherit;
 }
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow: overlay;
 }
 
 body {
@@ -33,4 +33,20 @@ body {
 ::selection {
   background-color: $color-primary-main;
   color: $color-white;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba($color-slate-dark, .25);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba($color-slate-dark, .75);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba($color-primary-dark, .75);
 }
