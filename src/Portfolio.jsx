@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Components/Button/Button';
+import Card from './Components/Card/Card';
 
 export default function Portfolio() {
   return (
@@ -12,6 +13,7 @@ export default function Portfolio() {
       <h6>Hi, my name is</h6>
       <p>Lorem ipsum sit amit dollor.</p>
       <Button link='#'>Click here</Button>
+      <Card />
     </div>
   );
 }

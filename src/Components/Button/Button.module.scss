@@ -31,7 +31,8 @@
     background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
   }
 
-  &:hover {
+  &:hover,
+  &:active {
     background-position: 100%;
     color: $color-white;
     box-shadow: 0 0 1rem $color-primary-dark;
