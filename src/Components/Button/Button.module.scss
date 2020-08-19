@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-slate-light-2;
+  font-family: $font-mono;
+  font-size: 1.4rem;
+
+  padding: .8rem 3.2rem;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: .4rem;
+  text-shadow: 0 0 .3rem $color-primary-dark;
+  box-shadow: 0 0 .5rem $color-primary-dark;
+  background-image: linear-gradient(120deg, $color-slate-dark-2 0%, $color-slate-dark-2 50%, $color-primary-dark 50%);
+  background-size: 220%;
+  transition: all .2s ease-in-out;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: -2px;
+    border-radius: .4rem;
+    background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+  }
+
+  &:hover {
+    background-position: 100%;
+    color: $color-white;
+    box-shadow: 0 0 1rem $color-primary-dark;
+  }
+}
