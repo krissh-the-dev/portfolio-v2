@@ -1,0 +1,36 @@
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 6rem;
+  color: $color-slate-light-3;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+h4 {
+  font-size: 3.8rem;
+}
+
+h5,
+h6 {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  color: $color-primary-light;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+p,
+div,
+body {
+  font-size: 2.2rem;
+}

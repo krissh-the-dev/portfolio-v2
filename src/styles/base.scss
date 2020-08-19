@@ -3,6 +3,7 @@
 
 @import './mixins';
 @import './variables';
+@import './typography';
 
 *,
 *::after,
@@ -14,6 +15,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Calibre', sans-serif;
   scroll-behavior: smooth;
   overflow: overlay;
 }
@@ -21,12 +23,12 @@ html {
 body {
   box-sizing: border-box;
   background-color: $color-white;
-  color: $color-gray-8;
+  color: color-slate-dark-2;
   overflow-x: hidden;
 
   @include theme(dark) {
-    background-color: $color-gray-8;
-    color: $color-gray-1;
+    background-color: $color-slate-dark-2;
+    color: $color-slate-light-1;
   }
 }
 
@@ -40,11 +42,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba($color-slate-dark, .25);
+  background: rgba($color-slate-dark-2, .25);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba($color-slate-dark, .75);
+  background: rgba($color-slate-dark-2, .75);
 }
 
 ::-webkit-scrollbar-thumb:hover {
