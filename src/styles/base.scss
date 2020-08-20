@@ -22,14 +22,10 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: $color-white;
-  color: color-slate-dark-2;
   overflow-x: hidden;
 
-  @include theme(dark) {
-    background-color: $color-slate-dark-2;
-    color: $color-slate-light-1;
-  }
+  background-color: $color-slate-dark-2;
+  color: $color-slate-light-1;
 }
 
 ::selection {
@@ -38,17 +34,17 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 1rem;
+  width: 1.2rem;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba($color-slate-dark-2, .25);
+  background: $color-slate-dark-1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba($color-slate-dark-2, .75);
+  background: rgba($color-primary-dark, .75);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba($color-primary-dark, .75);
+  background: rgba($color-primary-dark, 1);
 }

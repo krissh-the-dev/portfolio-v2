@@ -4,7 +4,7 @@ import Card from './Components/Card/Card';
 
 export default function Portfolio() {
   return (
-    <div style={{ margin: '10rem' }}>
+    <div style={{ margin: '100rem 10rem' }}>
       <h1>Krishna Moorthy</h1>
       <h2>Krishna Moorthy</h2>
       <h3>Krishna Moorthy</h3>
