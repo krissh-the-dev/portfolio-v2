@@ -8,5 +8,5 @@ export default function Card() {
       <div className={styles.card__banner}></div>
       <p className={styles.card__description}>Even if you don't listen to the music by Spotify, be sure to collect this library, please! 🔥 This music player component can be accessed by only one line</p>
     </div>
-  )
+  );
 }
