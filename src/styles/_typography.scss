@@ -1,10 +1,16 @@
+@import './mixins';
+
 h1 {
   font-size: 6rem;
 }
 
 h2 {
-  font-size: 6rem;
-  color: $color-slate-light-3;
+  font-size: 5rem;
+  color: $color-slate-light-4;
+
+  @include theme(dark) {
+    color: $color-slate-light-3;
+  }
 }
 
 h3 {
@@ -18,11 +24,15 @@ h4 {
 h5,
 h6 {
   font-family: $font-mono;
-  color: $color-primary-light;
+  color: $color-primary-dark;
+
+  @include theme(dark) {
+    color: $color-primary-light;
+  }
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h6 {

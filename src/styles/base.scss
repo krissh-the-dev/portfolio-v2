@@ -23,9 +23,13 @@ html {
 body {
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: $color-white;
+  color: $color-slate-dark-1;
 
-  background-color: $color-slate-dark-2;
-  color: $color-slate-light-1;
+  @include theme(dark) {
+    background-color: $color-slate-dark-2;
+    color: $color-slate-light-1;
+  }
 }
 
 ::selection {

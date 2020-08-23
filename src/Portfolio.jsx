@@ -1,19 +1,15 @@
 import React from 'react';
 import Button from './Components/Button/Button';
-import Card from './Components/Card/Card';
+import classes from './styles/styles.module.scss';
 
 export default function Portfolio() {
   return (
-    <div style={{ margin: '100rem 10rem' }}>
-      <h1>Krishna Moorthy</h1>
-      <h2>Krishna Moorthy</h2>
-      <h3>Krishna Moorthy</h3>
-      <h4>Krishna Moorthy</h4>
-      <h5>Hi, my name is</h5>
-      <h6>Hi, my name is</h6>
-      <p>Lorem ipsum sit amit dollor.</p>
-      <Button link='#'>Click here</Button>
-      <Card />
+    <div className={classes.hero}>
+      <div className={classes.container}>
+        <h5 className={classes.intro}>Hi, my name is</h5>
+        <h1 className={classes.hero__name}> <span className={classes.emphasize}>Krishna</span> Moorthy</h1>
+        <h2 className={classes.info}>UI/UX designer & Full stack developer</h2>
+      </div>
     </div>
   );
 }
