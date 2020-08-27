@@ -47,8 +47,11 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: rgba($color-primary-dark, .75);
+  opacity: .5;
+  transition: all .2s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba($color-primary-dark, 1);
+  opacity: 1;
 }
