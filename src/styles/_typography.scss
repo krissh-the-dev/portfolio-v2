@@ -2,6 +2,10 @@
 
 h1 {
   font-size: 6rem;
+
+  @include respond(phone) {
+    font-size: 4.8rem;
+  }
 }
 
 h2 {
@@ -11,14 +15,26 @@ h2 {
   @include theme(dark) {
     color: $color-slate-light-3;
   }
+
+  @include respond(phone) {
+    font-size: 4rem;
+  }
 }
 
 h3 {
   font-size: 5rem;
+
+  @include respond(phone) {
+    font-size: 4rem;
+  }
 }
 
 h4 {
   font-size: 3.8rem;
+
+  @include respond(phone) {
+    font-size: 3.4rem;
+  }
 }
 
 h5,
