@@ -38,13 +38,13 @@
   .waterMark {
     position: absolute;
     font-family: $font-mono;
-    opacity: .3;
+    opacity: .1;
     z-index: -10;
-    top: 8%;
-    right: -7%;
+    bottom: 100%;
+    left: 100%;
     font-size: 25rem;
     display: inline-block;
-    transform: rotate(90deg);
+    transform: rotate(90deg) translate(100%, 100%);
   }
 
   .quickContact {
