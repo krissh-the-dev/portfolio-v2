@@ -3,4 +3,42 @@
 
 .about {
   background-color: $color-slate-dark-1;
+  padding: 10rem 0;
+
+  .heading {
+    margin-bottom: 1.2rem;
+  }
+
+  .subheading {
+    margin-bottom: 1rem;
+  }
+
+  &__content {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+
+
+    @include respond(phone) {
+      flex-direction: column;
+
+      .description {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .description {
+      flex-basis: 65%;
+    }
+
+    .image {
+      display: inline-block;
+      margin: auto;
+      flex-basis: 30%;
+    }
+  }
+
+  .container {
+    @include marginate;
+  }
 }
