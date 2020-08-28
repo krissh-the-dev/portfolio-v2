@@ -3,11 +3,13 @@ import classes from './styles/styles.module.scss';
 
 import Hero from './sections/Hero/Hero';
 import About from './sections/About/About';
+import NavigationBar from './Components/NavigationBar/NavigationBar';
 
 
 export default function Portfolio() {
   return (
     <main>
+      <NavigationBar />
       <Hero />
       <About />
 
