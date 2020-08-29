@@ -1,0 +1,83 @@
+@import './variables';
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: $font-icon !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-thin-right:before {
+  content: "\e900";
+}
+
+.icon-people_outline:before {
+  content: "\e901";
+}
+
+.icon-slack:before {
+  content: "\e902";
+}
+
+.icon-download:before {
+  content: "\e903";
+}
+
+.icon-star:before {
+  content: "\e904";
+}
+
+.icon-link-2:before {
+  content: "\e905";
+}
+
+.icon-external-link:before {
+  content: "\e906";
+}
+
+.icon-linkedin:before {
+  content: "\e907";
+}
+
+.icon-github:before {
+  content: "\e908";
+}
+
+.icon-chevron-right:before {
+  content: "\e909";
+}
+
+.icon-linkedin1:before {
+  content: "\e90a";
+}
+
+.icon-send:before {
+  content: "\e90b";
+}
+
+.icon-mail:before {
+  content: "\e90c";
+}
+
+.icon-facebook:before {
+  content: "\e90d";
+}
+
+.icon-twitter:before {
+  content: "\e90e";
+}
+
+.icon-code-fork:before {
+  content: "\e90f";
+}
+
+.icon-code:before {
+  content: "\e910";
+}
