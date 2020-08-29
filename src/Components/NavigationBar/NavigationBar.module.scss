@@ -3,12 +3,16 @@
 
 .nav {
   background-color: $color-slate-dark-2;
-  box-shadow: 0 .5rem 1rem rgba($color-slate-dark-2, .5);
+  box-shadow: 0 .5rem 1rem rgba($color-slate-dark-2, .1);
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
+
+  @include theme(light) {
+    background-color: $color-white;
+  }
 
   .container {
     @include marginate;
@@ -141,6 +145,10 @@
       &::before {
         transform: translate(-50%, -50%) scale(1);
       }
+
+      @include theme(light) {
+        text-shadow: none;
+      }
     }
 
     &:last-child {
@@ -150,6 +158,6 @@
 
   &__link {
     text-decoration: none;
-    color: $color-slate-light-1;
+    color: inherit;
   }
 }

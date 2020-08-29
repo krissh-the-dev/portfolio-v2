@@ -5,6 +5,10 @@
   background-color: $color-slate-dark-1;
   padding: 10rem 0;
 
+  @include theme(light) {
+    background-color: $color-slate-light-1;
+  }
+
   .heading {
     margin-bottom: 1.2rem;
   }
