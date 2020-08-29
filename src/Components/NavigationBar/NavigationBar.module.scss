@@ -114,6 +114,7 @@
     display: inline-block;
     margin: 0 2rem;
     position: relative;
+    transition: text-shadow .2s;
 
     @include respond(phone) {
       display: block;
@@ -134,8 +135,12 @@
       transition: all .3s;
     }
 
-    &:hover::before {
-      transform: translate(-50%, -50%) scale(1);
+    &:hover {
+      text-shadow: 0 0 3px $color-primary-dark;
+
+      &::before {
+        transform: translate(-50%, -50%) scale(1);
+      }
     }
 
     &:last-child {
