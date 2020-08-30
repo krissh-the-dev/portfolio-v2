@@ -84,7 +84,9 @@
 
   &__check:checked~&__list {
     transform: translateX(0);
-    box-shadow: -1rem 0 1rem rgba($color-slate-dark-2, .5);
+    box-shadow: -1rem 0 1rem rgba($color-slate-dark-2, .3);
+
+    box-shadow: -1rem .5rem 1rem rgba($color-slate-dark-2, .1);
   }
 
   &__list {
@@ -111,6 +113,10 @@
       transform-origin: right;
       transition: all .3s;
       transform: translateX(100%);
+
+      @include theme(light) {
+        background-color: $color-white;
+      }
     }
   }
 
