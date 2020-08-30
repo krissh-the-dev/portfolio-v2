@@ -37,6 +37,10 @@
 
   .info {
     color: $color-slate-light-3;
+
+    @include theme(dark) {
+      color: $color-slate-light-2;
+    }
   }
 
   .waterMark {

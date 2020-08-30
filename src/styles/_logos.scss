@@ -9,6 +9,9 @@
   text-transform: none;
   line-height: 1;
   font-size: 5rem;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -381,8 +384,8 @@
 .logo-typescript .path1:before {
   content: "\e929";
   color: rgb(49,
-120,
-198);
+      120,
+      198);
 }
 
 .logo-typescript .path2:before {

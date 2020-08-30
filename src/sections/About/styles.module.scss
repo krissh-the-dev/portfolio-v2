@@ -41,7 +41,6 @@
 
       @include respond(phone) {
         max-height: 30rem;
-        text-align: center;
       }
     }
 
@@ -49,8 +48,8 @@
       display: inline-block;
       position: absolute;
       top: 50%;
-      right: 0%;
-      transform: translateY(-50%);
+      left: 50%;
+      transform: translate(-50%, -50%);
       max-height: 95%;
       align-self: center;
       object-fit: contain;
@@ -70,7 +69,7 @@
       }
 
       &:hover {
-        box-shadow: 0 0 .5rem $color-primary-dark;
+        box-shadow: 0 0 1rem $color-primary-dark;
         // filter: hue-rotate(0deg);
       }
     }
