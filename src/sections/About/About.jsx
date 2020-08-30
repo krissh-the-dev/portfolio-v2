@@ -62,7 +62,7 @@ export default function About() {
 
             <span class="logo logo-c"></span>
 
-            <span class="logo logo-c++"></span>
+            <span class="logo logo-cpp"></span>
 
             <span class="logo logo-php"></span>
           </div>
