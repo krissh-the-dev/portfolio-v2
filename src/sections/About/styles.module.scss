@@ -18,31 +18,60 @@
   }
 
   &__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(min-content, 65%) minmax(30%, 1fr);
+    grid-template-rows: min-content;
+    grid-gap: 2rem;
     margin-bottom: 2rem;
     justify-content: space-between;
 
-
-    @include respond(phone) {
-      flex-direction: column;
-
-      .description {
-        margin-bottom: 2rem;
-      }
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content 100%;
     }
 
     .description {
-      flex-basis: 65%;
+      margin-bottom: 2rem;
+    }
+
+    .profile {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      @include respond(tab-port) {
+        max-height: 30rem;
+        text-align: center;
+      }
     }
 
     .image {
       display: inline-block;
-      margin: auto;
-      flex-basis: 30%;
+      position: absolute;
+      top: 50%;
+      right: 0%;
+      transform: translateY(-50%);
+      max-height: 95%;
+      align-self: center;
+      object-fit: contain;
+      border-radius: .5rem;
+      border: 2px solid $color-primary-dark;
+      // filter: hue-rotate(250deg);
+      transition: all .2s;
+
+      @include respond(tab-port) {
+        position: relative;
+      }
+
+      &:hover {
+        box-shadow: 0 0 .5rem $color-primary-dark;
+        // filter: hue-rotate(0deg);
+      }
     }
   }
 
   .container {
-    @include marginate;
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
