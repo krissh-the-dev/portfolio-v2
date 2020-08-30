@@ -1,9 +1,11 @@
 @font-face {
   font-family: 'Logo';
-  src: url('logo.eot');
-  src: url('logo.eot?#iefix') format('embedded-opentype'),
-    url('logo.woff') format('woff'),
-    url('logo.ttf') format('truetype');
-  font-weight: 400;
+  src: url('logo.eot?2anxyb');
+  src: url('logo.eot?2anxyb#iefix') format('embedded-opentype'),
+    url('logo.ttf?2anxyb') format('truetype'),
+    url('logo.woff?2anxyb') format('woff'),
+    url('logo.svg?2anxyb#logo') format('svg');
+  font-weight: normal;
   font-style: normal;
+  font-display: block;
 }

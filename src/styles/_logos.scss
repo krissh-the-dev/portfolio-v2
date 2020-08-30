@@ -8,10 +8,141 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  font-size: 5rem;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.logo-mysql:before {
+  content: "\e939";
+  color: #00618a;
+}
+
+.logo-postgresql .path1:before {
+  content: "\e93a";
+  color: rgb(255, 255, 255);
+}
+
+.logo-postgresql .path2:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: rgb(2, 119, 189);
+}
+
+.logo-postgresql .path3:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: rgb(2, 119, 189);
+}
+
+.logo-postgresql .path4:before {
+  content: "\e93d";
+  margin-left: -1em;
+  color: rgb(2, 119, 189);
+}
+
+.logo-postgresql .path5:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: rgb(2, 119, 189);
+}
+
+.logo-postgresql .path6:before {
+  content: "\e93f";
+  margin-left: -1em;
+  color: rgb(2, 119, 189);
+}
+
+.logo-postgresql .path7:before {
+  content: "\e940";
+  margin-left: -1em;
+  color: rgb(2, 119, 189);
+}
+
+.logo-postgresql .path8:before {
+  content: "\e941";
+  margin-left: -1em;
+  color: rgb(2, 119, 189);
+}
+
+.logo-php:before {
+  content: "\e92b";
+  color: #6181b6;
+}
+
+.logo-sass:before {
+  content: "\e92c";
+  color: #cb6699;
+}
+
+.logo-firebase .path1:before {
+  content: "\e92d";
+  color: rgb(255, 160, 0);
+}
+
+.logo-firebase .path2:before {
+  content: "\e92e";
+  margin-left: -1em;
+  color: rgb(245, 127, 23);
+}
+
+.logo-firebase .path3:before {
+  content: "\e92f";
+  margin-left: -1em;
+  color: rgb(255, 202, 40);
+}
+
+.logo-firebase .path4:before {
+  content: "\e930";
+  margin-left: -1em;
+  color: rgb(255, 160, 0);
+}
+
+.logo-c1 .path1:before {
+  content: "\e931";
+  color: rgb(92, 141, 188);
+}
+
+.logo-c1 .path2:before {
+  content: "\e932";
+  margin-left: -0.888671875em;
+  color: rgb(26, 70, 116);
+}
+
+.logo-c1 .path3:before {
+  content: "\e933";
+  margin-left: -0.888671875em;
+  color: rgb(26, 70, 116);
+}
+
+.logo-c1 .path4:before {
+  content: "\e934";
+  margin-left: -0.888671875em;
+  color: rgb(27, 89, 142);
+}
+
+.logo-c1 .path5:before {
+  content: "\e935";
+  margin-left: -0.888671875em;
+  color: rgb(255, 255, 255);
+}
+
+.logo-c1 .path6:before {
+  content: "\e936";
+  margin-left: -0.888671875em;
+  color: rgb(255, 255, 255);
+}
+
+.logo-c:before {
+  content: "\e937";
+  color: #03599c;
+}
+
+.logo-git:before {
+  content: "\e938";
+  color: #f34f29;
 }
 
 .logo-python .path1:before {
@@ -249,7 +380,9 @@
 
 .logo-typescript .path1:before {
   content: "\e929";
-  color: rgb(49, 120, 198);
+  color: rgb(49,
+120,
+198);
 }
 
 .logo-typescript .path2:before {
