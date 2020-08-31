@@ -30,8 +30,7 @@
 
   @if($breakpoint==phone) {
 
-    @media only screen and (max-width: 37.5em),
-    only screen and (hover: none) {
+    @media only screen and (max-width: 37.5em) {
       //600px = 37.5em (1em = 16px)
       @content;
     }

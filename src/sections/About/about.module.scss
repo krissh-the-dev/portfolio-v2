@@ -4,6 +4,7 @@
 .about {
   background-color: $color-slate-dark-1;
   padding: 10rem 0;
+  position: relative;
 
   @include theme(light) {
     background-color: $color-slate-light-1;

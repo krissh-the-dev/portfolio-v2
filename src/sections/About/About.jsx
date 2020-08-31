@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './styles.module.scss';
+import classes from './about.module.scss';
 
 import Krish from '../../images/krish.png';
 import Skills from './Skills/Skills';
@@ -32,6 +32,7 @@ export default function About() {
 
         </div>
       </div>
+
     </section>
   );
 }
