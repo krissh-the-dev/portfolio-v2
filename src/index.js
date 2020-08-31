@@ -6,4 +6,4 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Portfolio />, document.querySelector('#root'));
 
-serviceWorker.unregister();
+serviceWorker.register();

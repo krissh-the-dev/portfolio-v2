@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './about.module.scss';
 
 import Krish from '../../images/krish.png';
-import Skills from './Skills/Skills';
+import Skills from './Skills';
 
 export default function About() {
   return (

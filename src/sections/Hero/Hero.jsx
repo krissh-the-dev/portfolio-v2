@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './styles.module.scss';
+import classes from './hero.module.scss';
 
 export default function Hero() {
   return (
