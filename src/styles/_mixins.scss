@@ -53,6 +53,12 @@
     }
   }
 
+  @if($breakpoint==touchscreen) {
+    @media only screen and (hover: none) {
+      @content;
+    }
+  }
+
   @if($breakpoint==tab-lan) {
 
     @media only screen and (max-width: 75em) {
