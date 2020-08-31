@@ -29,12 +29,12 @@ export default function About() {
         <Skills />
 
         <div className={classes.social}>
-          <a href='mailto: akrishnamoorthy007@gmail.com' className="icon icon-mail"></a>
-          <a href='https://github.com/KrishnaMoorthy12' className="icon icon-github"></a>
-          <a href='https://twitter.com/krish_the_dev' className="icon icon-twitter"></a>
-          <a href='https://linkedin.com/in/akrishnamoorthy007' className="icon icon-linkedin"></a>
-          <a href='https://fb.com/akrishnamoorthy007' className="icon icon-facebook"></a>
-          <a href='https://join.slack.com/t/akrishnamoorthy007/shared_invite/zt-h38nw07o-iwbECk2CYVTv0pNokG884g' className="icon icon-slack"></a>
+          <a href='mailto: akrishnamoorthy007@gmail.com' className="icon icon-mail">&nbsp;</a>
+          <a href='https://github.com/KrishnaMoorthy12' className="icon icon-github">&nbsp;</a>
+          <a href='https://twitter.com/krish_the_dev' className="icon icon-twitter">&nbsp;</a>
+          <a href='https://linkedin.com/in/akrishnamoorthy007' className="icon icon-linkedin">&nbsp;</a>
+          <a href='https://fb.com/akrishnamoorthy007' className="icon icon-facebook">&nbsp;</a>
+          <a href='https://join.slack.com/t/akrishnamoorthy007/shared_invite/zt-h38nw07o-iwbECk2CYVTv0pNokG884g' className="icon icon-slack">&nbsp;</a>
         </div>
       </div>
 

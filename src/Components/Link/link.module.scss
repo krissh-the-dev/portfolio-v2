@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.link {
+  display: inline-block;
+  font-family: $font-mono;
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: inline-block;
+  color: $color-slate-light-5;
+  transition: .2s all;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    bottom: -.5rem;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: $color-primary-dark;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  &:hover {
+    color: $color-primary-dark !important;
+
+    @include theme(dark) {
+      color: $color-primary-light !important;
+    }
+
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+
+  @include theme(dark) {
+    color: $color-slate-light-1;
+
+    &:hover {
+      color: $color-primary-light;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
