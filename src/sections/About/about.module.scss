@@ -76,6 +76,34 @@
     }
   }
 
+  .social {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+
+    &>a {
+      font-size: 2.2rem;
+      display: block;
+      text-decoration: none;
+      color: inherit;
+
+      transition: all .2s;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      &:hover {
+        color: $color-primary-dark;
+        filter: drop-shadow(0 0 1rem $color-primary-dark);
+
+        @include theme(dark) {
+          color: $color-primary-light;
+        }
+      }
+    }
+  }
+
   .container {
     max-width: 80%;
     margin: 0 auto;
