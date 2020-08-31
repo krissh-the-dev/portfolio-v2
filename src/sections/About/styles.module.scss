@@ -75,19 +75,6 @@
     }
   }
 
-  .skills {
-    .skill_rack {
-      display: flex;
-      flex-wrap: wrap;
-
-      &>span {
-        &:not(:last-child) {
-          margin: 0 2rem 2rem 0;
-        }
-      }
-    }
-  }
-
   .container {
     max-width: 80%;
     margin: 0 auto;

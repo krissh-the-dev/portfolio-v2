@@ -10,7 +10,7 @@ export default function Hero() {
         <h2 className={classes.info}>UI designer & Full stack developer</h2>
       </div>
 
-      <div className={classes.waterMark}>DEV</div>
+      <div role='img' className={classes.waterMark}>DEV</div>
 
       <div className={classes.quickContact}>
         <a href='mailto: akrishnamoorthy007@gmail.com'>akrishnamoorthy007@gmail.com</a>

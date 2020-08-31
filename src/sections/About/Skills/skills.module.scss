@@ -1,0 +1,24 @@
+@import '../../../styles/variables';
+
+.skills {
+  .skill_rack {
+    display: flex;
+    flex-wrap: wrap;
+
+    &>span {
+      display: block;
+      filter: brightness(90%);
+      cursor: grab;
+      // transition: filter .2s;
+
+      &:hover {
+        filter: brightness(110%) drop-shadow(0 0 .5rem $color-primary-dark);
+      }
+
+
+      &:not(:last-child) {
+        margin: 0 2rem 2rem 0;
+      }
+    }
+  }
+}
