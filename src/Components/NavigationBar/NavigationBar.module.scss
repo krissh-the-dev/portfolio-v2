@@ -146,14 +146,12 @@
     }
 
     &:hover {
-      text-shadow: 0 0 3px $color-primary-dark;
-
       &::before {
         transform: translate(-50%, -50%) scale(1);
       }
 
-      @include theme(light) {
-        text-shadow: none;
+      @include theme(dark) {
+        text-shadow: 0 0 3px $color-primary-dark;
       }
     }
 

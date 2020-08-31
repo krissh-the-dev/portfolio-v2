@@ -2,9 +2,9 @@
 @import '../../styles/mixins';
 
 .button {
+  position: relative;
   display: inline-block;
   text-decoration: none;
-  color: inherit;
   font-family: $font-mono;
   font-size: 1.4rem;
 
@@ -12,18 +12,20 @@
   border: 2px solid transparent;
   background-clip: padding-box;
   border-radius: .4rem;
-  text-shadow: 0 0 .3rem $color-primary-dark;
   box-shadow: 0 0 .3rem $color-primary-dark;
-  background-image: linear-gradient(120deg, $color-slate-dark-2 0%, $color-slate-dark-2 50%, $color-primary-dark 50%);
   background-size: 220%;
   border: 2px solid $color-primary-dark;
-  transition: all .2s ease-in-out;
-  position: relative;
 
-  @include theme(light) {
-    background-image: linear-gradient(120deg, $color-white 0%, $color-white 50%, $color-primary-dark 50%);
-    color: $color-primary-dark;
-    text-shadow: none;
+  background-image: linear-gradient(120deg, $color-white 0%, $color-white 50%, $color-primary-dark 50%);
+  color: $color-primary-dark;
+  text-shadow: none;
+
+  transition: all .2s ease-in-out;
+
+  @include theme(dark) {
+    background-image: linear-gradient(120deg, $color-slate-dark-2 0%, $color-slate-dark-2 50%, $color-primary-dark 50%);
+    color: inherit;
+    text-shadow: 0 0 .3rem $color-primary-dark;
   }
 
   &:hover,

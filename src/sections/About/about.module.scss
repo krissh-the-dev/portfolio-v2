@@ -2,12 +2,12 @@
 @import '../../styles/variables';
 
 .about {
-  background-color: $color-slate-dark-1;
-  padding: 10rem 0;
   position: relative;
+  padding: 10rem 0;
+  background-color: $color-slate-light-1;
 
-  @include theme(light) {
-    background-color: $color-slate-light-1;
+  @include theme(dark) {
+    background-color: $color-slate-dark-1;
   }
 
   .heading {
