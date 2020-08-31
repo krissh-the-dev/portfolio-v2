@@ -2,8 +2,8 @@
 @import '../../styles/variables';
 
 .nav {
-  background-color: $color-slate-dark-2;
-  box-shadow: 0 .5rem 1rem rgba($color-slate-dark-2, .1);
+  background-color: $color-white;
+  box-shadow: 0 1rem 1rem rgba($color-slate-dark-2, .08);
   position: fixed;
   width: 100%;
   top: 0;
@@ -11,8 +11,8 @@
   z-index: 1000;
   transition: all .3s;
 
-  @include theme(light) {
-    background-color: $color-white;
+  @include theme(dark) {
+    background-color: $color-slate-dark-2;
   }
 
   .container {
@@ -85,8 +85,6 @@
 
   &__check:checked~&__list {
     transform: translateX(0);
-    box-shadow: -1rem 0 1rem rgba($color-slate-dark-2, .3);
-
     box-shadow: -1rem .5rem 1rem rgba($color-slate-dark-2, .1);
   }
 
@@ -108,15 +106,16 @@
       top: 7.8rem;
       height: 100vh;
       padding: 4rem;
+      width: 50%;
       display: flex;
-      background-color: $color-slate-dark-2;
       flex-direction: column;
+      background-color: $color-white;
       transform-origin: right;
       transition: all .3s;
       transform: translateX(100%);
 
-      @include theme(light) {
-        background-color: $color-white;
+      @include theme(dark) {
+        background-color: $color-slate-dark-1;
       }
     }
   }
