@@ -93,6 +93,7 @@
     font-family: $font-mono;
     font-size: 1.4rem;
     list-style: none;
+    overflow: hidden;
 
     &_container {
       @include respond(phone) {
