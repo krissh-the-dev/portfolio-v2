@@ -4,43 +4,24 @@ import classes from './NavigationBar.module.scss';
 import Button from '../Button';
 
 export default function NavigationBar() {
-  const [navStyle, setNavStyle] = useState(0);
+  const [navStyle, setNavStyle] = useState({});
 
   window.onscroll = function (e) {
-    // print "false" if direction is down and "true" if up
     if (this.scrollY <= 5) {
-      setNavStyle(0);
+      // top of the page
+      setNavStyle({ boxShadow: 'none', padding: '1rem 0', background: 'none' });
     } else if (this.oldScroll > this.scrollY) {
-      setNavStyle(-1);
+      // scrolled up
+      setNavStyle({ transform: 'translateY(0)' });
     } else {
-      setNavStyle(1);
+      // scrolled down
+      setNavStyle({ transform: 'translateY(-100%)' });
     }
     this.oldScroll = this.scrollY;
   }
 
-  const topStyle = {
-    boxShadow: 'none',
-  }
-
-  const freeStyle = {
-    transform: 'translateY(-100%)'
-  }
-
-  const visibleStyle = {
-    transform: 'translateY(0)'
-  }
-
-  const navStyles = [
-    visibleStyle, topStyle, freeStyle
-  ];
-
-  // useEffect(() => {
-  //   console.log('State change: ', navStyle);
-  //   setScrollPosition(window.scrollY);
-  // }, [navStyle])
-
   return (
-    <nav className={classes.nav} style={navStyles[navStyle + 1]}>
+    <nav className={classes.nav} style={navStyle}>
       <div className={classes.container}>
         <div className={classes.nav__list_container}>
           <input type='checkbox' className={classes.nav__check} id='nav__check' />
