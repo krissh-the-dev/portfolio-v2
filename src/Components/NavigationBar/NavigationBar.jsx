@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import classes from './NavigationBar.module.scss';
 
 import Button from '../Button';
@@ -9,16 +9,18 @@ export default function NavigationBar() {
   window.onscroll = function (e) {
     if (this.scrollY <= 5) {
       // top of the page
-      setNavStyle({ boxShadow: 'none', padding: '1rem 0', background: 'none' });
+      setNavStyle({ boxShadow: 'none', paddingBottom: '1.5rem', background: 'none' });
     } else if (this.oldScroll > this.scrollY) {
       // scrolled up
       setNavStyle({ transform: 'translateY(0)' });
     } else {
       // scrolled down
-      setNavStyle({ transform: 'translateY(-100%)' });
+      setNavStyle({ boxShadow: 'none', transform: 'translateY(-100%)' });
     }
     this.oldScroll = this.scrollY;
   }
+
+  useEffect(() => setNavStyle({ boxShadow: 'none', paddingBottom: '1.5rem', background: 'none' }), []);
 
   return (
     <nav className={classes.nav} style={navStyle}>

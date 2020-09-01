@@ -84,8 +84,11 @@
   }
 
   &__check:checked~&__list {
-    transform: translateX(0);
-    box-shadow: -1rem .5rem 1rem rgba($color-slate-dark-2, .1);
+
+    @include respond(phone) {
+      transform: translateX(0);
+      box-shadow: -1rem .5rem 1rem rgba($color-slate-dark-2, .1);
+    }
   }
 
   &__list {
@@ -93,7 +96,7 @@
     font-family: $font-mono;
     font-size: 1.4rem;
     list-style: none;
-    overflow: hidden;
+    box-shadow: none;
 
     &_container {
       @include respond(phone) {
@@ -111,6 +114,7 @@
       display: flex;
       flex-direction: column;
       background-color: $color-white;
+      overflow: hidden;
       transform-origin: right;
       transition: all .3s;
       transform: translateX(100%);
