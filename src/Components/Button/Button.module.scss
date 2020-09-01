@@ -15,15 +15,14 @@
   box-shadow: 0 0 .3rem $color-primary-dark;
   background-size: 220%;
   border: 2px solid $color-primary-dark;
-
-  background-image: linear-gradient(120deg, $color-white 0%, $color-white 50%, $color-primary-dark 50%);
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-primary-dark 50%);
+  color: inherit;
   color: $color-primary-dark;
   text-shadow: none;
 
   transition: all .2s ease-in-out;
 
   @include theme(dark) {
-    background-image: linear-gradient(120deg, $color-slate-dark-2 0%, $color-slate-dark-2 50%, $color-primary-dark 50%);
     color: inherit;
     text-shadow: 0 0 .3rem $color-primary-dark;
   }
