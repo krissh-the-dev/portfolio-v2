@@ -14,8 +14,6 @@ export default function Hero() {
       <div role='img' className={classes.waterMark}>DEV</div>
 
       <div className={classes.quickContact}>
-        {/* <a href='mailto: akrishnamoorthy007@gmail.com'>akrishnamoorthy007@gmail.com</a>
-        <a href='https://twitter.com/krish_the_dev'>twitter/@krish_the_dev</a> */}
         <Link to='mailto: akrishnamoorthy007@gmail.com' lone>akrishnamoorthy007@gmail.com</Link>
         <Link to='https://twitter.com/krish_the_dev' lone>twitter/@krish_the_dev</Link>
       </div>

@@ -3,19 +3,23 @@
 
 .link {
   display: inline-block;
-  font-family: $font-mono;
-  font-size: 1.6rem;
+  font-family: inherit;
+  font-size: inherit;
   text-decoration: none;
   display: inline-block;
-  color: $color-slate-light-5;
+  color: $color-primary-dark;
   transition: .2s all;
   position: relative;
+
+  @include theme(dark) {
+    color: $color-primary-light;
+  }
 
   &::after {
     content: '';
     display: block;
     bottom: -.5rem;
-    height: 2px;
+    height: 1px;
     width: 100%;
     transform: scaleX(0);
     transform-origin: left;
@@ -35,12 +39,8 @@
     }
   }
 
-  @include theme(dark) {
-    color: $color-slate-light-1;
-
-    &:hover {
-      color: $color-primary-light;
-    }
+  &:hover {
+    color: $color-primary-light;
   }
 
   &:not(:last-child) {
