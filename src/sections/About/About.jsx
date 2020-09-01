@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './about.module.scss';
 
-import Krish from '../../images/krish.png';
+import { small, medium, large } from '../../images/Krish';
 import Skills from './Skills';
 import { Link } from '../../Components';
 
@@ -22,9 +22,9 @@ export default function About() {
               Other than coding, I'm passionate about Astronomy <span role='img' aria-label='galaxy emoji'>🌌</span> and bicycling <span role='img' aria-label='cycling emoji'>🚴‍♂️</span>. I like to cook in my leisure time. I love cats <span role='img' aria-label='cat face emoji'>😺</span> and adore all pet animals <span role='img' aria-label='pet dog emoji'>🐕</span>.
             </p>
           </div>
-          <div className={classes.profile}>
-            <img className={classes.image} alt='Krish' src={Krish} />
-          </div>
+          <picture className={classes.profile}>
+            <img className={classes.image} alt='Krish' src={medium} srcSet={`${small} 200w, ${medium} 600w, ${large} 1000w`} />
+          </picture>
         </div>
 
         <Skills />
