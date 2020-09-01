@@ -23,6 +23,17 @@
     justify-content: flex-end;
   }
 
+  &__brand {
+    max-height: 3rem;
+    margin-right: auto;
+  }
+
+  &__logo {
+    height: 3rem;
+    object-fit: contain;
+    object-position: center;
+  }
+
   &__check {
     display: none;
   }
