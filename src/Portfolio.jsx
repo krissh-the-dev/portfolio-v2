@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from './styles/styles.module.scss';
 
 import Hero from './sections/Hero';
 import About from './sections/About';
@@ -11,10 +10,6 @@ export default function Portfolio() {
       <NavigationBar />
       <Hero />
       <About />
-
-      <section className={classes.work}>
-        <h3>My work</h3>
-      </section>
     </main>
   );
 }
