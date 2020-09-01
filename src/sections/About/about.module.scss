@@ -56,7 +56,6 @@
       object-fit: contain;
       border-radius: .5rem;
       border: 2px solid $color-primary-dark;
-      // filter: hue-rotate(250deg);
       transition: all .2s;
 
       @include respond(tab-port) {
@@ -71,7 +70,6 @@
 
       &:hover {
         box-shadow: 0 0 1rem $color-primary-dark;
-        // filter: hue-rotate(0deg);
       }
     }
   }
