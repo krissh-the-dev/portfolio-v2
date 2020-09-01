@@ -3,7 +3,7 @@ import classes from './styles/styles.module.scss';
 
 import Hero from './sections/Hero';
 import About from './sections/About';
-import NavigationBar from './Components/NavigationBar';
+import { NavigationBar } from './Components';
 
 export default function Portfolio() {
   return (

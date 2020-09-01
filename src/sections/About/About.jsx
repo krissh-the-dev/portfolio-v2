@@ -3,7 +3,7 @@ import classes from './about.module.scss';
 
 import Krish from '../../images/krish.png';
 import Skills from './Skills';
-import Link from '../../Components/Link';
+import { Link } from '../../Components';
 
 export default function About() {
   return (

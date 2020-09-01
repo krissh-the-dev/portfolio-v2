@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './hero.module.scss';
-import Link from '../../Components/Link/Link';
+import { Link } from '../../Components';
 
 export default function Hero() {
   return (
