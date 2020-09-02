@@ -17,7 +17,8 @@ function Features({ list }) {
   );
 }
 
-export default function Project({ images, logo, type, title, children, features, stack, link, repo }) {
+export default function Project(props) {
+  const { images, logo, type, title, children, features, stack, link, repo } = props;
   /*
    * images: image images -> type: object<images> {small, large}
    * type -> type: string [eg. featured]
@@ -32,7 +33,13 @@ export default function Project({ images, logo, type, title, children, features,
     <div className={classes.project}>
       <figure className={classes.project__picture}>
         <img className={classes.project__image} alt={title} src={images.small} srcSet={`${images.small} 200w ${images.large} 600w`} />
-        <caption></caption>
+        <figcaption className={classes.caption}>
+          {repo && <a href={repo} target='_blank' className='icon'>&#xe910;</a>}
+          {link && <a href={link} target='_blank' className='icon'>&#xe906;</a>}
+        </figcaption>
+        <div className={classes.project__logo}>
+          <img src={logo} alt={title} />
+        </div>
       </figure>
       <div className={classes.project__details}>
         <h6 className={classes.project__type}>{`${type} project`}</h6>

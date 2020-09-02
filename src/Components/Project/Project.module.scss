@@ -13,14 +13,77 @@
     text-transform: capitalize;
   }
 
+  &__logo {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    opacity: .5;
+    transition: all .3s;
+
+    &>img {
+      width: 3rem;
+      height: 3rem;
+      object-fit: contain;
+    }
+  }
+
+  &__picture:hover &__logo {
+    opacity: 1;
+  }
+
   &__picture {
     flex: 1 1 35%;
     max-height: 30rem;
     overflow-y: hidden;
+    position: relative;
+    border-radius: .3rem;
+    transition: all .3s;
 
     @include respond(phone) {
       margin-bottom: 2rem;
       max-height: 20rem;
+    }
+
+    .caption {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba($color-primary-dark, .15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      opacity: 0;
+      transition: all .3s;
+
+      &>a {
+        display: inline-block;
+        padding: 1.2rem;
+        border-radius: .3rem;
+        text-align: center;
+        background-color: rgba($color-slate-dark-2, .8);
+        text-decoration: none;
+        color: $color-white;
+        transition: all .3s;
+
+        &:hover {
+          background-color: $color-primary-dark;
+
+          @include theme(dark) {
+            background-color: $color-primary-main;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      // box-shadow: 0 0 .5rem $color-primary-dark;
+
+      &>.caption {
+        opacity: 1;
+      }
     }
   }
 
@@ -96,23 +159,14 @@
     }
 
     &::before {
-      content: "";
+      content: "\e909";
       display: inline-block;
-      height: 1.5rem;
-      width: 1.5rem;
       margin-right: .5rem;
-      background-image: url(./icon-right.svg);
-      background-size: cover;
+      font-family: 'Icomoon' !important;
+      color: $color-primary-dark;
 
-      @supports (mask-image: url(./icon-right.svg)) or (--webkit-mask-image: url(./icon-right.svg)) {
-        background-color: $color-primary-main;
-        mask-image: url(./icon-right.svg);
-        mask-size: cover;
-        background-image: none;
-
-        @include theme(dark) {
-          background-color: $color-primary-light;
-        }
+      @include theme(dark) {
+        color: $color-primary-light;
       }
     }
   }
