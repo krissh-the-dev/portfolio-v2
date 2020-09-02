@@ -3,7 +3,7 @@
 
 .nav {
   background-color: $color-white;
-  box-shadow: 0 1rem 1rem rgba($color-slate-dark-2, .08);
+  box-shadow: 0 1rem 1rem rgba($color-slate-dark-5, .08);
   position: fixed;
   width: 100%;
   top: 0;
@@ -12,7 +12,7 @@
   transition: all .3s;
 
   @include theme(dark) {
-    background-color: $color-slate-dark-2;
+    background-color: $color-slate-dark-5;
   }
 
   .container {
@@ -98,7 +98,7 @@
 
     @include respond(phone) {
       transform: translateX(0);
-      box-shadow: -1rem .5rem 1rem rgba($color-slate-dark-2, .1);
+      box-shadow: -1rem .5rem 1rem rgba($color-slate-dark-5, .1);
     }
   }
 
@@ -131,7 +131,7 @@
       transform: translateX(100%);
 
       @include theme(dark) {
-        background-color: $color-slate-dark-1;
+        background-color: $color-slate-dark-4;
       }
     }
   }

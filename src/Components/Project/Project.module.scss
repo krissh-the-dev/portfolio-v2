@@ -36,7 +36,13 @@
 .techItem {
   font-family: $font-mono;
   font-size: 1.2rem;
-  color: $color-gray;
+
+
+  color: $color-slate-light-4;
+
+  @include theme(dark) {
+    color: $color-slate-light-3;
+  }
 
   &:not(:last-child) {
     margin-right: 3rem;

@@ -2,6 +2,11 @@
 
 h1 {
   font-size: 6rem;
+  color: $color-slate-dark-3;
+
+  @include theme(dark) {
+    color: $color-slate-light-1;
+  }
 
   @include respond(phone) {
     font-size: 4.8rem;
@@ -10,10 +15,10 @@ h1 {
 
 h2 {
   font-size: 5rem;
-  color: $color-slate-light-4;
+  color: $color-slate-dark-3;
 
   @include theme(dark) {
-    color: $color-slate-light-3;
+    color: $color-slate-dark-1;
   }
 
   @include respond(phone) {
@@ -24,6 +29,11 @@ h2 {
 h3 {
   font-size: 5rem;
   margin-bottom: 1.3rem;
+  color: $color-slate-dark-3;
+
+  @include theme(dark) {
+    color: $color-slate-light-1;
+  }
 
   @include respond(phone) {
     font-size: 4rem;
@@ -32,6 +42,11 @@ h3 {
 
 h4 {
   font-size: 3.8rem;
+  color: $color-slate-dark-3;
+
+  @include theme(dark) {
+    color: $color-slate-light-1;
+  }
 
   @include respond(phone) {
     font-size: 3.4rem;
@@ -60,4 +75,21 @@ p,
 div,
 body {
   font-size: 2rem;
+  font-weight: 500;
+  color: $color-slate-dark-4;
+
+  @include theme(dark) {
+    font-weight: 400;
+    color: $color-slate-light-2;
+  }
+}
+
+li {
+  color: $color-slate-dark-3;
+  font-weight: 500;
+
+  @include theme(dark) {
+    color: $color-slate-light-1;
+    font-weight: 400;
+  }
 }

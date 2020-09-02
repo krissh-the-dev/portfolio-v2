@@ -28,10 +28,10 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   background-color: $color-white;
-  color: $color-slate-dark-1;
+  color: $color-slate-dark-4;
 
   @include theme(dark) {
-    background-color: $color-slate-dark-2;
+    background-color: $color-slate-dark-5;
     color: $color-slate-light-1;
   }
 }
@@ -46,7 +46,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba($color-slate-dark-1, .4);
+  background: rgba($color-slate-dark-4, .4);
 }
 
 ::-webkit-scrollbar-thumb {
