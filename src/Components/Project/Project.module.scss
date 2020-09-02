@@ -1,10 +1,9 @@
 @import '../../styles/mixins';
 @import '../../styles/variables';
+@import '../../styles/animations';
 
 .project {
   display: flex;
-
-  &__title {}
 
   &__type {
     text-transform: capitalize;
@@ -17,7 +16,12 @@
   }
 
   &__image {
+    display: block;
     width: 100%;
+    animation-name: projectOverview;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.69, .63, .73, 1.24);
   }
 
   &__details {
