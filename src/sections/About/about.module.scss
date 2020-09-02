@@ -10,14 +10,6 @@
     background-color: $color-slate-dark-1;
   }
 
-  .heading {
-    margin-bottom: 1.2rem;
-  }
-
-  .subheading {
-    margin-bottom: 1rem;
-  }
-
   &__content {
     display: grid;
     grid-template-columns: minmax(min-content, 65%) minmax(30%, 1fr);

@@ -27,7 +27,7 @@ export default function Project({ images, logo, type, title, stack, link, repo, 
       </figure>
       <div className={classes.project__details}>
         <h6 className={classes.project__type}>{`${type} project`}</h6>
-        <h3 className={classes.project__title}>{title}</h3>
+        <h4 className={classes.project__title}>{title}</h4>
         <p className={classes.project__description}>{children}</p>
         <div className={classes.project__techStack}>
           {stack.map((value, index) => <Tech value={value} key={index} />)}

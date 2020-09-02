@@ -4,10 +4,7 @@
 .project {
   display: flex;
 
-  &__title {
-    margin-bottom: .5rem;
-    margin-top: -1rem;
-  }
+  &__title {}
 
   &__type {
     text-transform: capitalize;

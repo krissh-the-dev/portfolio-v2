@@ -2,6 +2,11 @@
 @import '../../../styles/mixins';
 
 .skills {
+
+  .subheading {
+    margin-bottom: 1rem;
+  }
+
   .skill_rack {
     display: flex;
     flex-wrap: wrap;
