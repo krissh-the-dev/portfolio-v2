@@ -9,7 +9,15 @@ function Tech({ value }) {
   );
 }
 
-export default function Project({ images, logo, type, title, stack, link, repo, children }) {
+function Features({ list }) {
+  return (
+    <ul class={classes.features}>
+      {list.map((feature, key) => <li className={classes.feature} key={key}>{feature}</li>)}
+    </ul>
+  );
+}
+
+export default function Project({ images, logo, type, title, children, features, stack, link, repo }) {
   /*
    * images: image images -> type: object<images> {small, large}
    * type -> type: string [eg. featured]
@@ -17,6 +25,7 @@ export default function Project({ images, logo, type, title, stack, link, repo, 
    * link -> landing page url
    * repo -> source code repository url
    * children : description -> type: string
+   * features -> Array<string>
    * logo: logo of the project -> type: string<image>
    */
   return (
@@ -29,6 +38,7 @@ export default function Project({ images, logo, type, title, stack, link, repo, 
         <h6 className={classes.project__type}>{`${type} project`}</h6>
         <h4 className={classes.project__title}>{title}</h4>
         <p className={classes.project__description}>{children}</p>
+        <Features list={features} />
         <div className={classes.project__techStack}>
           {stack.map((value, index) => <Tech value={value} key={index} />)}
         </div>
