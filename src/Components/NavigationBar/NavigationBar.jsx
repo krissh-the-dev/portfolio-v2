@@ -26,9 +26,9 @@ export default function NavigationBar() {
   return (
     <nav className={classes.nav} style={navStyle}>
       <div className={classes.container}>
-        <picture className={classes.nav__brand}>
-          <img className={classes.nav__logo} src={small} srcSet={`${small} 300w, ${large} 600w`} />
-        </picture>
+        <figure className={classes.nav__brand}>
+          <img className={classes.nav__logo} src={small} srcSet={`${small} 300w, ${large} 600w`} alt='Krish' />
+        </figure>
         <div className={classes.nav__list_container}>
           <input type='checkbox' className={classes.nav__check} id='nav__check' />
           <label htmlFor='nav__check' className={classes.nav__toggle}>&nbsp;</label>

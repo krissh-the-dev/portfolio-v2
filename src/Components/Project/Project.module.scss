@@ -4,6 +4,15 @@
 .project {
   display: flex;
 
+  &__title {
+    margin-bottom: .5rem;
+    margin-top: -1rem;
+  }
+
+  &__type {
+    text-transform: capitalize;
+  }
+
   &__picture {
     flex: 1 1 35%;
     max-height: 25rem;
@@ -29,7 +38,8 @@
 
 .techItem {
   font-family: $font-mono;
-  color: $color-slate-light-3;
+  font-size: 1.2rem;
+  color: $color-gray;
 
   &:not(:last-child) {
     margin-right: 3rem;

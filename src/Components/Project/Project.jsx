@@ -22,11 +22,11 @@ export default function Project({ images, logo, type, title, stack, link, repo, 
   return (
     <div className={classes.project}>
       <figure className={classes.project__picture}>
-        <img className={classes.project__image} src={images.small} srcSet={`${images.small} 200w ${images.large} 600w`} />
+        <img className={classes.project__image} alt={title} src={images.small} srcSet={`${images.small} 200w ${images.large} 600w`} />
         <caption></caption>
       </figure>
       <div className={classes.project__details}>
-        <h6 className={classes.project_type}>{`${type} project`}</h6>
+        <h6 className={classes.project__type}>{`${type} project`}</h6>
         <h3 className={classes.project__title}>{title}</h3>
         <p className={classes.project__description}>{children}</p>
         <div className={classes.project__techStack}>
