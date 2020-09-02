@@ -15,7 +15,7 @@ const features = [
 
 export default function MyWork() {
   return (
-    <section className={classes.projects}>
+    <section className={classes.projects} id='projects'>
       <div className={classes.container}>
         <h3 className={classes.heading}>My Projects</h3>
         <Project

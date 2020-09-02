@@ -33,14 +33,17 @@ export default function Project(props) {
     <div className={classes.project}>
       <figure className={classes.project__picture}>
         <img className={classes.project__image} alt={title} src={images.small} srcSet={`${images.small} 200w ${images.large} 600w`} />
+
         <figcaption className={classes.caption}>
-          {repo && <a href={repo} target='_blank' className='icon'>&#xe910;</a>}
-          {link && <a href={link} target='_blank' className='icon'>&#xe906;</a>}
+          {repo && <a href={repo} target='_blank' rel="noopener noreferrer" className='icon'>&#xe910;</a>}
+          {link && <a href={link} target='_blank' rel="noopener noreferrer" className='icon'>&#xe906;</a>}
         </figcaption>
+
         <div className={classes.project__logo}>
           <img src={logo} alt={title} />
         </div>
       </figure>
+
       <div className={classes.project__details}>
         <h6 className={classes.project__type}>{`${type} project`}</h6>
         <h4 className={classes.project__title}>{title}</h4>
@@ -51,5 +54,5 @@ export default function Project(props) {
         </div>
       </div>
     </div>
-  )
+  );
 }

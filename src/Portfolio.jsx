@@ -7,11 +7,13 @@ import { NavigationBar } from './Components';
 
 export default function Portfolio() {
   return (
-    <main>
+    <>
       <NavigationBar />
-      <Hero />
-      <About />
-      <Projects />
-    </main>
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+      </main>
+    </>
   );
 }

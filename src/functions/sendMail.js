@@ -8,7 +8,7 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-export default async function useMailer({ from, subject, message }) {
+export default async function sendMail({ from, subject, message }) {
   try {
     let info = await transporter.sendMail({ from, to: 'akrishnamoorthy007@gmail.com', subject, html: message });
     return info.messageId;

@@ -75,12 +75,12 @@
       font-size: 2.2rem;
       display: block;
       text-decoration: none;
-      color: inherit;
+      color: $color-slate-light-1;
 
       transition: all .2s;
 
       &:not(:last-child) {
-        margin-right: 1rem;
+        margin-right: 1.8rem;
       }
 
       &:hover {
