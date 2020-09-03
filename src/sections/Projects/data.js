@@ -10,6 +10,28 @@ const collegemate = {
   },
   description: 'A MERN stack Progressive Web App (PWA) built for students and teaching faculties to easily share materials, homework, assignments, and notes.',
   features: [
+    'Authentication system',
+    'Email alerts',
+    'File sharing',
+    'Creating new posts and materials',
+    'Scheduling based on current time',
+    'Dark theme'
+  ],
+  techStack: ['React', 'Express', 'MongoDB', 'PWA'],
+  link: 'https://collegemate.herokuapp.com/',
+  repo: undefined
+};
+
+const trident = {
+  title: 'Trident',
+  type: 'featured',
+  logo: CollegemateLogo,
+  images: {
+    light: { small: CollegemateDark, large: CollegemateDark },
+    dark: { small: CollegemateDark, large: CollegemateDark },
+  },
+  description: 'A pretty text/ code editor built with Java swing.',
+  features: [
     'Language recognition',
     'Syntax highlighting (not released)',
     'Customization options',
@@ -17,9 +39,10 @@ const collegemate = {
     'Compiling and executing',
     'Cross platform'
   ],
-  techStack: ['React', 'Express', 'MongoDB', 'PWA'],
-  link: 'https://collegemate.herokuapp.com/'
+  techStack: ['Java', 'Swing', 'Gradle', 'Cross-platform'],
+  link: 'https://krishnamoorthy12.github.io/trident/',
+  repo: 'https://github.com/KrishnaMoorthy12/trident'
 }
 
-const data = [collegemate];
+const data = [collegemate, trident];
 export default data;

@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './projects.module.scss';
 import { Project } from '../../Components';
-import { CollegemateLogo, CollegemateDark } from '../../images/Collegemate';
 import data from './data';
 
 export default function MyWork() {
@@ -11,9 +10,10 @@ export default function MyWork() {
         <h3 className={classes.heading}>My Projects</h3>
         {
           data.map((project, index) => {
-            const { title, type, logo, images, description, features, techStack, link } = project;
+            const { title, type, logo, images, description, features, techStack, link, repo } = project;
             return (
               <Project
+                key={index}
                 title={title}
                 type={type}
                 logo={logo}
@@ -21,6 +21,7 @@ export default function MyWork() {
                 features={features}
                 stack={techStack}
                 link={link}
+                repo={repo}
               >
                 {description}
               </Project>

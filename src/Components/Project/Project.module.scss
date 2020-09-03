@@ -5,6 +5,14 @@
 .project {
   display: flex;
 
+  &:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+
+  &:nth-child(odd) &__picture {
+    order: 1;
+  }
+
   @include respond(phone) {
     flex-direction: column;
   }
@@ -67,6 +75,10 @@
         text-decoration: none;
         color: $color-white;
         transition: all .3s;
+
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
 
         &:hover {
           background-color: $color-primary-dark;
