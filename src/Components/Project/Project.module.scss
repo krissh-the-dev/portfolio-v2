@@ -11,6 +11,10 @@
 
   &:nth-child(odd) &__picture {
     order: 1;
+
+    @include respond(phone) {
+      order: 0;
+    }
   }
 
   &:nth-child(odd) &__details {

@@ -13,6 +13,10 @@
   }
 }
 
+@mixin addPadding {
+  padding: 20rem 0;
+}
+
 /* MEDIA QUERY MANAGER
  *
  * 0 - 600px => phone
