@@ -45,7 +45,7 @@ export default function Project(props) {
       </figure>
 
       <div className={classes.project__details}>
-        <h6 className={classes.project__type}>{`${type} project`}</h6>
+        <h6 className={classes.project__type}>{type}</h6>
         <h4 className={classes.project__title}>{title}</h4>
         <p className={classes.project__description}>{children}</p>
         <Features list={features} />
