@@ -96,6 +96,10 @@
     animation-timing-function: cubic-bezier(.69, .63, .73, 1.24);
   }
 
+  &__picture:hover &__image {
+    filter: blur(3px);
+  }
+
   &__details {
     flex: 1 1 65%;
     display: flex;

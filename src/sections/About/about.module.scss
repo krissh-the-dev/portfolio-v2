@@ -46,8 +46,8 @@
       max-height: 95%;
       align-self: center;
       object-fit: contain;
-      border-radius: .5rem;
-      border: 2px solid $color-primary-dark;
+      border-radius: .3rem;
+      // border: 2px solid $color-primary-dark;
       transition: all .2s;
 
       @include respond(tab-port) {

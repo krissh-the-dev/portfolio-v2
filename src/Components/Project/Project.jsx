@@ -20,7 +20,7 @@ function Features({ list }) {
 export default function Project(props) {
   const { images, logo, type, title, children, features, stack, link, repo } = props;
   /*
-   * images: image images -> type: object<images> {small, large}
+   * images: image -> type: object<Object<images>> dark: {small, large}, light: {small, large}
    * type -> type: string [eg. featured]
    * tech -> type: array<string>
    * link -> landing page url
@@ -32,7 +32,7 @@ export default function Project(props) {
   return (
     <div className={classes.project}>
       <figure className={classes.project__picture}>
-        <img className={classes.project__image} alt={title} src={images.small} srcSet={`${images.small} 200w ${images.large} 600w`} />
+        <img className={classes.project__image} alt={title} src={images.dark.small} srcSet={`${images.dark.small} 200w ${images.dark.large} 600w`} />
 
         <figcaption className={classes.caption}>
           {repo && <a href={repo} target='_blank' rel="noopener noreferrer" className='icon'>&#xe910;</a>}

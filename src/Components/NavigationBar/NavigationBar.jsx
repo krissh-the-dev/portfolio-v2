@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import classes from './NavigationBar.module.scss';
 
-import { small, large } from '../../images/Logo';
+import { LogoSmall, LogoLarge } from '../../images/Logo';
 import Button from '../Button';
 
 export default function NavigationBar() {
@@ -27,7 +27,7 @@ export default function NavigationBar() {
     <nav className={classes.nav} style={navStyle}>
       <div className={classes.container}>
         <figure className={classes.nav__brand}>
-          <img className={classes.nav__logo} src={small} srcSet={`${small} 300w, ${large} 600w`} alt='Krish' />
+          <img className={classes.nav__logo} src={LogoSmall} srcSet={`${LogoSmall} 300w, ${LogoLarge} 600w`} alt='Krish' />
         </figure>
 
         <div className={classes.nav__list_container}>
@@ -50,5 +50,5 @@ export default function NavigationBar() {
         <Button link='#resume'>Download CV</Button>
       </div>
     </nav>
-  )
+  );
 }

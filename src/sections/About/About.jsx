@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './about.module.scss';
 
-import { small, medium, large } from '../../images/Krish';
+import { KrishSmall, KrishMedium, KrishLarge } from '../../images/Krish';
 import Skills from './Skills';
 import { Link } from '../../Components';
 
@@ -23,7 +23,7 @@ export default function About() {
             </p>
           </div>
           <picture className={classes.profile}>
-            <img className={classes.image} alt='Krish' src={medium} srcSet={`${small} 200w, ${medium} 600w, ${large} 1000w`} />
+            <img className={classes.image} alt='Krish' src={KrishMedium} srcSet={`${KrishSmall} 200w, ${KrishMedium} 600w, ${KrishLarge} 1000w`} />
           </picture>
         </div>
 

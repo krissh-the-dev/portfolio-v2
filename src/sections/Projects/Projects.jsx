@@ -1,8 +1,7 @@
 import React from 'react';
 import classes from './projects.module.scss';
 import { Project } from '../../Components';
-import small from '../../images/clgmate-dark-1.png';
-import logo from '../../images/clgmate-logo.png';
+import { CollegemateLogo, CollegemateDark } from '../../images/Collegemate';
 
 const features = [
   'Language recognition',
@@ -21,10 +20,14 @@ export default function MyWork() {
         <Project
           title='Collegemate'
           type='featured'
-          stack={['React', 'Express', 'MongoDB', 'PWA']} images={{ small, large: small }}
+          stack={['React', 'Express', 'MongoDB', 'PWA']}
+          images={{
+            dark: { small: CollegemateDark, large: CollegemateDark },
+            light: { small: CollegemateDark, large: CollegemateDark }
+          }}
           features={features}
           link='https://collegemate.herokuapp.com/'
-          logo={logo}
+          logo={CollegemateLogo}
         >
           A MERN stack Progressive Web App (PWA) built for students and teaching faculties to easily share materials, homework, assignments, and notes.
         </Project>
