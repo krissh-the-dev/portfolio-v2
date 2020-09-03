@@ -13,6 +13,11 @@
     order: 1;
   }
 
+  &:nth-child(odd) &__details {
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+
   @include respond(phone) {
     flex-direction: column;
   }

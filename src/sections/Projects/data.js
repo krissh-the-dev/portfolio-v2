@@ -40,7 +40,7 @@ const trident = {
     'Compiling and executing',
     'Cross platform'
   ],
-  techStack: ['Java', 'Swing', 'Gradle', 'Cross-platform'],
+  techStack: ['Java', 'Swing', 'Gradle'],
   link: 'https://krishnamoorthy12.github.io/trident/',
   repo: 'https://github.com/KrishnaMoorthy12/trident'
 };
