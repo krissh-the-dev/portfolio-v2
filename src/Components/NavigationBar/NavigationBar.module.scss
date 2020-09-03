@@ -118,7 +118,7 @@
     @include respond(phone) {
       position: fixed;
       right: 0;
-      top: 7.8rem;
+      top: calc(10vh - 1px);
       height: 100vh;
       padding: 4rem;
       width: 50%;
