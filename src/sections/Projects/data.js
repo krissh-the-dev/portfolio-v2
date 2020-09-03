@@ -83,7 +83,7 @@ const aubit = {
     'Reusable web components'
   ],
   techStack: ['React'],
-  link: 'https://collegemate.herokuapp.com/',
+  link: 'https://au-bit.netlify.app/',
   repo: undefined
 };
 
