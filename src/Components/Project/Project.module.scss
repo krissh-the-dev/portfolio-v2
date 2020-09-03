@@ -102,6 +102,7 @@
   &__image {
     display: block;
     width: 100%;
+    position: relative;
     animation-name: projectOverview;
     animation-duration: 30s;
     animation-iteration-count: infinite;

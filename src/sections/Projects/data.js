@@ -1,4 +1,5 @@
 import { CollegemateLogo, CollegemateDark } from '../../images/Collegemate';
+import { TridentLogo, TridentLight } from '../../images/Trident';
 
 const collegemate = {
   title: 'Collegemate',
@@ -25,10 +26,10 @@ const collegemate = {
 const trident = {
   title: 'Trident',
   type: 'featured',
-  logo: CollegemateLogo,
+  logo: TridentLogo,
   images: {
-    light: { small: CollegemateDark, large: CollegemateDark },
-    dark: { small: CollegemateDark, large: CollegemateDark },
+    light: { small: TridentLight, large: TridentLight },
+    dark: { small: TridentLight, large: TridentLight },
   },
   description: 'A pretty text/ code editor built with Java swing.',
   features: [
