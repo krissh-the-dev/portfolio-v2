@@ -1,5 +1,6 @@
 import { CollegemateLogo, CollegemateDark } from '../../images/Collegemate';
 import { TridentLogo, TridentLight } from '../../images/Trident';
+import { AubitLogo, AubitMobile } from '../../images/Aubit';
 
 const collegemate = {
   title: 'Collegemate',
@@ -67,6 +68,25 @@ const fellonLove = {
   repo: undefined
 };
 
+const aubit = {
+  title: 'AU-BIT Unofficial website',
+  type: 'Waiting for approval',
+  logo: AubitLogo,
+  images: {
+    light: { small: AubitMobile, large: AubitMobile },
+    dark: { small: AubitMobile, large: AubitMobile },
+  },
+  description: 'The unofficial website of University College of Engineering, BIT Campus, Tiruchirappalli. The website is still under development and will be approved upon completion to be the official website. Built with React.',
+  features: [
+    'Modern design',
+    'Online Form downloads',
+    'Reusable web components'
+  ],
+  techStack: ['React'],
+  link: 'https://collegemate.herokuapp.com/',
+  repo: undefined
+};
+
 const flowerVase = {
   title: 'Flower Vase CSS',
   type: 'Under development',
@@ -89,5 +109,5 @@ const flowerVase = {
   repo: undefined
 };
 
-const data = [collegemate, trident, fellonLove, flowerVase];
+const data = [collegemate, trident, aubit, fellonLove, flowerVase];
 export default data;
