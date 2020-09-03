@@ -94,6 +94,7 @@
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(.69, .63, .73, 1.24);
+    transition: all .4s;
   }
 
   &__picture:hover &__image {
