@@ -1,6 +1,7 @@
 import { CollegemateLogo, CollegemateDark } from '../../images/Collegemate';
 import { TridentLogo, TridentLight } from '../../images/Trident';
 import { AubitLogo, AubitMobile } from '../../images/Aubit';
+import { SpadeLogo, Spade } from '../../images/Spade';
 
 const collegemate = {
   title: 'Collegemate',
@@ -46,28 +47,6 @@ const trident = {
   repo: 'https://github.com/KrishnaMoorthy12/trident'
 };
 
-const fellonLove = {
-  title: 'FellonLove',
-  type: 'Delivered project',
-  logo: CollegemateLogo,
-  images: {
-    light: { small: CollegemateDark, large: CollegemateDark },
-    dark: { small: CollegemateDark, large: CollegemateDark },
-  },
-  description: 'A dating app for inmates in the United States of America, in which family members of prisoners can post advertisements to find a partner or them. Built with React, Express, MySQL and Sequelize. The app includes a Payment Gateway and admin panel.',
-  features: [
-    'Authentication system',
-    'Email alerts',
-    'Photo sharing',
-    'Payment Gateways',
-    'Admin Panel',
-    'Infinite Scroll'
-  ],
-  techStack: ['React', 'Express', 'MySQL', 'Stripe & PayPal'],
-  link: 'https://collegemate.herokuapp.com/',
-  repo: undefined
-};
-
 const aubit = {
   title: 'AU-BIT Unofficial website',
   type: 'Waiting for approval',
@@ -87,27 +66,27 @@ const aubit = {
   repo: undefined
 };
 
-const flowerVase = {
-  title: 'Flower Vase CSS',
+const spade = {
+  title: 'Spade',
   type: 'Under development',
-  logo: CollegemateLogo,
+  logo: SpadeLogo,
   images: {
-    light: { small: CollegemateDark, large: CollegemateDark },
-    dark: { small: CollegemateDark, large: CollegemateDark },
+    light: { small: Spade, large: Spade },
+    dark: { small: Spade, large: Spade },
   },
   description: 'A simple and open source component library containing a huge collection of CSS only components as separate modules. Users can directly import them as modules or just use the code in their projects.',
   features: [
-    '10 different Button components',
-    '10 different Button components',
-    '10 different Button components',
-    '10 different Button components',
-    '10 different Button components',
-    '10 different Button components'
+    'Button components',
+    'Input components',
+    'Switches',
+    'Navigation bars',
+    'Card components',
+    'Sample forms'
   ],
-  techStack: ['SCSS', 'Figma'],
+  techStack: ['HTML', 'SCSS', 'Figma'],
   link: 'https://collegemate.herokuapp.com/',
   repo: undefined
 };
 
-const data = [collegemate, trident, aubit, fellonLove, flowerVase];
+const data = [collegemate, trident, aubit, spade];
 export default data;
