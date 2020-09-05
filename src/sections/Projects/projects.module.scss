@@ -2,14 +2,10 @@
 @import '../../styles/variables';
 
 .projects {
-  @include addPadding;
+  @include sectionStyles(odd);
 
   .heading {
     text-align: center;
     margin-bottom: 4rem;
-  }
-
-  .container {
-    @include marginate;
   }
 }

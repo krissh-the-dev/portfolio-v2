@@ -3,12 +3,7 @@
 
 .about {
   position: relative;
-  @include addPadding;
-  background-color: $color-slate-light-1;
-
-  @include theme(dark) {
-    background-color: $color-slate-dark-4;
-  }
+  @include sectionStyles(even);
 
   &__content {
     display: grid;
@@ -97,15 +92,6 @@
           color: $color-primary-light;
         }
       }
-    }
-  }
-
-  .container {
-    max-width: 80%;
-    margin: 0 auto;
-
-    @include respond(tab-port) {
-      max-width: 90%;
     }
   }
 }

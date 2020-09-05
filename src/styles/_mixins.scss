@@ -17,6 +17,28 @@
   padding: 10rem 0;
 }
 
+@mixin sectionStyles($number) {
+  padding: 10rem 0;
+
+  .container {
+    @include marginate;
+  }
+
+  @if($number==odd) {}
+
+  @if($number==even) {
+    background-color: $color-slate-light-1;
+
+    .container {
+      max-width: 80%;
+    }
+
+    @include theme(dark) {
+      background-color: $color-slate-dark-4;
+    }
+  }
+}
+
 /* MEDIA QUERY MANAGER
  *
  * 0 - 600px => phone
