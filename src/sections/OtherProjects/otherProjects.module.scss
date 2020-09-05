@@ -1,12 +1,16 @@
 @import '../../styles/mixins';
 @import '../../styles/variables';
 
-.projects {
+.OtherProjects {
   @include addPadding;
+  background-color: $color-slate-light-1;
+
+  @include theme(dark) {
+    background-color: $color-slate-dark-4;
+  }
 
   .heading {
     text-align: center;
-    margin-bottom: 4rem;
   }
 
   .container {

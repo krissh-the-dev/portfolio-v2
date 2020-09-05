@@ -3,7 +3,7 @@
 
 .about {
   position: relative;
-  padding: 10rem 0;
+  @include addPadding;
   background-color: $color-slate-light-1;
 
   @include theme(dark) {
