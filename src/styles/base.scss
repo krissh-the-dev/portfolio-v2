@@ -42,17 +42,17 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 1rem;
+  width: .8rem;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba($color-slate-dark-4, .4);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   background: rgba($color-primary-dark, .75);
   opacity: .5;
-  border-radius: .5rem;
+  border-radius: 1rem;
   transition: all .2s;
 }
 
