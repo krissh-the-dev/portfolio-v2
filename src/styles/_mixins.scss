@@ -20,17 +20,20 @@
 @mixin sectionStyles($number) {
   padding: 10rem 0;
 
-  .container {
+  @if($number==odd) {
     @include marginate;
   }
-
-  @if($number==odd) {}
 
   @if($number==even) {
     background-color: $color-slate-light-1;
 
     .container {
       max-width: 80%;
+      margin: 0 auto;
+
+      @media only screen and (max-width: 120rem) {
+        width: 90%;
+      }
     }
 
     @include theme(dark) {
