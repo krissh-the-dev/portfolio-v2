@@ -35,8 +35,8 @@ export default function Project(props) {
         <img className={classes.project__image} alt={title} src={images.dark.small} srcSet={`${images.dark.small} 200w, ${images.dark.large} 600w`} />
 
         <figcaption className={classes.caption}>
-          {repo && <a href={repo} target='_blank' rel="noopener noreferrer" className='icon'>&#xe910;</a>}
-          {link && <a href={link} target='_blank' rel="noopener noreferrer" className='icon'>&#xe906;</a>}
+          {repo && <a href={repo} target='_blank' rel="noopener noreferrer" className='icon'>&#xe910; <span className={classes.link}>Repo</span></a>}
+          {link && <a href={link} target='_blank' rel="noopener noreferrer" className='icon'>&#xe906; <span className={classes.link}>Demo</span></a>}
         </figcaption>
 
         <div className={classes.project__logo}>

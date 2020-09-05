@@ -72,7 +72,8 @@
       transition: all .3s;
 
       &>a {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
         padding: 1.2rem;
         border-radius: .3rem;
         text-align: center;
@@ -91,6 +92,11 @@
           @include theme(dark) {
             background-color: $color-primary-main;
           }
+        }
+
+        .link {
+          font-family: $font-default;
+          margin-left: 1rem;
         }
       }
     }

@@ -22,9 +22,9 @@ export default function About() {
               Other than coding, I'm passionate about Astronomy <span role='img' aria-label='galaxy emoji'>🌌</span> and bicycling <span role='img' aria-label='cycling emoji'>🚴‍♂️</span>. I like to cook in my leisure time. I love cats <span role='img' aria-label='cat face emoji'>😺</span> and adore all pet animals <span role='img' aria-label='pet dog emoji'>🐕</span>.
             </p>
           </div>
-          <picture className={classes.profile}>
+          <figure className={classes.profile}>
             <img className={classes.image} alt='Krish' src={KrishMedium} srcSet={`${KrishSmall} 200w, ${KrishMedium} 600w, ${KrishLarge} 1000w`} />
-          </picture>
+          </figure>
         </div>
 
         <Skills />

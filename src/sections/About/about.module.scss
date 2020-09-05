@@ -42,9 +42,10 @@
       max-height: 95%;
       align-self: center;
       object-fit: contain;
-      border-radius: .3rem;
-      // border: 2px solid $color-primary-dark;
-      transition: all .2s;
+      border-radius: .6rem;
+      border: 2px solid transparent;
+      box-shadow: 0 0 1rem transparent;
+      transition: all .4s;
 
       @include respond(tab-port) {
         min-height: 23rem;
@@ -58,6 +59,7 @@
       }
 
       &:hover {
+        border: 2px solid $color-primary-dark;
         box-shadow: 0 0 1rem $color-primary-dark;
       }
     }
