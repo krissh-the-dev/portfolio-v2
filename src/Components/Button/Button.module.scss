@@ -3,7 +3,8 @@
 
 .button {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   font-family: $font-mono;
   font-size: 1.4rem;
