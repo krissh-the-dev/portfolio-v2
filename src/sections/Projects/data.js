@@ -84,8 +84,8 @@ const spade = {
     'Sample forms'
   ],
   techStack: ['HTML', 'SCSS', 'Figma'],
-  link: 'https://collegemate.herokuapp.com/',
-  repo: undefined
+  repo: 'https://github.com/KrishnaMoorthy12/spade',
+  link: undefined
 };
 
 const data = [collegemate, trident, aubit, spade];

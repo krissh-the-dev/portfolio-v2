@@ -40,6 +40,15 @@
     }
   }
 
+
+  @if($breakpoint==phone-large) {
+
+    @media only screen and (max-width: 50em) {
+      //800px = 56.25em (1em = 16px)
+      @content;
+    }
+  }
+
   @if($breakpoint==tab-port) {
 
     @media only screen and (max-width: 56.25em) {

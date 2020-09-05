@@ -11,7 +11,7 @@ function Tech({ value }) {
 
 function Features({ list }) {
   return (
-    <ul class={classes.features}>
+    <ul className={classes.features}>
       {list.map((feature, key) => <li className={classes.feature} key={key}>{feature}</li>)}
     </ul>
   );
@@ -32,7 +32,7 @@ export default function Project(props) {
   return (
     <div className={classes.project}>
       <figure className={classes.project__picture}>
-        <img className={classes.project__image} alt={title} src={images.dark.small} srcSet={`${images.dark.small} 200w ${images.dark.large} 600w`} />
+        <img className={classes.project__image} alt={title} src={images.dark.small} srcSet={`${images.dark.small} 200w, ${images.dark.large} 600w`} />
 
         <figcaption className={classes.caption}>
           {repo && <a href={repo} target='_blank' rel="noopener noreferrer" className='icon'>&#xe910;</a>}
