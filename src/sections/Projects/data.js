@@ -5,7 +5,7 @@ import { SpadeLogo, Spade } from '../../images/Spade';
 
 const collegemate = {
   title: 'Collegemate',
-  type: 'featured project',
+  type: 'Featured project',
   logo: CollegemateLogo,
   images: {
     light: { small: CollegemateDark, large: CollegemateDark },
@@ -27,7 +27,7 @@ const collegemate = {
 
 const trident = {
   title: 'Trident',
-  type: 'featured project',
+  type: 'Featured project',
   logo: TridentLogo,
   images: {
     light: { small: TridentLight, large: TridentLight },
@@ -59,9 +59,10 @@ const aubit = {
   features: [
     'Modern design',
     'Online Form downloads',
-    'Reusable web components'
+    'Reusable web components',
+    'Image Gallery'
   ],
-  techStack: ['React'],
+  techStack: ['React', 'SCSS'],
   link: 'https://au-bit.netlify.app/',
   repo: undefined
 };

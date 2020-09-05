@@ -75,21 +75,17 @@ p,
 div,
 body {
   font-size: 2rem;
-  font-weight: 500;
   color: $color-slate-dark-4;
 
   @include theme(dark) {
-    font-weight: 400;
     color: $color-slate-light-2;
   }
 }
 
 li {
   color: $color-slate-dark-3;
-  font-weight: 500;
 
   @include theme(dark) {
     color: $color-slate-light-1;
-    font-weight: 400;
   }
 }
