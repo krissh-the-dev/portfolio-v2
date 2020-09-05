@@ -3,4 +3,15 @@
 
 .OtherProjects {
   @include sectionStyles(even);
+
+  &__list {
+    list-style: none;
+    background-color: $color-slate-light-2;
+    border-radius: .3rem;
+    overflow: hidden;
+
+    @include theme(dark) {
+      background-color: $color-slate-dark-5;
+    }
+  }
 }

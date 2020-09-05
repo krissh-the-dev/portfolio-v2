@@ -1,0 +1,58 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  transition: all .2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-slate-light-3;
+
+    @include theme(dark) {
+      background-color: $color-slate-dark-2;
+    }
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+
+    .title {
+      flex: 1 1 50%;
+    }
+
+    .type,
+    .tech {
+      flex: 1 1 25%;
+      font-family: $font-mono;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+
+  .additional {
+    max-height: 15rem;
+    overflow: hidden;
+    transition: all .3s;
+
+    .description {
+      padding: 2rem 0;
+      font-size: 1.8rem;
+    }
+
+    .actions {
+      display: flex;
+
+      &>a {
+        margin-right: 2rem;
+
+        &>span {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
