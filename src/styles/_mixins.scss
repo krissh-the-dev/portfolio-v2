@@ -32,7 +32,7 @@
       margin: 0 auto;
 
       @media only screen and (max-width: 120rem) {
-        width: 90%;
+        max-width: 90%;
       }
     }
 

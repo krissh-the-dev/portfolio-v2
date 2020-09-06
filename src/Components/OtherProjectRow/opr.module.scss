@@ -5,11 +5,16 @@
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  border: 1px solid $color-slate-light-4;
   transition: all .2s;
   cursor: pointer;
 
+  @include theme(dark) {
+    border-color: $color-slate-dark-2;
+  }
+
   &:hover {
-    background-color: $color-slate-light-3;
+    background-color: $color-slate-light-1;
 
     @include theme(dark) {
       background-color: $color-slate-dark-2;
@@ -19,9 +24,14 @@
   .main {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     .title {
       flex: 1 1 50%;
+
+      @include respond(phone) {
+        flex: 1 1 100%;
+      }
     }
 
     .type,
@@ -30,6 +40,23 @@
       font-family: $font-mono;
       font-size: 1.2rem;
       text-align: center;
+    }
+
+    @include respond(phone) {
+
+      .type,
+      .tech {
+        margin-top: .5rem;
+        text-align: left;
+      }
+
+      .type {
+        flex-basis: 60%;
+      }
+
+      .tech {
+        flex-basis: 40%;
+      }
     }
   }
 
