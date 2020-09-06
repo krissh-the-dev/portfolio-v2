@@ -17,10 +17,14 @@ $color-slate-dark-4: #1A171E;
 $color-slate-dark-5: #120E16;
 $color-black: #000;
 
+$color-tomato: #cf0000;
+
 /* SHADOWS */
 $shadow-primary-all: box-shadow(0, 0, 1rem, $color-primary-main);
 $shadow-subtle: 0 .3rem 1rem rgba($color-slate-dark-5, .2);
 $shadow-subtle-small: 0 .2rem .5rem rgba($color-slate-dark-5, .2);
+
+$radius-small: .3rem;
 
 $font-default: 'Calibre',
 sans-serif;

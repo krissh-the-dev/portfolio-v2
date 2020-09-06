@@ -3,5 +3,22 @@
 
 .contact {
   @include sectionStyles(even);
-  text-align: center;
+
+  .heading,
+  .subheading {
+    text-align: center;
+  }
+
+  .heading {
+    margin-bottom: 4rem;
+  }
+
+  &__form {
+    width: 50rem;
+    margin: 0 auto;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
 }
