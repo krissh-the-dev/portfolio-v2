@@ -8,7 +8,7 @@
     list-style: none;
     background-color: $color-white;
     border-radius: .3rem;
-    box-shadow: 0 .3rem 1rem rgba($color-slate-dark-5, .2);
+    box-shadow: $shadow-subtle;
     overflow: hidden;
 
     @include theme(dark) {
