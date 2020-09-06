@@ -39,7 +39,14 @@
       flex: 1 1 25%;
       font-family: $font-mono;
       font-size: 1.2rem;
-      text-align: center;
+    }
+
+    .type {
+      text-align: left;
+    }
+
+    .tech {
+      text-align: right;
     }
 
     @include respond(phone) {

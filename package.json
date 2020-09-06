@@ -4,6 +4,7 @@
   "version": "0.5.0",
   "private": true,
   "dependencies": {
+    "dotenv": "^8.2.0",
     "node-sass": "^4.14.1",
     "nodemailer": "^6.4.11",
     "react": "^16.13.1",
@@ -11,7 +12,7 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "env-cmd react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
