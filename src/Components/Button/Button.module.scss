@@ -14,16 +14,20 @@
   background-clip: padding-box;
   border-radius: .4rem;
   box-shadow: 0 0 .3rem $color-primary-dark;
+  color: $color-slate-dark-2;
   background-size: 220%;
   border: 2px solid $color-primary-dark;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-primary-dark 50%);
+  background-image:
+    linear-gradient(120deg, transparent 0%, transparent 50%, $color-primary-dark 50%);
+  cursor: pointer;
 
   transition: all .2s ease-in-out;
 
-  color: $color-slate-dark-2;
-
   @include theme(dark) {
+    border-color: $color-primary-main;
     color: $color-slate-light-1;
+    background-image:
+      linear-gradient(120deg, transparent 0%, transparent 50%, $color-primary-main 50%);
   }
 
   &:hover,
