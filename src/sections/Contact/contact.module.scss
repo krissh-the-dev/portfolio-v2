@@ -1,0 +1,7 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.contact {
+  @include sectionStyles(even);
+  text-align: center;
+}
