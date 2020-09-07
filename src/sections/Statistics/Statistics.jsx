@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 
 import { getAllStats } from './data';
 import { StatCard as Card } from '../../Components';
+import Graph from './Graph/Graph';
 
 dotenv.config();
 
@@ -13,8 +14,9 @@ export default function Statistics() {
     following: { totalCount: 0 },
     totalRepositoriesWithContributedCommits: 0,
     totalContributions: 0,
-    contributionByWeek: new Array(53),
+    contributionByWeek: new Array(53).fill(0),
   });
+
   useEffect(() => {
     if (process.env.NODE_ENV === 'production') {
       getAllStats().then(res => setStats(res));
@@ -24,29 +26,38 @@ export default function Statistics() {
         following: { totalCount: 40 },
         totalContributions: 2400,
         totalRepositoriesWithContributedCommits: 45,
-        contributionByWeek: (new Array(53)).fill(Math.round(Math.random() * 10))
+        contributionByWeek: new Array(53).fill(Math.round(Math.abs(Math.random() * 10)))
       });
     }
   }, []);
+
   useEffect(() => console.table({
     followers: stats.followers.totalCount,
     following: stats.following.totalCount,
     contributions: stats.totalContributions,
     repos: stats.totalRepositoriesWithContributedCommits
   }), [stats]);
+
   return (
     <section id='statistics' className={classes.statistics}>
       <div className={classes.container}>
         <h6 className={classes.subheading}>My GitHub profile</h6>
         <h3 className={classes.heading}>Statistics</h3>
-        <div className={classes.contributions}>
-          <Card data={stats.totalContributions} caption={'contributions this year'} />
-          <Card data={stats.contributionByWeek[stats.contributionByWeek.length - 1]} caption={'contributions this week'} />
-        </div>
-        <div className={classes.stats}>
-          <Card data={stats.totalRepositoriesWithContributedCommits} caption={'contributed repositories'} />
-          <Card data={stats.followers.totalCount} caption={'followers'} />
-          <Card data={stats.following.totalCount} caption={'following'} />
+        <div className={classes.statistics__container}>
+          <div className={classes.visualization}>
+            <Graph data={stats.contributionByWeek.map(value => ({ contributions: value }))} />
+          </div>
+          <div className={classes.data}>
+            <div className={classes.contributions}>
+              <Card data={stats.totalContributions} caption={'contributions this year'} />
+              <Card data={stats.contributionByWeek[stats.contributionByWeek.length - 1]} caption={'contributions this week'} />
+            </div>
+            <div className={classes.stats}>
+              <Card data={stats.totalRepositoriesWithContributedCommits} caption={'contributed repositories'} />
+              <Card data={stats.followers.totalCount} caption={'followers'} />
+              <Card data={stats.following.totalCount} caption={'following'} />
+            </div>
+          </div>
         </div>
       </div>
     </section>
