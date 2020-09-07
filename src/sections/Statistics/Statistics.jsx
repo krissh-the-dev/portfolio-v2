@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import classes from './stats.module.scss';
+import dotenv from 'dotenv';
 
 import { getAllStats } from './data';
 import { StatCard as Card } from '../../Components';
+
+dotenv.config();
 
 export default function Statistics() {
   const [stats, setStats] = useState({
@@ -13,9 +16,19 @@ export default function Statistics() {
     contributionByWeek: new Array(53),
   });
   useEffect(() => {
-    // getAllStats().then(res => setStats(res));
+    if (process.env.NODE_ENV === 'production') {
+      getAllStats().then(res => setStats(res));
+    } else {
+      setStats({
+        followers: { totalCount: 35 },
+        following: { totalCount: 40 },
+        totalContributions: 2400,
+        totalRepositoriesWithContributedCommits: 45,
+        contributionByWeek: (new Array(53)).fill(Math.round(Math.random() * 10))
+      });
+    }
   }, []);
-  useEffect(() => console.log(stats), [stats]);
+  useEffect(() => console.table(stats), [stats]);
   return (
     <section className={classes.statistics}>
       <div className={classes.container}>
