@@ -36,7 +36,7 @@ export default function Project(props) {
 
         <figcaption className={classes.caption}>
           {repo && <a href={repo} target='_blank' rel="noopener noreferrer" className='icon'>&#xe910; <span className={classes.link}>Repo</span></a>}
-          {link && <a href={link} target='_blank' rel="noopener noreferrer" className='icon'>&#xe906; <span className={classes.link}>Demo</span></a>}
+          {link && <a href={link} target='_blank' rel="noopener noreferrer" className='icon'>&#xe906; <span className={classes.link}>Link</span></a>}
         </figcaption>
 
         <div className={classes.project__logo}>

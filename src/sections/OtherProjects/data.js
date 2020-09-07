@@ -8,12 +8,12 @@ export default [
     repo: 'https://github.com/KrishnaMoorthy12/ya-image-converter'
   },
   {
-    title: 'Leet Code Time Tracker',
-    type: 'Contributed project',
-    technology: 'Chrome Extension',
-    description: 'An extension to track the number of problems solved in LeetCode and time taken to solve it.',
-    link: 'https://chrome.google.com/webstore/detail/leetcode-time-tracker/obcihoolahbncgakepoceagnjnfgghhl?hl=en&authuser=0',
-    repo: 'https://github.com/VarthanV/LeetCode-Time-Tracker'
+    title: 'Spade',
+    type: 'Under development',
+    technology: 'SCSS',
+    description: 'A simple and open source component library containing a huge collection of CSS only components as separate modules.',
+    link: undefined,
+    repo: undefined
   },
   {
     title: 'ASUS Z00VD ADB Toolkit',

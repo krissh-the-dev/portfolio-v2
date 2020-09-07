@@ -49,7 +49,7 @@ const trident = {
 
 const aubit = {
   title: 'AU-BIT Unofficial website',
-  type: 'Waiting for approval',
+  type: 'Collaborated project',
   logo: AubitLogo,
   images: {
     light: { small: AubitMobile, large: AubitMobile },
@@ -67,27 +67,21 @@ const aubit = {
   repo: undefined
 };
 
-const spade = {
-  title: 'Spade',
+const leetCode = {
+  title: 'LeetCode Time Tracker',
   type: 'Under development',
   logo: SpadeLogo,
   images: {
     light: { small: Spade, large: Spade },
     dark: { small: Spade, large: Spade },
   },
-  description: 'A simple and open source component library containing a huge collection of CSS only components as separate modules. Users can directly import them as modules or just use the code in their projects.',
+  description: 'A Chrome extension to keep track of the problems solved and time taken to solve each problem in LeetCode. I have worked on the UI/ UX of the extension.',
   features: [
-    'Button components',
-    'Input components',
-    'Switches',
-    'Navigation bars',
-    'Card components',
-    'Sample forms'
   ],
-  techStack: ['HTML', 'SCSS', 'Figma'],
-  repo: 'https://github.com/KrishnaMoorthy12/spade',
-  link: undefined
+  techStack: ['Chrome Extension', 'TypeScript', 'SCSS'],
+  repo: 'https://github.com/VarthanV/LeetCode-Time-Tracker',
+  link: 'https://chrome.google.com/webstore/detail/leetcode-time-tracker/obcihoolahbncgakepoceagnjnfgghhl?hl=en&authuser=0'
 };
 
-const data = [collegemate, trident, aubit, spade];
+const data = [collegemate, trident, aubit, leetCode];
 export default data;
