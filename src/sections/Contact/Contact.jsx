@@ -21,7 +21,7 @@ export default function Contact() {
   }
 
   return (
-    <section className={classes.contact}>
+    <section id='contact' className={classes.contact}>
       <div className={classes.container}>
         <h6 className={classes.subheading}>Contact me</h6>
         <h3 className={classes.heading}>Get in touch</h3>

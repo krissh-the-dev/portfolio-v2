@@ -5,7 +5,7 @@ import { Button } from '../../Components';
 
 export default function Donate() {
   return (
-    <section className={classes.donate}>
+    <section id='donate' className={classes.donate}>
       <p className={classes.ask}>I want to ask you something... <br /> If you like my work, please consider donating to one of the following:</p>
       <div className={classes.container}>
         <div className={classes.donate__wiki}>

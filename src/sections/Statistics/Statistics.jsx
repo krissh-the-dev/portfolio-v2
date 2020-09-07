@@ -35,7 +35,7 @@ export default function Statistics() {
     repos: stats.totalRepositoriesWithContributedCommits
   }), [stats]);
   return (
-    <section className={classes.statistics}>
+    <section id='statistics' className={classes.statistics}>
       <div className={classes.container}>
         <h6 className={classes.subheading}>My GitHub profile</h6>
         <h3 className={classes.heading}>Statistics</h3>
