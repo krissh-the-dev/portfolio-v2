@@ -4,6 +4,10 @@
 .contact {
   @include sectionStyles(even);
 
+  .container {
+    text-align: center;
+  }
+
   .heading,
   .subheading {
     text-align: center;
@@ -16,7 +20,6 @@
   &__form {
     width: 50rem;
     margin: 0 auto;
-    text-align: center;
 
     @include respond(tab-port) {
       width: 100%;

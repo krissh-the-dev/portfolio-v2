@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import classes from './contact.module.scss';
 
 import { Button } from '../../Components';
+import SocialLinks from './SocialLinks';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -46,6 +47,7 @@ export default function Contact() {
 
           <Button onClick={handleSubmit}>{'Send ->'}</Button>
         </form>
+        <SocialLinks />
       </div>
     </section>
   );
