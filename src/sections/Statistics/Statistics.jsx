@@ -28,10 +28,16 @@ export default function Statistics() {
       });
     }
   }, []);
-  useEffect(() => console.table(stats), [stats]);
+  useEffect(() => console.table({
+    followers: stats.followers.totalCount,
+    following: stats.following.totalCount,
+    contributions: stats.totalContributions,
+    repos: stats.totalRepositoriesWithContributedCommits
+  }), [stats]);
   return (
     <section className={classes.statistics}>
       <div className={classes.container}>
+        <h6 className={classes.subheading}>My GitHub profile</h6>
         <h3 className={classes.heading}>Statistics</h3>
         <div className={classes.contributions}>
           <Card data={stats.totalContributions} caption={'contributions this year'} />

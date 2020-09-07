@@ -4,6 +4,11 @@
 .OtherProjects {
   @include sectionStyles(even);
 
+  .heading {
+    margin-bottom: $margin-medium;
+    ;
+  }
+
   &__list {
     list-style: none;
     background-color: $color-white;

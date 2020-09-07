@@ -6,7 +6,7 @@
   flex-direction: column;
   padding: 2rem;
   border: 1px solid $color-slate-light-4;
-  transition: all .2s;
+  transition: all .2s ease-in-out;
   cursor: pointer;
 
   @include theme(dark) {

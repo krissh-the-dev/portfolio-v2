@@ -4,6 +4,10 @@
 .statistics {
   @include sectionStyles(odd);
 
+  .heading {
+    margin-bottom: $margin-medium;
+  }
+
   .contributions {
     display: grid;
     grid-gap: 2rem;

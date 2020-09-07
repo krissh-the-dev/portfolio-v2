@@ -10,7 +10,7 @@
     grid-template-columns: minmax(min-content, 65%) minmax(30%, 1fr);
     grid-template-rows: min-content;
     grid-gap: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: $margin-medium;
     justify-content: space-between;
 
     @include respond(phone) {
