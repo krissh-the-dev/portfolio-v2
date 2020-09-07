@@ -9,10 +9,17 @@ export default function Contact() {
     email: '',
     message: ''
   });
+
   const handleChange = ({ target }) => {
-    const { name, value } = target;
-    setFormData(prevVal => ({ ...prevVal, [name]: value }));
+    const { id, value } = target;
+    setFormData(prevVal => ({ ...prevVal, [id]: value }));
   }
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    console.table(formData);
+  }
+
   return (
     <section className={classes.contact}>
       <div className={classes.container}>
@@ -20,21 +27,24 @@ export default function Contact() {
         <h3 className={classes.heading}>Get in touch</h3>
         <form className={classes.contact__form}>
           <div className={classes.input}>
-            <input placeholder='name' id='name' name='name' type='text' className={classes.input__field} value={formData.name} onChange={handleChange} />
+            <input placeholder='name' id='name' type='text' className={classes.input__field}
+              value={formData.name} onChange={handleChange} />
             <label htmlFor='name' className={classes.input__label}>Name</label>
           </div>
 
           <div className={classes.input}>
-            <input placeholder='email' id='email' name='email' type='email' className={classes.input__field} value={formData.email} onChange={handleChange} />
-            <label htmlFor='email' className={classes.input__label}>Message</label>
+            <input placeholder='email' id='email' type='email' className={classes.input__field}
+              value={formData.email} onChange={handleChange} />
+            <label htmlFor='email' className={classes.input__label}>Email</label>
           </div>
 
           <div className={classes.input}>
-            <textarea placeholder='message' className={classes.input__field} id='message' name='message' style={{ height: 'auto', minHeight: '16rem' }} value={formData.message} onChange={handleChange} />
+            <textarea placeholder='message' id='message' className={classes.input__field} style={{ height: 'auto', minHeight: '16rem' }}
+              value={formData.message} onChange={handleChange} />
             <label htmlFor='message' className={classes.input__label}>Message</label>
           </div>
 
-          <Button onClick={() => console.log(formData)}>Send {'->'}</Button>
+          <Button onClick={handleSubmit}>{'Send ->'}</Button>
         </form>
       </div>
     </section>
