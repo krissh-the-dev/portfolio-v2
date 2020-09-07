@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Hero, About, Projects, OtherProjects, Statistics, Contact } from './sections';
+import { Hero, About, Projects, OtherProjects, Statistics, Contact, Donate } from './sections';
 import { NavigationBar } from './Components';
 
 export default function Portfolio() {
@@ -14,6 +14,7 @@ export default function Portfolio() {
         <OtherProjects />
         <Statistics />
         <Contact />
+        <Donate />
       </main>
     </>
   );
