@@ -1,7 +1,7 @@
 import { CollegemateLogo, CollegemateDark } from '../../images/Collegemate';
 import { TridentLogo, TridentLight } from '../../images/Trident';
 import { AubitLogo, AubitMobile } from '../../images/Aubit';
-import { SpadeLogo, Spade } from '../../images/Spade';
+import { LeetCodeLogo, LeetCode } from '../../images/LeetCode';
 
 const collegemate = {
   title: 'Collegemate',
@@ -70,15 +70,20 @@ const aubit = {
 const leetCode = {
   title: 'LeetCode Time Tracker',
   type: 'Under development',
-  logo: SpadeLogo,
+  logo: LeetCodeLogo,
   images: {
-    light: { small: Spade, large: Spade },
-    dark: { small: Spade, large: Spade },
+    light: { small: LeetCode, large: LeetCode },
+    dark: { small: LeetCode, large: LeetCode },
   },
-  description: 'A Chrome extension to keep track of the problems solved and time taken to solve each problem in LeetCode. I have worked on the UI/ UX of the extension.',
+  description: 'A Chrome extension to keep track of the problems solved and time taken to solve each problem in LeetCode. I have worked on the UI of the extension.',
   features: [
+    'Counter',
+    'Data visualization',
+    'Export as CSV',
+    'Filter and Find',
+    'Cloud sync (coming soon)'
   ],
-  techStack: ['Chrome Extension', 'TypeScript', 'SCSS'],
+  techStack: ['Chrome Extension', 'TypeScript', 'LeetCode API', 'SCSS'],
   repo: 'https://github.com/VarthanV/LeetCode-Time-Tracker',
   link: 'https://chrome.google.com/webstore/detail/leetcode-time-tracker/obcihoolahbncgakepoceagnjnfgghhl?hl=en&authuser=0'
 };
