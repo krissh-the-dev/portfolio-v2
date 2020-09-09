@@ -3,6 +3,7 @@ export { default as Contact } from './Contact';
 export { default as Donate } from './Donate';
 export { default as Footer } from './Footer';
 export { default as Hero } from './Hero';
+export { default as Loader } from './Loader';
 export { default as OtherProjects } from './OtherProjects';
 export { default as Projects } from './Projects';
 export { default as Statistics } from './Statistics';

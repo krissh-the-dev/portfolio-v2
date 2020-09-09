@@ -1,0 +1,82 @@
+@import '../../styles/animations';
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: $color-slate-dark-5;
+  z-index: 10000;
+
+  .container {
+    width: 10rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    width: 8rem;
+    height: 10rem;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: '';
+      height: 10rem;
+      width: 2rem;
+      background-color: $color-primary-main;
+      border-radius: 2px;
+      animation-name: flyInLeft;
+      animation-duration: .5s;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      margin-left: 1rem;
+      height: 10rem;
+      width: 8rem;
+      border-radius: 2px;
+      background-image: linear-gradient(to right, $color-primary-dark, $color-primary-main 60%);
+      clip-path: polygon(90% 0, 31% 50%, 90% 100%, 55% 100%, 0% 50%, 55% 0);
+      animation-name: flyInRight;
+      animation-duration: 1s;
+      animation-timing-function: cubic-bezier(.17, .67, .53, 1.15)
+    }
+  }
+
+  .progress {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: .5rem;
+    height: .5rem;
+    position: relative;
+    top: 2rem;
+    background-color: $color-slate-dark-3;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      display: block;
+      border-radius: .5rem;
+      height: .4rem;
+      width: 100%;
+      left: -100%;
+      background-image: linear-gradient(to right, $color-primary-main, $color-primary-dark);
+      animation-name: load;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+  }
+}
