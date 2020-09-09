@@ -3,6 +3,7 @@ import classes from './contact.module.scss';
 
 import { Button } from '../../Components';
 import SocialLinks from './SocialLinks';
+import sendMail from '../../functions/sendMail';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -19,6 +20,8 @@ export default function Contact() {
   const handleSubmit = event => {
     event.preventDefault();
     console.table(formData);
+    const { name, email, message } = formData;
+    console.log(sendMail({ name, email, message }));
   }
 
   return (
