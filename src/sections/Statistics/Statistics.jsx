@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import classes from './stats.module.scss';
 import dotenv from 'dotenv';
+import Fade from 'react-reveal/Fade';
 
 import { getAllStats } from './data';
 import { StatCard as Card } from '../../Components';
-import Graph from './Graph/Graph';
+import Graph from './Graph';
 
 dotenv.config();
 
@@ -47,17 +48,19 @@ export default function Statistics() {
           <div className={classes.visualization}>
             <Graph data={stats.contributionByWeek.map(value => ({ contributions: value }))} />
           </div>
-          <div className={classes.data}>
-            <div className={classes.contributions}>
-              <Card data={stats.totalContributions} caption={'contributions this year'} />
-              <Card data={stats.contributionByWeek[stats.contributionByWeek.length - 1]} caption={'contributions this week'} />
+          <Fade bottom cascade>
+            <div className={classes.data}>
+              <div className={classes.contributions}>
+                <Card data={stats.totalContributions} caption={'contributions this year'} />
+                <Card data={stats.contributionByWeek[stats.contributionByWeek.length - 1]} caption={'contributions this week'} />
+              </div>
+              <div className={classes.stats}>
+                <Card data={stats.totalRepositoriesWithContributedCommits} caption={'contributed repositories'} />
+                <Card data={stats.followers.totalCount} caption={'followers'} />
+                <Card data={stats.following.totalCount} caption={'following'} />
+              </div>
             </div>
-            <div className={classes.stats}>
-              <Card data={stats.totalRepositoriesWithContributedCommits} caption={'contributed repositories'} />
-              <Card data={stats.followers.totalCount} caption={'followers'} />
-              <Card data={stats.following.totalCount} caption={'following'} />
-            </div>
-          </div>
+          </Fade>
         </div>
       </div>
     </section>

@@ -45,5 +45,5 @@ export default function Skills() {
         <span className="logo logo-php"></span>
       </div>
     </div>
-  )
+  );
 }

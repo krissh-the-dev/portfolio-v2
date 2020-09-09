@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Project.module.scss';
+import Fade from 'react-reveal/Fade';
 
 function Tech({ value }) {
   return (
@@ -12,7 +13,7 @@ function Tech({ value }) {
 function Features({ list }) {
   return (
     <ul className={classes.features}>
-      {list.map((feature, key) => <li className={classes.feature} key={key}>{feature}</li>)}
+      {list.map((feature, key) => <li className={classes.feature}>{feature}</li>)}
     </ul>
   );
 }
@@ -45,13 +46,15 @@ export default function Project(props) {
       </figure>
 
       <div className={classes.project__details}>
-        <h6 className={classes.project__type}>{type}</h6>
-        <h4 className={classes.project__title}>{title}</h4>
-        <p className={classes.project__description}>{children}</p>
-        <Features list={features} />
-        <div className={classes.project__techStack}>
-          {stack.map((value, index) => <Tech value={value} key={index} />)}
-        </div>
+        <Fade bottom>
+          <h6 className={classes.project__type}>{type}</h6>
+          <h4 className={classes.project__title}>{title}</h4>
+          <p className={classes.project__description}>{children}</p>
+          <Features list={features} />
+          <div className={classes.project__techStack}>
+            {stack.map((value, index) => <Tech value={value} key={index} />)}
+          </div>
+        </Fade>
       </div>
     </div>
   );
