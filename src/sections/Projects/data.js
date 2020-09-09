@@ -83,5 +83,5 @@ const leetCode = {
   link: 'https://chrome.google.com/webstore/detail/leetcode-time-tracker/obcihoolahbncgakepoceagnjnfgghhl?hl=en&authuser=0'
 };
 
-const data = [collegemate, trident, aubit, leetCode];
+const data = [collegemate, leetCode, aubit, trident];
 export default data;

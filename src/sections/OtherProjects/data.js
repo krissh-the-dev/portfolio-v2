@@ -1,29 +1,5 @@
 export default [
   {
-    title: 'YA Image Converter',
-    type: 'Collaborated project',
-    technology: 'Java Swing',
-    description: 'Yet another image converter that converts RGB (Color) image to Grayscale (B&W).',
-    link: 'https://github.com/KrishnaMoorthy12/ya-image-converter/releases/latest',
-    repo: 'https://github.com/KrishnaMoorthy12/ya-image-converter'
-  },
-  {
-    title: 'Spade',
-    type: 'Under development',
-    technology: 'SCSS',
-    description: 'A simple and open source component library containing a huge collection of CSS only components as separate modules.',
-    link: undefined,
-    repo: undefined
-  },
-  {
-    title: 'ASUS Z00VD ADB Toolkit',
-    type: 'Featured project',
-    technology: 'BatchScript',
-    description: 'A Command Line Tool for ASUS Zenfone Go (Z00VD) for unlocking, rooting and more...',
-    link: 'https://technologystew.blogspot.com/2018/04/toolwindowsz00vd14-asus-z00vd-adb.html',
-    repo: 'https://github.com/KrishnaMoorthy12/Asus-Z00VD-Toolkit',
-  },
-  {
     title: 'Nviktous',
     type: 'Contributed project',
     technology: 'React JS',
@@ -32,12 +8,28 @@ export default [
     repo: undefined
   },
   {
-    title: 'APK Batch Installer',
-    type: 'Featured Project',
-    technology: 'Java',
-    description: 'Batch/ Bulk android app installer for PC using ADB.',
-    link: 'https://github.com/KrishnaMoorthy12/apk-installer/releases/latest',
-    repo: 'https://github.com/KrishnaMoorthy12/apk-installer'
+    title: 'Zosime Tech - Home page',
+    type: 'Collaborated Project',
+    technology: 'HTML - SCSS',
+    description: 'A landing page for Zosime Tech, a web service startup.',
+    link: 'https://zosimetech.tk/',
+    repo: undefined
+  },
+  {
+    title: 'YA Image Converter',
+    type: 'Collaborated project',
+    technology: 'Java Swing',
+    description: 'An image converter that converts RGB (Color) image to Grayscale (B&W).',
+    link: 'https://github.com/KrishnaMoorthy12/ya-image-converter/releases/latest',
+    repo: 'https://github.com/KrishnaMoorthy12/ya-image-converter'
+  },
+  {
+    title: 'ASUS Z00VD ADB Toolkit',
+    type: 'Featured project',
+    technology: 'BatchScript',
+    description: 'A Command Line Tool for ASUS Zenfone Go (Z00VD) for unlocking, rooting and more... Has over 1000 downloads.',
+    link: 'https://technologystew.blogspot.com/2018/04/toolwindowsz00vd14-asus-z00vd-adb.html',
+    repo: 'https://github.com/KrishnaMoorthy12/Asus-Z00VD-Toolkit',
   },
   {
     title: 'Meow Meow Cat',
@@ -48,11 +40,19 @@ export default [
     repo: 'https://github.com/KrishnaMoorthy12/apk-installer'
   },
   {
-    title: 'Zosime Tech - Home page',
-    type: 'Collaborated Project',
-    technology: 'HTML - SCSS',
-    description: 'A landing page for Zosime Tech, a web service startup.',
-    link: 'https://zosimetech.tk/',
+    title: 'Spade',
+    type: 'Under development',
+    technology: 'SCSS',
+    description: 'A simple and open source component library containing a huge collection of CSS only components as separate modules.',
+    link: undefined,
     repo: undefined
   },
+  {
+    title: 'APK Batch Installer',
+    type: 'Featured Project',
+    technology: 'Java',
+    description: 'Batch/ Bulk android app installer for PC using ADB.',
+    link: 'https://github.com/KrishnaMoorthy12/apk-installer/releases/latest',
+    repo: 'https://github.com/KrishnaMoorthy12/apk-installer'
+  }
 ]
