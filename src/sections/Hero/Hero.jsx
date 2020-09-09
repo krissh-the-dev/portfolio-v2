@@ -10,7 +10,7 @@ export default function Hero() {
         <Fade bottom cascade>
           <h5 className={classes.intro}>Hi, my name is</h5>
           <h1 className={classes.hero__name}>
-            <span className={classes.emphasize}>Krishna</span> Moorthy</h1>
+            <span className={classes.emphasize}>Krishna</span><span> Moorthy</span></h1>
           <h2 className={classes.info}>UI/ UX designer & Full stack developer</h2>
         </Fade>
       </div>
@@ -22,5 +22,5 @@ export default function Hero() {
         <Link to='https://twitter.com/krish_the_dev' lone>twitter/@krish_the_dev</Link>
       </div>
     </section>
-  )
+  );
 }

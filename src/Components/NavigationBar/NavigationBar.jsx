@@ -42,6 +42,9 @@ export default function NavigationBar() {
               <a className={classes.nav__link} href='#projects'>Projects</a>
             </li>
             <li className={classes.nav__item}>
+              <a className={classes.nav__link} href='#statistics'>Statistics</a>
+            </li>
+            <li className={classes.nav__item}>
               <a className={classes.nav__link} href='#contact'>Contact</a>
             </li>
           </ul>
