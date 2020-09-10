@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className={classes.hero}>
       <div className={classes.container}>
-        <Fade bottom cascade>
+        <Fade bottom>
           <h5 className={classes.intro}>Hi, my name is</h5>
           <h1 className={classes.hero__name}>
             <span className={classes.emphasize}>Krishna</span><span> Moorthy</span></h1>
