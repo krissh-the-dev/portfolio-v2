@@ -49,7 +49,7 @@
       background-image: linear-gradient(to right, $color-primary-dark, $color-primary-main 60%);
       clip-path: polygon(90% 0, 31% 50%, 90% 100%, 55% 100%, 0% 50%, 55% 0);
       animation-name: flyInRight;
-      animation-duration: 1s;
+      animation-duration: .5s;
       animation-timing-function: cubic-bezier(.17, .67, .53, 1.15)
     }
   }
@@ -63,6 +63,8 @@
     top: 2rem;
     background-color: $color-slate-dark-3;
     overflow: hidden;
+    animation-name: fadeAppear;
+    animation-duration: 1s;
 
     &::after {
       content: '';
@@ -75,7 +77,8 @@
       left: -100%;
       background-image: linear-gradient(to right, $color-primary-main, $color-primary-dark);
       animation-name: load;
-      animation-duration: 2s;
+      animation-duration: 1.7s;
+      animation-delay: 1s;
       animation-iteration-count: infinite;
     }
   }

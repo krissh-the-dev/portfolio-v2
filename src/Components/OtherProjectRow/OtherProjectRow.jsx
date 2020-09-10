@@ -16,7 +16,7 @@ export default function OtherProjectRow({ title, type, technology, children, lin
           {children}
         </p>
         <div className={classes.actions}>
-          {link && <Button link={repo}><span className='icon icon-code' /> Repo</Button>}
+          {link && <Button link={repo}><span className='icon icon-code' />Repo</Button>}
           {link && <Button link={link}><span className='icon icon-external-link' />Link</Button>}
         </div>
       </div>
