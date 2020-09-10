@@ -3,7 +3,7 @@ export default [
     title: 'Nviktous',
     type: 'Contributed project',
     technology: 'React JS',
-    description: 'Nviktous is a prototype of an e-commerce app built with React JS, Express and Mongo DB.',
+    description: 'Nviktous is a prototype of an e-commerce app built with React JS, Express and Mongo DB. I worked on the frontend of the application.',
     link: 'http://nviktous.herokuapp.com/',
     repo: undefined
   },
@@ -35,7 +35,7 @@ export default [
     title: 'Meow Meow Cat',
     type: 'Featured Project',
     technology: 'Java - Android',
-    description: '',
+    description: 'A native android app which plays cute cat meowing sounds on button tap. Published in Amazon App Store.',
     link: 'https://github.com/KrishnaMoorthy12/apk-installer/releases/latest',
     repo: 'https://github.com/KrishnaMoorthy12/apk-installer'
   },
