@@ -26,9 +26,10 @@ export default function NavigationBar() {
   return (
     <nav className={classes.nav} style={navStyle}>
       <div className={classes.container}>
-        <figure className={classes.nav__brand}>
+        {/* eslint-disable-next-line */}
+        <a href='#' className={classes.nav__brand}>
           <img className={classes.nav__logo} src={LogoSmall} srcSet={`${LogoSmall} 300w, ${LogoLarge} 600w`} alt='Krish' />
-        </figure>
+        </a>
 
         <div className={classes.nav__list_container}>
           <input type='checkbox' className={classes.nav__check} id='nav__check' />

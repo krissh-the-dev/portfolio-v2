@@ -29,6 +29,9 @@
   &__brand {
     max-height: 3rem;
     margin-right: auto;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
   }
 
   &__logo {
