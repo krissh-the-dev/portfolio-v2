@@ -13,7 +13,7 @@ function Tech({ value }) {
 function Features({ list }) {
   return (
     <ul className={classes.features}>
-      {list.map((feature, key) => <li className={classes.feature}>{feature}</li>)}
+      {list.map((feature, key) => <li className={classes.feature} key={key}>{feature}</li>)}
     </ul>
   );
 }

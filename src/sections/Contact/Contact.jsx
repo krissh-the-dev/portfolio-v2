@@ -7,11 +7,8 @@ import SocialLinks from './SocialLinks';
 import mail from './mailer';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const initialState = { name: '', email: '', message: '' };
+  const [formData, setFormData] = useState(initialState);
   const [mailerResponse, setMailerResponse] = useState('not initiated');
 
   const handleChange = ({ target }) => {
@@ -25,8 +22,10 @@ export default function Contact() {
     const { name, email, message } = formData;
     mail({ name, email, message })
       .then((res) => {
-        if (res.status === 200)
+        if (res.status === 200) {
           setMailerResponse('success');
+          setFormData(initialState);
+        }
         else
           setMailerResponse('error');
       })

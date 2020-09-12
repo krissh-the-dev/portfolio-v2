@@ -32,13 +32,6 @@ export default function Statistics() {
     }
   }, []);
 
-  useEffect(() => console.table({
-    followers: stats.followers.totalCount,
-    following: stats.following.totalCount,
-    contributions: stats.totalContributions,
-    repos: stats.totalRepositoriesWithContributedCommits
-  }), [stats]);
-
   return (
     <section id='statistics' className={classes.statistics}>
       <div className={classes.container}>
