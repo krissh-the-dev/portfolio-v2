@@ -3,7 +3,6 @@ import classes from './contact.module.scss';
 import Fade from 'react-reveal/Fade';
 
 import { Button, SnackBar } from '../../Components';
-import SocialLinks from './SocialLinks';
 import mail from './mailer';
 
 export default function Contact() {
@@ -70,9 +69,6 @@ export default function Contact() {
           </SnackBar>
         }
 
-        <Fade bottom>
-          <SocialLinks />
-        </Fade>
       </div>
     </section>
   );

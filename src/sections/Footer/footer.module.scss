@@ -10,6 +10,10 @@
     background-color: inherit;
   }
 
+  &>div {
+    margin: 1rem 0;
+  }
+
   .colorize {
     font-family: $font-mono;
     font-size: 1.6rem;
