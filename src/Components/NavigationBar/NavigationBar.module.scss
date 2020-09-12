@@ -47,7 +47,7 @@
   &__toggle {
     display: none;
 
-    @include respond(phone) {
+    @include respond(phone-large) {
       border: none;
       width: 2rem;
       height: 2px;
@@ -102,7 +102,7 @@
 
   &__check:checked~&__list {
 
-    @include respond(phone) {
+    @include respond(phone-large) {
       transform: translateX(0);
       box-shadow: -1rem .5rem 1rem rgba($color-slate-dark-5, .1);
     }
@@ -116,12 +116,12 @@
     box-shadow: none;
 
     &_container {
-      @include respond(phone) {
+      @include respond(phone-large) {
         order: 1;
       }
     }
 
-    @include respond(phone) {
+    @include respond(phone-large) {
       position: fixed;
       right: 0;
       top: calc(10vh - 1px);
@@ -148,7 +148,7 @@
     position: relative;
     transition: text-shadow .2s;
 
-    @include respond(phone) {
+    @include respond(phone-large) {
       display: block;
       margin: 2rem 0;
     }
