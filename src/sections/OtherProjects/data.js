@@ -19,7 +19,7 @@ export default [
     title: 'YA Image Converter',
     type: 'Collaborated project',
     technology: 'Java Swing',
-    description: 'An image converter that converts RGB (Color) image to Grayscale (B&W).',
+    description: 'An image converter that converts RGB (Color) image to Grayscale and Black and White.',
     link: 'https://github.com/KrishnaMoorthy12/ya-image-converter/releases/latest',
     repo: 'https://github.com/KrishnaMoorthy12/ya-image-converter'
   },
@@ -27,7 +27,7 @@ export default [
     title: 'ASUS Z00VD ADB Toolkit',
     type: 'Featured project',
     technology: 'BatchScript',
-    description: 'A Command Line Tool for ASUS Zenfone Go (Z00VD) for unlocking, rooting and more... Has over 1000 downloads.',
+    description: 'A Command Line Tool for ASUS Zenfone Go (Z00VD) to unlock boot-loader, root and more... Has over 1000 downloads.',
     link: 'https://technologystew.blogspot.com/2018/04/toolwindowsz00vd14-asus-z00vd-adb.html',
     repo: 'https://github.com/KrishnaMoorthy12/Asus-Z00VD-Toolkit',
   },
@@ -51,7 +51,7 @@ export default [
     title: 'APK Batch Installer',
     type: 'Featured Project',
     technology: 'Java',
-    description: 'Batch/ Bulk android app installer for PC using ADB.',
+    description: 'A Command Line tool to Batch install android apps using ADB.',
     link: 'https://github.com/KrishnaMoorthy12/apk-installer/releases/latest',
     repo: 'https://github.com/KrishnaMoorthy12/apk-installer'
   }

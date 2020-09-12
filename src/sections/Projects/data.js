@@ -33,7 +33,7 @@ const trident = {
     light: { small: TridentLight, large: TridentLight },
     dark: { small: TridentLight, large: TridentLight },
   },
-  description: 'A pretty text/ code editor built with Java swing.',
+  description: 'A pretty code editor built with Java swing. Specially developed to overcome major problems while programming in their schools, without providing advanced features such as code completion etc.',
   features: [
     'Language recognition',
     'Syntax highlighting (not released)',
