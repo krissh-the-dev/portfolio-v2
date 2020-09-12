@@ -9,11 +9,20 @@
     grid-gap: 4rem;
   }
 
+  .data {
+    display: grid;
+    grid-template-columns: .7fr 1fr;
+    grid-gap: 2rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
+
   .contributions {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 2rem;
   }
 
   .stats {
