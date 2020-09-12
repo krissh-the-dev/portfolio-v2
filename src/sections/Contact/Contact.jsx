@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 import { Button } from '../../Components';
 import SocialLinks from './SocialLinks';
-import sendMail from '../../functions/sendMail';
+import mail from './mailer';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -12,6 +12,7 @@ export default function Contact() {
     email: '',
     message: ''
   });
+  const [mailerResponse, setMailerResponse] = useState('not initiated');
 
   const handleChange = ({ target }) => {
     const { id, value } = target;
@@ -22,7 +23,17 @@ export default function Contact() {
     event.preventDefault();
     console.table(formData);
     const { name, email, message } = formData;
-    console.log(sendMail({ name, email, message }));
+    mail({ name, email, message })
+      .then((res) => {
+        if (res.status === 200)
+          setMailerResponse('success');
+        else
+          setMailerResponse('error');
+      })
+      .catch(err => {
+        setMailerResponse('error');
+        console.log(err)
+      });
   }
 
   return (
