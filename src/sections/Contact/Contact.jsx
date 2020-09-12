@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import classes from './contact.module.scss';
 import Fade from 'react-reveal/Fade';
 
-import { Button } from '../../Components';
+import { Button, SnackBar } from '../../Components';
 import SocialLinks from './SocialLinks';
 import mail from './mailer';
 
@@ -64,6 +64,12 @@ export default function Contact() {
             <Button onClick={handleSubmit}>{'Send ->'}</Button>
           </Fade>
         </form>
+
+        {mailerResponse !== 'not initiated' &&
+          <SnackBar variant={mailerResponse} icon="mail">
+            {mailerResponse === 'success' ? 'Message sent successfully' : 'There was an error sending your message.'}
+          </SnackBar>
+        }
 
         <Fade bottom>
           <SocialLinks />

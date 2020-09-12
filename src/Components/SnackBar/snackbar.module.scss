@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+
+.SnackBar {
+
+  &__error,
+  &__success {
+    position: fixed;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: $radius-small;
+    color: $color-white;
+    z-index: 1000;
+    transition: all 1.2s;
+  }
+
+  &__error {
+    background-color: $color-tomato;
+  }
+
+  &__success {
+    background-color: $color-emerald;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 1rem;
+  }
+}
