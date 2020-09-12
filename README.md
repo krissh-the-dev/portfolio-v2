@@ -4,14 +4,7 @@
 
 ### UI/UX designer | Full stack developer
 
-## Available Scripts
+NOT DOCUMENTED YET | NOT OPTIMIZED YET
 
-In the project directory, you can run:
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Forking/ Cloning:
+The project is not fully complete yet. Forking/ Cloning is allowed, but please give attribution to me. I have put in a lot of effort in building this. I will add more details once the project is optimized and documented.
