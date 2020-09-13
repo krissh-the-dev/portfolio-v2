@@ -72,7 +72,6 @@
     animation-delay: 3.5s;
 
     @include respond(phone) {
-      bottom: 2rem;
       font-size: 1.7rem;
 
       a {

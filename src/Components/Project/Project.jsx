@@ -35,7 +35,7 @@ export default function Project(props) {
    * logo: logo of the project -> type: string<image>
    */
   return (
-    <Fade bottom distance={'6rem'}>
+    <Fade bottom distance={'4rem'}>
       <div className={classes.project}>
         <figure className={classes.project__picture}>
           <img className={classes.project__image} alt={title} src={images.dark.small} srcSet={`${images.dark.small} 200w, ${images.dark.large} 600w`} />

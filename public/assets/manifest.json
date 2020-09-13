@@ -40,7 +40,7 @@
       "density": "4.0"
     },
     {
-      "src": "\/android-icon-512x512.png",
+      "src": "\/icon-512x512.png",
       "sizes": "512x512",
       "type": "image\/png",
       "density": "4.0",
@@ -50,7 +50,7 @@
   "start_url": "/?source=pwa",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#7000FF",
+  "background_color": "#120E16",
   "theme_color": "#7000FF",
   "shortcuts": [
     {
