@@ -43,7 +43,7 @@ export default function Contact() {
       <div className={classes.container}>
         <h6 className={classes.sub_heading}>Contact me</h6>
         <h3 className={classes.heading}>Get in touch</h3>
-        <Fade bottom>
+        <Fade bottom distance={'4rem'}>
           <form className={classes.contact__form}>
             <div className={classes.input}>
               <input placeholder='name' id='name' required type='text' className={classes.input__field}
