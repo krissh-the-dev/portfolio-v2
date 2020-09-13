@@ -19,6 +19,7 @@
 
 @mixin sectionStyles($number) {
   padding: 10rem 0;
+  overflow: hidden;
 
   @if($number==odd) {
     @include marginate;

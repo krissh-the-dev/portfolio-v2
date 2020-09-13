@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Project.module.scss';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-reveal';
 
 function Tech({ value }) {
   return (
@@ -31,22 +31,22 @@ export default function Project(props) {
    * logo: logo of the project -> type: string<image>
    */
   return (
-    <div className={classes.project}>
-      <figure className={classes.project__picture}>
-        <img className={classes.project__image} alt={title} src={images.dark.small} srcSet={`${images.dark.small} 200w, ${images.dark.large} 600w`} />
+    <Fade bottom>
+      <div className={classes.project}>
+        <figure className={classes.project__picture}>
+          <img className={classes.project__image} alt={title} src={images.dark.small} srcSet={`${images.dark.small} 200w, ${images.dark.large} 600w`} />
 
-        <figcaption className={classes.caption}>
-          {repo && <a href={repo} target='_blank' rel="noopener noreferrer" className='icon'>&#xe910; <span className={classes.link}>Repo</span></a>}
-          {link && <a href={link} target='_blank' rel="noopener noreferrer" className='icon'>&#xe906; <span className={classes.link}>Link</span></a>}
-        </figcaption>
+          <figcaption className={classes.caption}>
+            {repo && <a href={repo} target='_blank' rel="noopener noreferrer" className='icon'>&#xe910; <span className={classes.link}>Repo</span></a>}
+            {link && <a href={link} target='_blank' rel="noopener noreferrer" className='icon'>&#xe906; <span className={classes.link}>Link</span></a>}
+          </figcaption>
 
-        <div className={classes.project__logo}>
-          <img src={logo} alt={title} />
-        </div>
-      </figure>
+          <div className={classes.project__logo}>
+            <img src={logo} alt={title} />
+          </div>
+        </figure>
 
-      <div className={classes.project__details}>
-        <Fade bottom>
+        <div className={classes.project__details}>
           <div className={classes.sub_heading}>{type}</div>
           <h4 className={classes.project__title}>{title}</h4>
           <p className={classes.project__description}>{children}</p>
@@ -54,8 +54,8 @@ export default function Project(props) {
           <div className={classes.project__techStack}>
             {stack.map((value, index) => <Tech value={value} key={index} />)}
           </div>
-        </Fade>
+        </div>
       </div>
-    </div>
+    </Fade>
   );
 }
