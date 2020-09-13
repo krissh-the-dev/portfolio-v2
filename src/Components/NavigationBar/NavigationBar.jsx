@@ -53,7 +53,7 @@ export default function NavigationBar() {
             </ul>
           </div>
 
-          <Button link='https://1drv.ms/b/s!AnRRdVvoe_29kUND8Wo-4xou5pnC'>Download CV</Button>
+          <Button link='https://1drv.ms/b/s!AnRRdVvoe_29kUND8Wo-4xou5pnC'>Résumé</Button>
         </div>
       </Fade>
     </nav>
