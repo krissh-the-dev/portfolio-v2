@@ -12,7 +12,7 @@ function Tech({ value }) {
 
 function Features({ list }) {
   return (
-    <Fade bottom cascade distance={'3rem'}>
+    <Fade bottom distance={'2rem'}>
       <ul className={classes.features}>
         {
           list.map((feature, key) => <li className={classes.feature} key={key}>{feature}</li>)
