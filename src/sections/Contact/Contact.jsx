@@ -17,8 +17,12 @@ export default function Contact() {
 
   const handleSubmit = event => {
     event.preventDefault();
-    console.table(formData);
-    const { name, email, message } = formData;
+    const { name, email, message } = { name: formData.name.trim(), email: formData.email.trim(), message: formData.message.trim() };
+
+    if (name === '' || email === '' || message === '') {
+      console.log('Not sent');
+      return setMailerResponse('error');
+    }
     mail({ name, email, message })
       .then((res) => {
         if (res.status === 200) {
@@ -42,19 +46,19 @@ export default function Contact() {
         <Fade bottom>
           <form className={classes.contact__form}>
             <div className={classes.input}>
-              <input placeholder='name' id='name' type='text' className={classes.input__field}
+              <input placeholder='name' id='name' required type='text' className={classes.input__field}
                 value={formData.name} onChange={handleChange} />
               <label htmlFor='name' className={classes.input__label}>Name</label>
             </div>
 
             <div className={classes.input}>
-              <input placeholder='email' id='email' type='email' className={classes.input__field}
+              <input placeholder='email' id='email' required type='email' className={classes.input__field}
                 value={formData.email} onChange={handleChange} />
               <label htmlFor='email' className={classes.input__label}>Email</label>
             </div>
 
             <div className={classes.input}>
-              <textarea placeholder='message' id='message' className={classes.input__field} style={{ height: 'auto', minHeight: '16rem' }}
+              <textarea placeholder='message' id='message' required className={classes.input__field} style={{ height: 'auto', minHeight: '16rem' }}
                 value={formData.message} onChange={handleChange} />
               <label htmlFor='message' className={classes.input__label}>Message</label>
             </div>

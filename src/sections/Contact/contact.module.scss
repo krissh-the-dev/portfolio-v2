@@ -67,7 +67,7 @@
       color: transparent;
     }
 
-    &:invalid {
+    &:not(:placeholder-shown):invalid {
       background-color: rgba($color-tomato, .2);
       border-color: $color-tomato;
       box-shadow: 0 0 .3rem $color-tomato !important;
