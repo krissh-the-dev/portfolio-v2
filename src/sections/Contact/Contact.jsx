@@ -64,8 +64,8 @@ export default function Contact() {
             </div>
 
             <Button onClick={handleSubmit}>{'Send ->'}</Button>
-          </Fade>
-        </form>
+        </Fade>
+          </form>
 
         {mailerResponse !== 'not initiated' &&
           <SnackBar variant={mailerResponse} icon="mail">
