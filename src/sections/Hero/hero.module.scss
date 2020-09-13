@@ -16,8 +16,18 @@
     position: relative;
   }
 
+  .intro {
+    animation-name: fadeAppear;
+    animation-duration: 1s;
+    animation-delay: 3.8s;
+  }
+
   .hero__name {
     line-height: 1.2em;
+
+    animation-name: fadeAppear;
+    animation-duration: 1.3s;
+    animation-delay: 3.8s;
 
     .emphasize {
       position: relative;
@@ -40,6 +50,10 @@
   .info {
     color: $color-slate-dark-1;
     line-height: 1em;
+
+    animation-name: fadeAppear;
+    animation-duration: 1.8s;
+    animation-delay: 3.8s;
 
     @include theme(dark) {
       color: $color-slate-light-2;
@@ -68,8 +82,8 @@
     font-size: 1.4rem;
 
     animation-name: fadeAppear;
-    animation-duration: 1s;
-    animation-delay: 3.5s;
+    animation-duration: 2s;
+    animation-delay: 3.8s;
 
     @include respond(phone) {
       font-size: 1.7rem;
