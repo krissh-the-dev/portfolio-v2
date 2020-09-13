@@ -12,9 +12,13 @@ function Tech({ value }) {
 
 function Features({ list }) {
   return (
-    <ul className={classes.features}>
-      {list.map((feature, key) => <li className={classes.feature} key={key}>{feature}</li>)}
-    </ul>
+    <Fade bottom cascade distance={'3rem'}>
+      <ul className={classes.features}>
+        {
+          list.map((feature, key) => <li className={classes.feature} key={key}>{feature}</li>)
+        }
+      </ul>
+    </Fade>
   );
 }
 
@@ -31,7 +35,7 @@ export default function Project(props) {
    * logo: logo of the project -> type: string<image>
    */
   return (
-    <Fade bottom>
+    <Fade bottom distance={'4rem'}>
       <div className={classes.project}>
         <figure className={classes.project__picture}>
           <img className={classes.project__image} alt={title} src={images.dark.small} srcSet={`${images.dark.small} 200w, ${images.dark.large} 600w`} />

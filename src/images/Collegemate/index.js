@@ -1,2 +1,2 @@
 export { default as CollegemateLogo } from './clgmate-logo.png';
-export { default as CollegemateDark } from './clgmate-dark.png';
+export { default as CollegemateDark } from './clgmate-dark.jpg';

@@ -12,7 +12,7 @@ export default function About() {
     <section className={classes.about} id='about'>
       <div className={classes.container}>
         <h3 className={classes.heading}>About me</h3>
-        <Fade bottom>
+        <Fade bottom distance={'4rem'}>
           <div className={classes.about__content}>
             <div className={classes.about__text}>
               <p className={classes.description}>

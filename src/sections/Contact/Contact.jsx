@@ -41,10 +41,10 @@ export default function Contact() {
   return (
     <section id='contact' className={classes.contact}>
       <div className={classes.container}>
-        <h6 className={classes.sub_heading}>Contact me</h6>
+        <div className={classes.sub_heading}>Contact me</div>
         <h3 className={classes.heading}>Get in touch</h3>
-        <Fade bottom>
-          <form className={classes.contact__form}>
+        <form className={classes.contact__form}>
+          <Fade bottom distance={'4rem'}>
             <div className={classes.input}>
               <input placeholder='name' id='name' required type='text' className={classes.input__field}
                 value={formData.name} onChange={handleChange} />
@@ -64,8 +64,8 @@ export default function Contact() {
             </div>
 
             <Button onClick={handleSubmit}>{'Send ->'}</Button>
-          </form>
         </Fade>
+          </form>
 
         {mailerResponse !== 'not initiated' &&
           <SnackBar variant={mailerResponse} icon="mail">
