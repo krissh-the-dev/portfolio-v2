@@ -12,9 +12,9 @@ export default function About() {
     <section className={classes.about} id='about'>
       <div className={classes.container}>
         <h3 className={classes.heading}>About me</h3>
-        <div className={classes.about__content}>
-          <div className={classes.about__text}>
-            <Fade bottom>
+        <Fade bottom>
+          <div className={classes.about__content}>
+            <div className={classes.about__text}>
               <p className={classes.description}>
                 <span role='img' aria-label='wave emoji'>👋</span> Hello, world! I am Krish, a software engineer from Chennai, India.
               </p>
@@ -24,15 +24,15 @@ export default function About() {
               <p className={classes.description}>
                 Other than coding, I'm passionate about Astronomy <span role='img' aria-label='galaxy emoji'>🌌</span> and bicycling <span role='img' aria-label='cycling emoji'>🚴‍♂️</span>. I like to cook in my leisure time. I love cats <span role='img' aria-label='cat face emoji'>😺</span> and adore all pet animals <span role='img' aria-label='pet dog emoji'>🐕</span>.
             </p>
-            </Fade>
+            </div>
+
+            <figure className={classes.profile}>
+              <img className={classes.image} alt='Krish' src={KrishMedium} srcSet={`${KrishSmall} 300w, ${KrishMedium} 700w, ${KrishLarge} 1100w`} />
+            </figure>
           </div>
 
-          <figure className={classes.profile}>
-            <img className={classes.image} alt='Krish' src={KrishMedium} srcSet={`${KrishSmall} 300w, ${KrishMedium} 700w, ${KrishLarge} 1100w`} />
-          </figure>
-        </div>
-
-        <Skills />
+          <Skills />
+        </Fade>
 
         <Fade bottom>
           <SocialLinks />

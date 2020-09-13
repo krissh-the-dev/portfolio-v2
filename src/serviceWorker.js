@@ -6,7 +6,9 @@ const isLocalhost = Boolean(
   )
 );
 
-export function register(config) {
+let deferredPrompt;
+
+function register(config) {
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
     const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
     if (publicUrl.origin !== window.location.origin) {
@@ -24,6 +26,13 @@ export function register(config) {
       } else {
         registerValidSW(swUrl, config);
       }
+    });
+
+    window.addEventListener('beforeinstallprompt', (InstallEvent) => {
+      // Prevent the mini-infobar from appearing on mobile
+      InstallEvent.preventDefault();
+      // Stash the event so it can be triggered later.
+      deferredPrompt = InstallEvent;
     });
   }
 }
@@ -89,7 +98,7 @@ function checkValidServiceWorker(swUrl, config) {
     });
 }
 
-export function unregister() {
+function unregister() {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.ready
       .then(registration => {
@@ -100,3 +109,5 @@ export function unregister() {
       });
   }
 }
+
+export { register, unregister, deferredPrompt };

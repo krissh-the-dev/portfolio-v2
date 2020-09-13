@@ -89,3 +89,14 @@ li {
     color: $color-slate-light-1;
   }
 }
+
+.sub_heading {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: $font-mono;
+  color: $color-primary-dark;
+
+  @include theme(dark) {
+    color: $color-primary-light;
+  }
+}

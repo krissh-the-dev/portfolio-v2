@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './projects.module.scss';
+
 import { Project } from '../../Components';
 import data from './data';
 

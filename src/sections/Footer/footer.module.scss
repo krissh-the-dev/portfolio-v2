@@ -20,7 +20,7 @@
     color: $color-primary-dark;
 
     @include theme(dark) {
-      color: $color-primary-main;
+      color: $color-primary-light;
     }
   }
 }

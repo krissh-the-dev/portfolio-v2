@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className={classes.hero}>
       <div className={classes.container}>
-        <Fade bottom>
+        <Fade clear delay={4000}>
           <h5 className={classes.intro}>Hi, my name is</h5>
           <h1 className={classes.hero__name}>
             <span className={classes.emphasize}>Krishna</span><span> Moorthy</span></h1>
@@ -16,6 +16,7 @@ export default function Hero() {
       </div>
 
       <div role='img' className={classes.waterMark}>DEV</div>
+
 
       <div className={classes.quickContact}>
         <Link to='mailto: akrishnamoorthy007@gmail.com' lone>akrishnamoorthy007@gmail.com</Link>

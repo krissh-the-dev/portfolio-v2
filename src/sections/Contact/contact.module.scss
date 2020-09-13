@@ -1,5 +1,6 @@
 @import '../../styles/mixins';
 @import '../../styles/variables';
+@import '../../styles/typography';
 
 .contact {
   @include sectionStyles(even);
@@ -9,7 +10,7 @@
   }
 
   .heading,
-  .subheading {
+  .sub_heading {
     text-align: center;
   }
 
@@ -66,7 +67,7 @@
       color: transparent;
     }
 
-    &:invalid {
+    &:not(:placeholder-shown):invalid {
       background-color: rgba($color-tomato, .2);
       border-color: $color-tomato;
       box-shadow: 0 0 .3rem $color-tomato !important;
