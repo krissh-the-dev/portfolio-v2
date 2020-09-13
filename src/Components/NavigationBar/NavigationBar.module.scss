@@ -10,8 +10,6 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  animation-name: fadeInTop;
-  animation-duration: 1s;
   transition: all .3s;
 
   @include theme(dark) {

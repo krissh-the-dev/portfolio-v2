@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import classes from './NavigationBar.module.scss';
+import { Fade } from 'react-reveal';
 
 import { LogoSmall, LogoLarge } from '../../images/Logo';
 import Button from '../Button';
@@ -25,34 +26,36 @@ export default function NavigationBar() {
 
   return (
     <nav className={classes.nav} style={navStyle}>
-      <div className={classes.container}>
-        {/* eslint-disable-next-line */}
-        <a href='#' className={classes.nav__brand}>
-          <img className={classes.nav__logo} src={LogoSmall} srcSet={`${LogoSmall} 300w, ${LogoLarge} 600w`} alt='Krish' />
-        </a>
+      <Fade top delay={4000} duration={500}>
+        <div className={classes.container}>
+          {/* eslint-disable-next-line */}
+          <a href='#' className={classes.nav__brand}>
+            <img className={classes.nav__logo} src={LogoSmall} srcSet={`${LogoSmall} 300w, ${LogoLarge} 600w`} alt='Krish' />
+          </a>
 
-        <div className={classes.nav__list_container}>
-          <input type='checkbox' className={classes.nav__check} id='nav__check' />
-          <label htmlFor='nav__check' className={classes.nav__toggle}>&nbsp;</label>
+          <div className={classes.nav__list_container}>
+            <input type='checkbox' className={classes.nav__check} id='nav__check' />
+            <label htmlFor='nav__check' className={classes.nav__toggle}>&nbsp;</label>
 
-          <ul className={classes.nav__list}>
-            <li className={classes.nav__item}>
-              <a className={classes.nav__link} href='#about'>About</a>
-            </li>
-            <li className={classes.nav__item}>
-              <a className={classes.nav__link} href='#projects'>Projects</a>
-            </li>
-            <li className={classes.nav__item}>
-              <a className={classes.nav__link} href='#statistics'>Statistics</a>
-            </li>
-            <li className={classes.nav__item}>
-              <a className={classes.nav__link} href='#contact'>Contact</a>
-            </li>
-          </ul>
+            <ul className={classes.nav__list}>
+              <li className={classes.nav__item}>
+                <a className={classes.nav__link} href='#about'>About</a>
+              </li>
+              <li className={classes.nav__item}>
+                <a className={classes.nav__link} href='#projects'>Projects</a>
+              </li>
+              <li className={classes.nav__item}>
+                <a className={classes.nav__link} href='#statistics'>Statistics</a>
+              </li>
+              <li className={classes.nav__item}>
+                <a className={classes.nav__link} href='#contact'>Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <Button link='https://1drv.ms/b/s!AnRRdVvoe_29kUND8Wo-4xou5pnC'>Download CV</Button>
         </div>
-
-        <Button link='https://1drv.ms/b/s!AnRRdVvoe_29kUND8Wo-4xou5pnC'>Download CV</Button>
-      </div>
+      </Fade>
     </nav>
   );
 }

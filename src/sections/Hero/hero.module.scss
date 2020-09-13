@@ -1,3 +1,4 @@
+@import '../../styles/animations';
 @import '../../styles/mixins';
 @import '../../styles/variables';
 
@@ -66,11 +67,15 @@
     font-family: $font-mono;
     font-size: 1.4rem;
 
+    animation-name: fadeAppear;
+    animation-duration: 1s;
+    animation-delay: 3.5s;
+
     @include respond(phone) {
       bottom: 2rem;
       font-size: 1.7rem;
 
-      &>a {
+      a {
         padding: 1rem 0;
       }
     }
