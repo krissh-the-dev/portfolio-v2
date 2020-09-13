@@ -64,4 +64,10 @@
       }
     }
   }
+
+  .socialLinks {
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
 }

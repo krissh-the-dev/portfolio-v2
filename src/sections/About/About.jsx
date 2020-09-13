@@ -35,7 +35,9 @@ export default function About() {
         </Fade>
 
         <Fade bottom>
-          <SocialLinks />
+          <div className={classes.socialLinks}>
+            <SocialLinks />
+          </div>
         </Fade>
       </div>
     </section>

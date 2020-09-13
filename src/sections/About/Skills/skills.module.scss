@@ -5,6 +5,11 @@
 
   .subheading {
     margin-bottom: 1rem;
+
+    @include respond(phone) {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
   }
 
   .skill_rack {
@@ -12,10 +17,20 @@
     flex-wrap: wrap;
     margin-bottom: 4rem;
 
+    @include respond(phone) {
+      justify-content: space-around;
+    }
+
     &>span {
       display: block;
       filter: brightness(90%);
       cursor: grab;
+
+      margin: 0 2rem 2rem 0;
+
+      @include respond(phone) {
+        margin: 0 2rem 3rem 2rem;
+      }
 
       @include respond(touchscreen) {
         filter: none;
@@ -25,10 +40,6 @@
 
       &:hover {
         filter: brightness(110%) drop-shadow(0 0 1rem $color-primary-dark);
-      }
-
-      &:not(:last-child) {
-        margin: 0 2rem 2rem 0;
       }
     }
   }
