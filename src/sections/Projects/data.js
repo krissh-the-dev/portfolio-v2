@@ -69,7 +69,7 @@ const aubit = {
 
 const leetCode = {
   title: 'LeetCode Time Tracker',
-  type: 'Under development',
+  type: 'Collaborated Project',
   logo: LeetCodeLogo,
   images: {
     light: { small: LeetCode, large: LeetCode },
