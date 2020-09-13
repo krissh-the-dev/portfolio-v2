@@ -9,7 +9,7 @@ export default function OtherProjects() {
     <section className={classes.OtherProjects}>
       <div className={classes.container}>
         <h3 className={classes.heading}>Other Projects</h3>
-        <ul className={classes.OtherProjects__list}>
+        <div className={classes.OtherProjects__list}>
           <Fade bottom>
             {
               otherProjects.map((project, index) => {
@@ -19,7 +19,7 @@ export default function OtherProjects() {
               })
             }
           </Fade>
-        </ul>
+        </div>
       </div>
     </section>
   );

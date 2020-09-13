@@ -47,7 +47,7 @@ export default function Project(props) {
 
       <div className={classes.project__details}>
         <Fade bottom>
-          <h6 className={classes.project__type}>{type}</h6>
+          <div className={classes.sub_heading}>{type}</div>
           <h4 className={classes.project__title}>{title}</h4>
           <p className={classes.project__description}>{children}</p>
           <Features list={features} />

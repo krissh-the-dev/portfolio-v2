@@ -35,7 +35,7 @@ export default function Statistics() {
   return (
     <section id='statistics' className={classes.statistics}>
       <div className={classes.container}>
-        <h6 className={classes.subheading}>My GitHub profile</h6>
+        <div className={classes.sub_heading}>My GitHub profile</div>
         <h3 className={classes.heading}>Statistics</h3>
         <div className={classes.statistics__container}>
           <div className={classes.visualization}>

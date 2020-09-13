@@ -37,7 +37,7 @@ export default function Contact() {
   return (
     <section id='contact' className={classes.contact}>
       <div className={classes.container}>
-        <h6 className={classes.subheading}>Contact me</h6>
+        <h6 className={classes.sub_heading}>Contact me</h6>
         <h3 className={classes.heading}>Get in touch</h3>
         <form className={classes.contact__form}>
           <Fade bottom>
