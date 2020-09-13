@@ -1,5 +1,6 @@
 {
   "name": "Krishna Moorthy",
+  "short_name": "Krish",
   "description": "The PWA for the Collegemate web client.",
   "icons": [
     {
@@ -35,6 +36,12 @@
     {
       "src": "\/android-icon-192x192.png",
       "sizes": "192x192",
+      "type": "image\/png",
+      "density": "4.0"
+    },
+    {
+      "src": "\/android-icon-512x512.png",
+      "sizes": "512x512",
       "type": "image\/png",
       "density": "4.0",
       "purpose": "any maskable"
