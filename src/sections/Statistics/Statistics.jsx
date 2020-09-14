@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import Fade from 'react-reveal/Fade';
 
 import { getAllStats } from './data';
-import { StatCard as Card } from '../../Components';
+import { Button, StatCard as Card } from '../../Components';
 import Graph from './Graph';
 
 dotenv.config();
@@ -37,7 +37,7 @@ export default function Statistics() {
       <div className={classes.container}>
         <div className={classes.sub_heading}>My GitHub profile</div>
         <h3 className={classes.heading}>Statistics</h3>
-        <Fade bottom cascade>
+        <Fade bottom distance={'6rem'} cascade>
           <div className={classes.statistics__container}>
             <div className={classes.visualization}>
               <Graph data={stats.contributionByWeek.map(value => ({ contributions: value }))} />
@@ -54,6 +54,13 @@ export default function Statistics() {
               </div>
             </div>
           </div>
+
+          <Fade bottom distance={'4rem'} delay={1}>
+            <div className={classes.cta}>
+              <Button to='https://github.com/KrishnaMoorthy12'>
+                <span className='icon icon-github' />GitHub Profile</Button>
+            </div>
+          </Fade>
         </Fade>
       </div>
     </section>

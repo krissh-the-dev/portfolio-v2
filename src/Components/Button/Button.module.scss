@@ -30,6 +30,10 @@
       linear-gradient(120deg, transparent 0%, transparent 50%, $color-primary-main 50%);
   }
 
+  &>span {
+    margin-right: 1rem;
+  }
+
   &:hover,
   &:active {
     background-position: 100%;

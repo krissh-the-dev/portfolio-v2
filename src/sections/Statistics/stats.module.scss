@@ -8,6 +8,7 @@
   &__container {
     display: grid;
     grid-gap: 4rem;
+    margin-bottom: $margin-medium;
   }
 
   .data {
@@ -32,5 +33,9 @@
 
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
+  }
+
+  .cta {
+    text-align: center;
   }
 }
