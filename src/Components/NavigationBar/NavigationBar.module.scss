@@ -122,8 +122,8 @@
     @include respond(phone-large) {
       position: fixed;
       right: 0;
-      top: calc(13vh - 3px);
-      height: 100vh;
+      top: 7.7rem;
+      height: calc(100vh + 1px);
       padding-top: 4rem;
       width: 50%;
       display: flex;
