@@ -166,6 +166,11 @@
       margin: 0;
     }
 
+    &:nth-last-of-type(2) {
+      margin-right: 4rem;
+      // to select 2nd elem from last (before close button)
+    }
+
     &::before {
       content: '';
       width: 170%;
@@ -188,10 +193,6 @@
       @include theme(dark) {
         text-shadow: 0 0 3px $color-primary-dark;
       }
-    }
-
-    &:last-child {
-      margin-right: 4rem;
     }
   }
 

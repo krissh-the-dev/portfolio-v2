@@ -15,7 +15,8 @@ export default function Graph({ data }) {
             <stop offset="100%" stopColor="#8B31FF" stopOpacity={0} />
           </linearGradient>
         </defs>
-        <Tooltip />
+        <Tooltip
+          contentStyle={{ borderRadius: '.3rem' }} />
         <Area
           type="monotone"
           dataKey="contributions"
