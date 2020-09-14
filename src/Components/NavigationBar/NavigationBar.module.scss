@@ -122,9 +122,9 @@
     @include respond(phone-large) {
       position: fixed;
       right: 0;
-      top: calc(10vh - 1px);
+      top: calc(13vh - 3px);
       height: 100vh;
-      padding: 4rem;
+      padding-top: 4rem;
       width: 50%;
       display: flex;
       flex-direction: column;
@@ -140,6 +140,21 @@
     }
   }
 
+  .hamCloseBtn {
+    display: none;
+    cursor: pointer;
+
+    &>span {
+      margin-right: 1rem;
+    }
+
+    @include respond(phone-large) {
+      display: flex;
+      align-items: center;
+      margin-top: auto;
+    }
+  }
+
   &__item {
     display: inline-block;
     margin: 0 2rem;
@@ -148,7 +163,7 @@
 
     @include respond(phone-large) {
       display: block;
-      margin: 2rem 0;
+      margin: 0;
     }
 
     &::before {
@@ -180,8 +195,14 @@
     }
   }
 
-  &__link {
+  &__link,
+  .hamCloseBtn {
     text-decoration: none;
     color: inherit;
+
+    @include respond(phone) {
+      display: block;
+      padding: 2rem 4rem;
+    }
   }
 }
