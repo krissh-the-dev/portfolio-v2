@@ -201,7 +201,7 @@
     text-decoration: none;
     color: inherit;
 
-    @include respond(phone) {
+    @include respond(phone-large) {
       display: block;
       padding: 2rem 4rem;
     }

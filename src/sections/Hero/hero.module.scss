@@ -35,11 +35,11 @@
       &::after {
         content: '';
         position: absolute;
-        bottom: -5%;
+        bottom: .3rem;
         left: 50%;
         transform: translateX(-50%);
         width: 98%;
-        height: .8rem;
+        height: .5rem;
         border-radius: 1rem;
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         box-shadow: 0 0 1rem $color-primary-dark;
@@ -48,16 +48,11 @@
   }
 
   .info {
-    color: $color-slate-dark-1;
     line-height: 1em;
 
     animation-name: fadeAppear;
     animation-duration: 1.8s;
     animation-delay: 3.8s;
-
-    @include theme(dark) {
-      color: $color-slate-light-2;
-    }
   }
 
   .waterMark {
@@ -76,7 +71,7 @@
     @include marginate;
     position: absolute;
     left: 50%;
-    bottom: 10%;
+    bottom: 5%;
     transform: translateX(-50%);
     font-family: $font-mono;
     font-size: 1.4rem;
@@ -86,7 +81,7 @@
     animation-delay: 3.8s;
 
     @include respond(phone) {
-      font-size: 1.7rem;
+      font-size: 1.4rem;
 
       a {
         padding: 1rem 0;
