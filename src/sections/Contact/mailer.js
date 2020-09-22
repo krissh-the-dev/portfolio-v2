@@ -1,8 +1,7 @@
 import emailjs from 'emailjs-com';
-import dotenv from 'dotenv';
 
 if (process.env.NODE_ENV === 'development') {
-  dotenv.config();
+  require('dotenv').config();
 }
 
 const mail = ({ name, email, message }) => {
