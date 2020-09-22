@@ -1,5 +1,7 @@
 import dotenv from 'dotenv';
-dotenv.config();
+if (process.env.NODE_ENV === 'development') {
+  dotenv.config();
+}
 
 const token = process.env.REACT_APP_TOKEN;
 const query = `query {
