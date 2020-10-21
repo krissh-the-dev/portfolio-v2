@@ -1,2 +1,1 @@
-import OtherProjectRow from './OtherProjectRow';
-export default OtherProjectRow;
+export { default } from './OtherProjectRow';

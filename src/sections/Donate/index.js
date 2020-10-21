@@ -1,2 +1,1 @@
-import Donate from './Donate';
-export default Donate;
+export { default } from './Donate';
