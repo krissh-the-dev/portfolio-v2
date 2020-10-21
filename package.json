@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "private": false,
   "dependencies": {
-    "dotenv": "^8.2.0",
     "emailjs-com": "^2.6.3",
     "node-sass": "^4.14.1",
     "react": "^17.0.0",
@@ -12,6 +11,9 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "3.4.4",
     "recharts": "^1.8.5"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   },
   "scripts": {
     "format": "prettier --write \"**/*.{js,jsx,html,scss}\"",
