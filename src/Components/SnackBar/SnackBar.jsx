@@ -11,7 +11,10 @@ export default function SnackBar({ icon, variant, children: message }) {
   }, []);
 
   return (
-    <div style={isVisible ? {} : { opacity: 0, zIndex: -1000, visibility: "hidden" }} className={variant === 'error' ? classes.SnackBar__error : classes.SnackBar__success}>
+    <div
+      style={isVisible ? {} : { opacity: 0, zIndex: -1000, visibility: 'hidden' }}
+      className={variant === 'error' ? classes.SnackBar__error : classes.SnackBar__success}
+    >
       <span className={classes.SnackBar__icon}>
         <span className={`icon icon-${icon}`} />
       </span>

@@ -35,7 +35,7 @@
       background-color: $color-primary-main;
       border-radius: 2px;
       animation-name: flyInLeft;
-      animation-duration: .5s;
+      animation-duration: 0.5s;
     }
 
     &::after {
@@ -49,16 +49,16 @@
       background-image: linear-gradient(to right, $color-primary-dark, $color-primary-main 60%);
       clip-path: polygon(90% 0, 31% 50%, 90% 100%, 55% 100%, 0% 50%, 55% 0);
       animation-name: flyInRight;
-      animation-duration: .5s;
-      animation-timing-function: cubic-bezier(.17, .67, .53, 1.15)
+      animation-duration: 0.5s;
+      animation-timing-function: cubic-bezier(0.17, 0.67, 0.53, 1.15);
     }
   }
 
   .progress {
     width: 100%;
     margin: 0 auto;
-    border-radius: .5rem;
-    height: .5rem;
+    border-radius: 0.5rem;
+    height: 0.5rem;
     position: relative;
     top: 2rem;
     background-color: $color-slate-dark-3;
@@ -71,8 +71,8 @@
       position: absolute;
       top: 0;
       display: block;
-      border-radius: .5rem;
-      height: .4rem;
+      border-radius: 0.5rem;
+      height: 0.4rem;
       width: 100%;
       left: -100%;
       background-image: linear-gradient(to right, $color-primary-main, $color-primary-dark);

@@ -1,9 +1,7 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
 
-
 .SnackBar {
-
   &__error,
   &__success {
     position: fixed;

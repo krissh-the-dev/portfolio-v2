@@ -8,7 +8,7 @@
   text-decoration: none;
   display: inline-block;
   color: $color-primary-dark;
-  transition: .2s all;
+  transition: 0.2s all;
   position: relative;
 
   @include theme(dark) {
@@ -18,7 +18,7 @@
   &::after {
     content: '';
     display: block;
-    bottom: -.5rem;
+    bottom: -0.5rem;
     height: 1px;
     width: 100%;
     transform: scaleX(0);

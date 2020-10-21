@@ -40,10 +40,10 @@
     text-transform: capitalize;
     height: 4.5rem;
     align-items: center;
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
-  &__field:not(:placeholder-shown)+&__label {
+  &__field:not(:placeholder-shown) + &__label {
     top: -3.5rem;
     left: 0;
     font-size: 1.8rem;
@@ -54,33 +54,33 @@
     width: 100%;
     max-width: 100%;
     height: 4.5rem;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-family: $font-default;
     color: inherit;
     font-size: 2rem;
     background-color: transparent;
     border: 2px solid $color-primary-dark;
     border-radius: $radius-small;
-    transition: all .2s;
+    transition: all 0.2s;
 
     &::placeholder {
       color: transparent;
     }
 
     &:not(:placeholder-shown):invalid {
-      background-color: rgba($color-tomato, .2);
+      background-color: rgba($color-tomato, 0.2);
       border-color: $color-tomato;
-      box-shadow: 0 0 .3rem $color-tomato !important;
+      box-shadow: 0 0 0.3rem $color-tomato !important;
     }
 
     &:hover {
-      box-shadow: 0 0 .3rem $color-primary-dark;
+      box-shadow: 0 0 0.3rem $color-primary-dark;
     }
 
     &:active,
     &:focus {
       outline: none;
-      box-shadow: 0 0 .6rem $color-primary-dark;
+      box-shadow: 0 0 0.6rem $color-primary-dark;
       background-color: $color-slate-light-1;
 
       @include theme(dark) {

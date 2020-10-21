@@ -5,13 +5,13 @@
   display: inline-flex;
   align-items: center;
 
-  &>a {
+  & > a {
     font-size: 2.2rem;
     display: block;
     text-decoration: none;
     color: $color-slate-dark-1;
 
-    transition: all .2s;
+    transition: all 0.2s;
 
     @include theme(dark) {
       color: $color-slate-light-1;

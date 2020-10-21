@@ -15,7 +15,7 @@ export default function Statistics() {
     following: { totalCount: 0 },
     totalRepositoriesWithContributedCommits: 0,
     totalContributions: 0,
-    contributionByWeek: new Array(53).fill(0),
+    contributionByWeek: new Array(53).fill(0)
   });
 
   useEffect(() => {
@@ -45,7 +45,10 @@ export default function Statistics() {
             <div className={classes.data}>
               <div className={classes.contributions}>
                 <Card data={stats.totalContributions} caption={'contributions this year'} />
-                <Card data={stats.contributionByWeek[stats.contributionByWeek.length - 1]} caption={'contributions this week'} />
+                <Card
+                  data={stats.contributionByWeek[stats.contributionByWeek.length - 1]}
+                  caption={'contributions this week'}
+                />
               </div>
               <div className={classes.stats}>
                 <Card data={stats.totalRepositoriesWithContributedCommits} caption={'contributed repositories'} />
@@ -58,7 +61,9 @@ export default function Statistics() {
           <Fade bottom distance={'6rem'} delay={1}>
             <div className={classes.cta}>
               <Button link='https://github.com/KrishnaMoorthy12'>
-                <span className='icon icon-github' />GitHub Profile</Button>
+                <span className='icon icon-github' />
+                GitHub Profile
+              </Button>
             </div>
           </Fade>
         </Fade>

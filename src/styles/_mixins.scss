@@ -20,11 +20,11 @@
 @mixin sectionStyles($number) {
   padding: 10rem 0;
 
-  @if($number==odd) {
+  @if ($number==odd) {
     @include marginate;
   }
 
-  @if($number==even) {
+  @if ($number==even) {
     background-color: $color-slate-light-1;
 
     .container {
@@ -56,57 +56,48 @@
  */
 
 @mixin respond($breakpoint) {
-
-  @if($breakpoint==phone) {
-
+  @if ($breakpoint==phone) {
     @media only screen and (max-width: 37.5em) {
       //600px = 37.5em (1em = 16px)
       @content;
     }
   }
 
-
-  @if($breakpoint==phone-large) {
-
+  @if ($breakpoint==phone-large) {
     @media only screen and (max-width: 50em) {
       //800px = 56.25em (1em = 16px)
       @content;
     }
   }
 
-  @if($breakpoint==tab-port) {
-
+  @if ($breakpoint==tab-port) {
     @media only screen and (max-width: 56.25em) {
       //900px = 56.25em (1em = 16px)
       @content;
     }
   }
 
-  @if($breakpoint==tab-port-touch) {
-
-    @media only screen and (max-width: 56.25em),
-    only screen and (hover: none) {
+  @if ($breakpoint==tab-port-touch) {
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       //900px = 56.25em (1em = 16px)
       @content;
     }
   }
 
-  @if($breakpoint==touchscreen) {
+  @if ($breakpoint==touchscreen) {
     @media only screen and (hover: none) {
       @content;
     }
   }
 
-  @if($breakpoint==tab-lan) {
-
+  @if ($breakpoint==tab-lan) {
     @media only screen and (max-width: 75em) {
       //1200px = 75em (1em = 16px)
       @content;
     }
   }
 
-  @if($breakpoint==huge) {
-
+  @if ($breakpoint==huge) {
     @media only screen and (min-width: 112.5em) {
       //1800px = 112.5em (1em = 16px)
       @content;

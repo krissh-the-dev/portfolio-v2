@@ -1,20 +1,20 @@
 /* COLORS */
 
 $color-primary-light: #9f55ff;
-$color-primary-main: #8B31FF;
-$color-primary-dark: #7000FF;
+$color-primary-main: #8b31ff;
+$color-primary-dark: #7000ff;
 
 $color-white: #f6f5f7;
-$color-slate-light-1:#E8E8E8;
-$color-slate-light-2:#C4C4C4;
+$color-slate-light-1: #e8e8e8;
+$color-slate-light-2: #c4c4c4;
 $color-slate-light-3: #bbb;
 $color-slate-light-4: #888;
 
-$color-slate-dark-1:#323133;
+$color-slate-dark-1: #323133;
 $color-slate-dark-2: #242225;
 $color-slate-dark-3: #1e1b20;
-$color-slate-dark-4: #1A171E;
-$color-slate-dark-5: #120E16;
+$color-slate-dark-4: #1a171e;
+$color-slate-dark-5: #120e16;
 $color-black: #000;
 
 $color-tomato: #cf0000;
@@ -22,18 +22,13 @@ $color-emerald: #00ac56;
 
 /* SHADOWS */
 $shadow-primary-all: box-shadow(0, 0, 1rem, $color-primary-main);
-$shadow-subtle: 0 .3rem 1rem rgba($color-slate-dark-5, .2);
-$shadow-subtle-small: 0 .2rem .5rem rgba($color-slate-dark-5, .2);
+$shadow-subtle: 0 0.3rem 1rem rgba($color-slate-dark-5, 0.2);
+$shadow-subtle-small: 0 0.2rem 0.5rem rgba($color-slate-dark-5, 0.2);
 
-$radius-small: .3rem;
+$radius-small: 0.3rem;
 $margin-medium: 4rem;
 
-$font-default: 'Calibre',
-sans-serif;
-$font-mono: 'JetBrains Mono',
-'Fira Code',
-monospace;
-$font-icon: 'Icomoon',
-sans-serif;
-$font-logo: 'Logo',
-sans-serif;
+$font-default: 'Calibre', sans-serif;
+$font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+$font-icon: 'Icomoon', sans-serif;
+$font-logo: 'Logo', sans-serif;

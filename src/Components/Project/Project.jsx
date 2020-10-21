@@ -3,20 +3,18 @@ import classes from './Project.module.scss';
 import { Fade } from 'react-reveal';
 
 function Tech({ value }) {
-  return (
-    <span className={classes.techItem}>
-      {value}
-    </span>
-  );
+  return <span className={classes.techItem}>{value}</span>;
 }
 
 function Features({ list }) {
   return (
     <Fade bottom distance={'2rem'}>
       <ul className={classes.features}>
-        {
-          list.map((feature, key) => <li className={classes.feature} key={key}>{feature}</li>)
-        }
+        {list.map((feature, key) => (
+          <li className={classes.feature} key={key}>
+            {feature}
+          </li>
+        ))}
       </ul>
     </Fade>
   );
@@ -38,11 +36,24 @@ export default function Project(props) {
     <Fade bottom distance={'4rem'}>
       <div className={classes.project}>
         <figure className={classes.project__picture}>
-          <img className={classes.project__image} alt={title} src={images.dark.small} srcSet={`${images.dark.small} 200w, ${images.dark.large} 600w`} />
+          <img
+            className={classes.project__image}
+            alt={title}
+            src={images.dark.small}
+            srcSet={`${images.dark.small} 200w, ${images.dark.large} 600w`}
+          />
 
           <figcaption className={classes.caption}>
-            {repo && <a href={repo} target='_blank' rel="noopener noreferrer" className='icon'>&#xe910; <span className={classes.link}>Repo</span></a>}
-            {link && <a href={link} target='_blank' rel="noopener noreferrer" className='icon'>&#xe906; <span className={classes.link}>Link</span></a>}
+            {repo && (
+              <a href={repo} target='_blank' rel='noopener noreferrer' className='icon'>
+                &#xe910; <span className={classes.link}>Repo</span>
+              </a>
+            )}
+            {link && (
+              <a href={link} target='_blank' rel='noopener noreferrer' className='icon'>
+                &#xe906; <span className={classes.link}>Link</span>
+              </a>
+            )}
           </figcaption>
 
           <div className={classes.project__logo}>
@@ -56,7 +67,9 @@ export default function Project(props) {
           <p className={classes.project__description}>{children}</p>
           <Features list={features} />
           <div className={classes.project__techStack}>
-            {stack.map((value, index) => <Tech value={value} key={index} />)}
+            {stack.map((value, index) => (
+              <Tech value={value} key={index} />
+            ))}
           </div>
         </div>
       </div>

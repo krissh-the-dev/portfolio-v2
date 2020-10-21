@@ -28,10 +28,14 @@ const query = `query {
               }`;
 
 async function fetchGitHubStats() {
-  const headers = { 'Authorization': `bearer ${token}` }
-  const body = { "query": query }
-  const response = await fetch('https://api.github.com/graphql', { method: 'POST', body: JSON.stringify(body), headers: headers })
-  const data = await response.json()
+  const headers = { Authorization: `bearer ${token}` };
+  const body = { query: query };
+  const response = await fetch('https://api.github.com/graphql', {
+    method: 'POST',
+    body: JSON.stringify(body),
+    headers: headers
+  });
+  const data = await response.json();
   return data;
 }
 
@@ -58,15 +62,27 @@ function getWeeklyContributionCount(weeks) {
 async function getAllStats() {
   const { followers, following, contributionsCollection } = await getStatsData();
 
-  const { totalRepositoriesWithContributedCommits, totalCommitContributions, totalIssueContributions, totalPullRequestContributions, contributionCalendar } = contributionsCollection;
+  const {
+    totalRepositoriesWithContributedCommits,
+    totalCommitContributions,
+    totalIssueContributions,
+    totalPullRequestContributions,
+    contributionCalendar
+  } = contributionsCollection;
 
   const { totalContributions, weeks } = contributionCalendar;
 
   const contributionByWeek = getWeeklyContributionCount(weeks);
   return {
-    followers, following, totalRepositoriesWithContributedCommits, totalCommitContributions, totalIssueContributions, totalPullRequestContributions, totalContributions,
+    followers,
+    following,
+    totalRepositoriesWithContributedCommits,
+    totalCommitContributions,
+    totalIssueContributions,
+    totalPullRequestContributions,
+    totalContributions,
     contributionByWeek
-  }
+  };
 }
 
-export { getAllStats }
+export { getAllStats };
