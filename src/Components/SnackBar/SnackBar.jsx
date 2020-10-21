@@ -10,9 +10,13 @@ export default function SnackBar({ icon, variant, children: message }) {
     }, 5000);
   }, []);
 
+  useEffect(() => {
+    setIsVisible(true);
+  }, [message, variant]);
+
   return (
     <div
-      style={isVisible ? {} : { opacity: 0, zIndex: -1000, visibility: 'hidden' }}
+      style={isVisible ? {} : { opacity: 0, transform: 'translate(-50%, 5rem)', zIndex: -1000, visibility: 'hidden' }}
       className={variant === 'error' ? classes.SnackBar__error : classes.SnackBar__success}
     >
       <span className={classes.SnackBar__icon}>
