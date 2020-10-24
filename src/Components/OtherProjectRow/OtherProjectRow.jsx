@@ -15,7 +15,7 @@ export default function OtherProjectRow({ title, type, technology, children, lin
         <span className={classes.type}>{type}</span>
         <span className={classes.tech}>{technology}</span>
       </div>
-      <div className={classes.additional} style={!isExpanded ? { maxHeight: 0 } : {}}>
+      <div className={classes.additional} style={!isExpanded ? { maxHeight: 0 } : { overflow: 'visible' }}>
         <p className={classes.description}>{children}</p>
         <div className={classes.actions}>
           {repo && (
