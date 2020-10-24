@@ -1,5 +1,13 @@
 export default [
   {
+    title: 'class-scheduler',
+    type: 'Featured project',
+    technology: 'NPM, Yarn',
+    description: 'A zero dependency class time table manager.',
+    link: 'https://www.npmjs.com/package/class-scheduler',
+    repo: 'https://github.com/benxene/class-scheduler'
+  },
+  {
     title: 'Nviktous',
     type: 'Contributed project',
     technology: 'React JS',
