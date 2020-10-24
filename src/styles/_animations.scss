@@ -22,6 +22,17 @@
   }
 }
 
+@keyframes fadeSnackBar {
+  0% {
+    transform: translate(-50%, 5rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
 @keyframes flyInRight {
   0% {
     transform: translateX(20rem);

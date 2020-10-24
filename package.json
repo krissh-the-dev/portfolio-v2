@@ -1,24 +1,25 @@
 {
   "name": "portfolio-v2",
   "author": "KrishnaMoorthy12",
-  "version": "0.5.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
   "dependencies": {
     "emailjs-com": "^2.6.3",
     "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
     "react-reveal": "^1.2.2",
-    "react-scripts": "3.4.3",
+    "react-scripts": "3.4.4",
     "recharts": "^1.8.5"
   },
   "devDependencies": {
     "dotenv": "^8.2.0"
   },
   "scripts": {
+    "format": "prettier --write \"**/*.{js,jsx,html,scss}\"",
+    "format:check": "prettier -c \"**/*.{js,jsx,html,scss}\"",
     "start": "env-cmd react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2"
   }
 }

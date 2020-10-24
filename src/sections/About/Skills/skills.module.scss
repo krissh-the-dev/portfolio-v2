@@ -2,7 +2,6 @@
 @import '../../../styles/mixins';
 
 .skills {
-
   .subheading {
     margin-bottom: 1rem;
 
@@ -21,7 +20,7 @@
       justify-content: space-around;
     }
 
-    &>span {
+    & > span {
       display: block;
       filter: brightness(90%);
       cursor: grab;

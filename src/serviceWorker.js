@@ -1,9 +1,7 @@
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
-  window.location.hostname === '[::1]' ||
-  window.location.hostname.match(
-    /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
-  )
+    window.location.hostname === '[::1]' ||
+    window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/)
 );
 
 let deferredPrompt;
@@ -28,7 +26,7 @@ function register(config) {
       }
     });
 
-    window.addEventListener('beforeinstallprompt', (InstallEvent) => {
+    window.addEventListener('beforeinstallprompt', InstallEvent => {
       // Prevent the mini-infobar from appearing on mobile
       InstallEvent.preventDefault();
       // Stash the event so it can be triggered later.
@@ -74,14 +72,11 @@ function registerValidSW(swUrl, config) {
 
 function checkValidServiceWorker(swUrl, config) {
   fetch(swUrl, {
-    headers: { 'Service-Worker': 'script' },
+    headers: { 'Service-Worker': 'script' }
   })
     .then(response => {
       const contentType = response.headers.get('content-type');
-      if (
-        response.status === 404 ||
-        (contentType != null && contentType.indexOf('javascript') === -1)
-      ) {
+      if (response.status === 404 || (contentType != null && contentType.indexOf('javascript') === -1)) {
         navigator.serviceWorker.ready.then(registration => {
           registration.unregister().then(() => {
             window.location.reload();
@@ -92,9 +87,7 @@ function checkValidServiceWorker(swUrl, config) {
       }
     })
     .catch(() => {
-      console.log(
-        'No internet connection found. App is running in offline mode.'
-      );
+      console.log('No internet connection found. App is running in offline mode.');
     });
 }
 

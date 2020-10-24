@@ -31,10 +31,10 @@
     position: absolute;
     bottom: 1rem;
     left: 1rem;
-    opacity: .5;
-    transition: all .3s;
+    opacity: 0.5;
+    transition: all 0.3s;
 
-    &>img {
+    & > img {
       width: 4rem;
       height: 4rem;
       object-fit: contain;
@@ -50,8 +50,8 @@
     max-height: 30rem;
     overflow-y: hidden;
     position: relative;
-    border-radius: .3rem;
-    transition: all .3s;
+    border-radius: 0.3rem;
+    transition: all 0.3s;
 
     @include respond(phone-large) {
       margin-bottom: 2rem;
@@ -64,24 +64,24 @@
       height: 100%;
       top: 0;
       left: 0;
-      background-color: rgba($color-primary-dark, .15);
+      background-color: rgba($color-primary-dark, 0.15);
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       opacity: 0;
-      transition: all .3s;
+      transition: all 0.3s;
 
-      &>a {
+      & > a {
         display: inline-flex;
         align-items: center;
         padding: 1.2rem;
-        border-radius: .3rem;
+        border-radius: 0.3rem;
         text-align: center;
-        background-color: rgba($color-slate-dark-2, .8);
+        background-color: rgba($color-slate-dark-2, 0.8);
         text-decoration: none;
         color: $color-white;
-        transition: all .3s;
+        transition: all 0.3s;
 
         &:not(:last-child) {
           margin-right: 1rem;
@@ -105,7 +105,7 @@
     &:hover {
       // box-shadow: 0 0 .5rem $color-primary-dark;
 
-      &>.caption {
+      & > .caption {
         opacity: 1;
       }
     }
@@ -118,8 +118,8 @@
     animation-name: projectOverview;
     animation-duration: 30s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(.69, .63, .73, 1.24);
-    transition: all .4s;
+    animation-timing-function: cubic-bezier(0.69, 0.63, 0.73, 1.24);
+    transition: all 0.4s;
   }
 
   &__picture:hover &__image {
@@ -176,11 +176,11 @@
     display: flex;
     align-items: center;
     list-style: none;
-    transition: all .3s;
+    transition: all 0.3s;
     cursor: default;
 
     &:hover {
-      transform: translateX(.5rem);
+      transform: translateX(0.5rem);
       color: $color-primary-main;
 
       @include theme(dark) {
@@ -189,9 +189,9 @@
     }
 
     &::before {
-      content: "\e909";
+      content: '\e909';
       display: inline-block;
-      margin-right: .5rem;
+      margin-right: 0.5rem;
       font-family: 'Icomoon' !important;
       color: $color-primary-dark;
 

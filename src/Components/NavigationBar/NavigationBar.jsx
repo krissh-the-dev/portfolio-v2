@@ -20,7 +20,7 @@ export default function NavigationBar() {
       setNavStyle({ boxShadow: 'none', transform: 'translateY(-100%)' });
     }
     this.oldScroll = this.scrollY;
-  }
+  };
 
   useEffect(() => setNavStyle({ boxShadow: 'none', paddingBottom: '1.5rem', background: 'none' }), []);
 
@@ -28,7 +28,7 @@ export default function NavigationBar() {
 
   const handleHamClose = () => {
     check.current.checked = false;
-  }
+  };
 
   return (
     <nav className={classes.nav} style={navStyle}>
@@ -36,29 +36,44 @@ export default function NavigationBar() {
         <div className={classes.container}>
           {/* eslint-disable-next-line */}
           <a href='#' className={classes.nav__brand}>
-            <img className={classes.nav__logo} src={LogoSmall} srcSet={`${LogoSmall} 300w, ${LogoLarge} 600w`} alt='Krish' />
+            <img
+              className={classes.nav__logo}
+              src={LogoSmall}
+              srcSet={`${LogoSmall} 300w, ${LogoLarge} 600w`}
+              alt='Krish'
+            />
           </a>
 
           <div className={classes.nav__list_container}>
             <input ref={check} type='checkbox' className={classes.nav__check} id='nav__check' />
-            <label htmlFor='nav__check' className={classes.nav__toggle}>&nbsp;</label>
+            <label htmlFor='nav__check' className={classes.nav__toggle}>
+              &nbsp;
+            </label>
 
             <ul className={classes.nav__list}>
               <li className={classes.nav__item}>
-                <a className={classes.nav__link} onClick={handleHamClose} href='#about'>About</a>
+                <a className={classes.nav__link} onClick={handleHamClose} href='#about'>
+                  About
+                </a>
               </li>
               <li className={classes.nav__item}>
-                <a className={classes.nav__link} onClick={handleHamClose} href='#projects'>Projects</a>
+                <a className={classes.nav__link} onClick={handleHamClose} href='#projects'>
+                  Projects
+                </a>
               </li>
               <li className={classes.nav__item}>
-                <a className={classes.nav__link} onClick={handleHamClose} href='#statistics'>Statistics</a>
+                <a className={classes.nav__link} onClick={handleHamClose} href='#statistics'>
+                  Statistics
+                </a>
               </li>
               <li className={classes.nav__item}>
-                <a className={classes.nav__link} onClick={handleHamClose} href='#contact'>Contact</a>
+                <a className={classes.nav__link} onClick={handleHamClose} href='#contact'>
+                  Contact
+                </a>
               </li>
 
-              <li className={classes.hamCloseBtn} onClick={handleHamClose} >
-                <span className="icon icon-arrow-thin-right"></span>
+              <li className={classes.hamCloseBtn} onClick={handleHamClose}>
+                <span className='icon icon-arrow-thin-right'></span>
                 Close
               </li>
             </ul>

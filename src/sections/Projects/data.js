@@ -9,9 +9,10 @@ const collegemate = {
   logo: CollegemateLogo,
   images: {
     light: { small: CollegemateDark, large: CollegemateDark },
-    dark: { small: CollegemateDark, large: CollegemateDark },
+    dark: { small: CollegemateDark, large: CollegemateDark }
   },
-  description: 'A MERN stack Progressive Web App (PWA) built for students and teaching faculties to easily share materials, homework, assignments, and notes.',
+  description:
+    'A MERN stack Progressive Web App (PWA) built for students and teaching faculties to easily share materials, homework, assignments, and notes.',
   features: [
     'Authentication system',
     'Email alerts',
@@ -31,9 +32,10 @@ const trident = {
   logo: TridentLogo,
   images: {
     light: { small: TridentLight, large: TridentLight },
-    dark: { small: TridentLight, large: TridentLight },
+    dark: { small: TridentLight, large: TridentLight }
   },
-  description: 'A pretty code editor built with Java swing. Specially developed to overcome major problems while programming in their schools, without providing advanced features such as code completion etc.',
+  description:
+    'A pretty code editor built with Java swing. Specially developed to overcome major problems while programming in their schools, without providing advanced features such as code completion etc.',
   features: [
     'Language recognition',
     'Syntax highlighting (not released)',
@@ -53,15 +55,11 @@ const aubit = {
   logo: AubitLogo,
   images: {
     light: { small: AubitMobile, large: AubitMobile },
-    dark: { small: AubitMobile, large: AubitMobile },
+    dark: { small: AubitMobile, large: AubitMobile }
   },
-  description: 'The unofficial website of University College of Engineering, BIT Campus, Tiruchirappalli. The website is still under development and will be approved upon completion to be the official website. Built with React.',
-  features: [
-    'Modern design',
-    'Online Form downloads',
-    'Reusable web components',
-    'Image Gallery'
-  ],
+  description:
+    'The unofficial website of University College of Engineering, BIT Campus, Tiruchirappalli. The website is still under development and will be approved upon completion to be the official website. Built with React.',
+  features: ['Modern design', 'Online Form downloads', 'Reusable web components', 'Image Gallery'],
   techStack: ['React', 'SCSS'],
   link: 'https://au-bit.netlify.app/',
   repo: undefined
@@ -73,19 +71,15 @@ const leetCode = {
   logo: LeetCodeLogo,
   images: {
     light: { small: LeetCode, large: LeetCode },
-    dark: { small: LeetCode, large: LeetCode },
+    dark: { small: LeetCode, large: LeetCode }
   },
-  description: 'A Chrome extension to keep track of the problems solved and time taken to solve each problem in LeetCode. I have worked on the UI of the extension.',
-  features: [
-    'Counter',
-    'Data visualization',
-    'Export as CSV',
-    'Filter and Find',
-    'Cloud sync (coming soon)'
-  ],
+  description:
+    'A Chrome extension to keep track of the problems solved and time taken to solve each problem in LeetCode. I have worked on the UI of the extension.',
+  features: ['Counter', 'Data visualization', 'Export as CSV', 'Filter and Find', 'Cloud sync (coming soon)'],
   techStack: ['Chrome Extension', 'TypeScript', 'LeetCode API', 'SCSS'],
   repo: 'https://github.com/VarthanV/LeetCode-Time-Tracker',
-  link: 'https://chrome.google.com/webstore/detail/leetcode-time-tracker/obcihoolahbncgakepoceagnjnfgghhl?hl=en&authuser=0'
+  link:
+    'https://chrome.google.com/webstore/detail/leetcode-time-tracker/obcihoolahbncgakepoceagnjnfgghhl?hl=en&authuser=0'
 };
 
 const data = [collegemate, leetCode, aubit, trident];

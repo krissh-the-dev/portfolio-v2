@@ -13,7 +13,7 @@
 
   .data {
     display: grid;
-    grid-template-columns: .7fr 1fr;
+    grid-template-columns: 0.7fr 1fr;
     grid-gap: 2rem;
 
     @include respond(tab-port) {

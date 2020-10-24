@@ -9,7 +9,6 @@ export default function Footer() {
       <div>
         <SocialLinks />
       </div>
-
       <span className={classes.colorize}>Designed</span> and <span className={classes.colorize}>built</span> <br />
       by Krishna Moorthy
     </div>

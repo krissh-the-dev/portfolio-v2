@@ -42,10 +42,10 @@
       max-height: 95%;
       align-self: center;
       object-fit: contain;
-      border-radius: .6rem;
+      border-radius: 0.6rem;
       border: 2px solid transparent;
       box-shadow: 0 0 1rem transparent;
-      transition: all .4s;
+      transition: all 0.4s;
 
       @include respond(tab-port) {
         min-height: 23rem;

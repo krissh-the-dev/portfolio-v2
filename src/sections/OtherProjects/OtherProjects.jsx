@@ -11,13 +11,14 @@ export default function OtherProjects() {
         <h3 className={classes.heading}>Other Projects</h3>
         <div className={classes.OtherProjects__list}>
           <Fade bottom>
-            {
-              otherProjects.map((project, index) => {
-                const { title, type, technology, description, link, repo } = project;
-                return (
-                  <OtherProject title={title} type={type} key={index} technology={technology} link={link} repo={repo} >{description}</OtherProject>);
-              })
-            }
+            {otherProjects.map((project, index) => {
+              const { title, type, technology, description, link, repo } = project;
+              return (
+                <OtherProject title={title} type={type} key={index} technology={technology} link={link} repo={repo}>
+                  {description}
+                </OtherProject>
+              );
+            })}
           </Fade>
         </div>
       </div>
