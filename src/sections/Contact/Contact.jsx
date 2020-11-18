@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import Filter from 'bad-words';
 import Fade from 'react-reveal/Fade';
+import ReCaptcha from 'react-google-recaptcha';
+import dotenv from 'dotenv';
 import classes from './contact.module.scss';
 
 import { Button, SnackBar } from '../../Components';
 import mail from './mailer';
+
+dotenv.config();
+const RECAPTCHA_CLIENT_ID =
+  process.env.NODE_ENV === 'production' ? process.env.REACT_APP_RECAPTCHA : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI';
 
 const filter = new Filter();
 filter.removeWords('god');
@@ -108,6 +114,10 @@ export default function Contact() {
               <label htmlFor='message' className={classes.input__label}>
                 Message
               </label>
+            </div>
+
+            <div className={classes.contact__captcha}>
+              <ReCaptcha sitekey={RECAPTCHA_CLIENT_ID} onChange={val => console.log(val)} />
             </div>
 
             <Button onClick={handleSubmit}>{'Send ->'}</Button>

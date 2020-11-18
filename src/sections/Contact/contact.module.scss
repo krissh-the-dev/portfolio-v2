@@ -26,6 +26,12 @@
       width: 100%;
     }
   }
+
+  &__captcha {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
 }
 
 .input {
