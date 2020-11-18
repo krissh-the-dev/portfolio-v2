@@ -18,6 +18,7 @@ filter.removeWords('god');
 export default function Contact() {
   const initialState = { name: '', email: '', message: '' };
   const [formData, setFormData] = useState(initialState);
+  const [reCaptchaResponse, setCaptchaResponse] = useState(null);
   const [mailerResponse, setMailerResponse] = useState('not initiated');
 
   const handleChange = ({ target }) => {
@@ -33,10 +34,13 @@ export default function Contact() {
 
   const handleSubmit = event => {
     event.preventDefault();
+    if (!reCaptchaResponse) {
+      return setMailerResponse('bot');
+    }
     const { name, email, message } = {
-      name: formData.name.trim(),
-      email: formData.email.trim(),
-      message: formData.message.trim()
+      name: formData.name,
+      email: formData.email,
+      message: formData.message
     };
 
     if (name === '' || email === '' || message === '') {
@@ -117,7 +121,7 @@ export default function Contact() {
             </div>
 
             <div className={classes.contact__captcha}>
-              <ReCaptcha sitekey={RECAPTCHA_CLIENT_ID} onChange={val => console.log(val)} />
+              <ReCaptcha sitekey={RECAPTCHA_CLIENT_ID} onChange={setCaptchaResponse} />
             </div>
 
             <Button onClick={handleSubmit}>{'Send ->'}</Button>
@@ -126,7 +130,11 @@ export default function Contact() {
 
         {mailerResponse !== 'not initiated' && (
           <SnackBar variant={mailerResponse} icon='mail'>
-            {mailerResponse === 'success' ? 'Message sent successfully' : 'There was an error sending your message.'}
+            {mailerResponse === 'success'
+              ? 'Message sent successfully'
+              : mailerResponse === 'bot'
+              ? 'Complete ReCaptcha challenge'
+              : 'There was an error sending your message'}
           </SnackBar>
         )}
       </div>
