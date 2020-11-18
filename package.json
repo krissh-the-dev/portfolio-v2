@@ -1,7 +1,7 @@
 {
   "name": "portfolio-v2",
   "author": "KrishnaMoorthy12",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": false,
   "dependencies": {
     "bad-words": "^3.0.4",
@@ -25,7 +25,17 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "semi": ["warn", "always"],
+      "quotes": ["warn", "single"],
+      "no-console": ["off", { "allow": ["warn", "error"] }],
+      "comma-dangle": ["warn", "never"],
+      "comma-spacing": ["warn", { "before": false, "after": true }],
+      "no-empty": "warn",
+      "no-duplicate-case": "warn",
+      "curly": "warn"
+    }
   },
   "browserslist": {
     "production": [

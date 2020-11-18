@@ -34,7 +34,6 @@ export default function Contact() {
     };
 
     if (name === '' || email === '' || message === '') {
-      console.log('Not sent');
       return setMailerResponse('error');
     }
     mail({ name, email, message })
@@ -42,11 +41,13 @@ export default function Contact() {
         if (res.status === 200) {
           setMailerResponse('success');
           setFormData(initialState);
-        } else setMailerResponse('error');
+        } else {
+          setMailerResponse('error');
+        }
       })
       .catch(err => {
         setMailerResponse('error');
-        console.log(err);
+        console.error(err);
       });
   };
 
