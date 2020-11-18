@@ -1,23 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import classes from './opr.module.scss';
 import Button from '../Button';
 
 export default function OtherProjectRow({ title, type, technology, children, link, repo }) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const additionalDetails = useRef(null);
-
-  useEffect(() => {
-    if (isExpanded) {
-      additionalDetails.current.style.maxHeight = '12rem';
-      setTimeout(() => {
-        additionalDetails.current.style.overflow = 'visible';
-      }, 50);
-    } else {
-      additionalDetails.current.style.maxHeight = 0;
-      additionalDetails.current.style.overflow = 'hidden';
-    }
-  }, [isExpanded]);
-
   return (
     <div
       className={classes.row}
@@ -29,7 +15,7 @@ export default function OtherProjectRow({ title, type, technology, children, lin
         <span className={classes.type}>{type}</span>
         <span className={classes.tech}>{technology}</span>
       </div>
-      <div className={classes.additional} ref={additionalDetails}>
+      <div className={classes.additional} style={!isExpanded ? { maxHeight: 0 } : { overflow: 'visible' }}>
         <p className={classes.description}>{children}</p>
         <div className={classes.actions}>
           {repo && (
