@@ -83,7 +83,14 @@ export default function Contact() {
                 id='message'
                 required
                 className={classes.input__field}
-                style={{ height: 'auto', minHeight: '16rem' }}
+                style={{
+                  height: 'auto',
+                  width: '100%',
+                  minWidth: '100%',
+                  maxWidth: '100%',
+                  minHeight: '16rem',
+                  maxHeight: '20rem'
+                }}
                 value={formData.message}
                 onChange={handleChange}
               />
