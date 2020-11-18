@@ -1,4 +1,4 @@
-const otherProjects = [
+export default [
   {
     title: 'class-scheduler',
     type: 'Featured project',
@@ -68,5 +68,3 @@ const otherProjects = [
     repo: 'https://github.com/KrishnaMoorthy12/apk-installer'
   }
 ];
-
-export default otherProjects;
