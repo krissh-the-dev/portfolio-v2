@@ -89,7 +89,7 @@ export default function Contact() {
                   minWidth: '100%',
                   maxWidth: '100%',
                   minHeight: '16rem',
-                  maxHeight: '20rem'
+                  maxHeight: '26rem'
                 }}
                 value={formData.message}
                 onChange={handleChange}
