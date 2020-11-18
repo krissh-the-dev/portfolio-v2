@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
-import classes from './contact.module.scss';
+import Filter from 'bad-words';
 import Fade from 'react-reveal/Fade';
+import classes from './contact.module.scss';
 
 import { Button, SnackBar } from '../../Components';
 import mail from './mailer';
+
+const filter = new Filter();
+filter.removeWords('god');
 
 export default function Contact() {
   const initialState = { name: '', email: '', message: '' };
@@ -12,7 +16,13 @@ export default function Contact() {
 
   const handleChange = ({ target }) => {
     const { id, value } = target;
-    setFormData(prevVal => ({ ...prevVal, [id]: value }));
+    setFormData(prevVal => {
+      if (value.trim() !== prevVal[id] && value.trim().length > prevVal[id].trim().length) {
+        return { ...prevVal, [id]: filter.clean(value.trim()) };
+      } else {
+        return { ...prevVal, [id]: value };
+      }
+    });
   };
 
   const handleSubmit = event => {
@@ -83,7 +93,14 @@ export default function Contact() {
                 id='message'
                 required
                 className={classes.input__field}
-                style={{ height: 'auto', minHeight: '16rem' }}
+                style={{
+                  height: 'auto',
+                  width: '100%',
+                  minWidth: '100%',
+                  maxWidth: '100%',
+                  minHeight: '16rem',
+                  maxHeight: '26rem'
+                }}
                 value={formData.message}
                 onChange={handleChange}
               />
