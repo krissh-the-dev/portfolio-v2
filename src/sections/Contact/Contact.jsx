@@ -121,7 +121,13 @@ export default function Contact() {
             </div>
 
             <div className={classes.contact__captcha}>
-              <ReCaptcha sitekey={RECAPTCHA_CLIENT_ID} onChange={setCaptchaResponse} />
+              <ReCaptcha
+                sitekey={RECAPTCHA_CLIENT_ID}
+                onChange={setCaptchaResponse}
+                theme={
+                  window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+                }
+              />
             </div>
 
             <Button onClick={handleSubmit}>{'Send ->'}</Button>
