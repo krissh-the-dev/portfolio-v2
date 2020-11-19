@@ -24,7 +24,7 @@ export default function About() {
               <p className={classes.description}>
                 I love to design and code{' '}
                 <span role='img' aria-label='code emoji'>
-                  👩‍💻
+                  👨🏼‍💻
                 </span>
                 . I build high-quality applications for the web. I concentrate on writing clean and understandable code.
                 Currently, I'm pursuing my undergrads{' '}
