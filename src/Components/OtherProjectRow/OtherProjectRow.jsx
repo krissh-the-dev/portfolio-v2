@@ -8,7 +8,7 @@ export default function OtherProjectRow({ title, type, technology, children, lin
 
   useEffect(() => {
     if (isExpanded) {
-      additionalDetails.current.style.maxHeight = '12rem';
+      additionalDetails.current.style.maxHeight = '18rem';
       setTimeout(() => {
         additionalDetails.current.style.overflow = 'visible';
       }, 50);
