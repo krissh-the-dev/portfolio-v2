@@ -9,13 +9,13 @@
     "node-sass": "^4.14.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-google-recaptcha": "^2.1.0",
     "react-reveal": "^1.2.2",
     "react-scripts": "^3.4.4",
     "recharts": "^1.8.5"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
+    "env-cmd": "^10.1.0",
     "prettier": "^2.1.2"
   },
   "scripts": {
