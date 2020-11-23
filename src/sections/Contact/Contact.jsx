@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import Filter from 'bad-words';
 import Fade from 'react-reveal/Fade';
-import ReCaptcha from 'react-google-recaptcha';
-import dotenv from 'dotenv';
 import classes from './contact.module.scss';
 
 import { Button, SnackBar } from '../../Components';
 import mail from './mailer';
 
+/* captcha
+import ReCaptcha from 'react-google-recaptcha';
+import dotenv from 'dotenv';
 dotenv.config();
 const RECAPTCHA_CLIENT_ID =
   process.env.NODE_ENV === 'production' ? process.env.REACT_APP_RECAPTCHA : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI';
+*/
 
 const filter = new Filter();
 filter.removeWords('god');
@@ -18,8 +20,10 @@ filter.removeWords('god');
 export default function Contact() {
   const initialState = { name: '', email: '', message: '' };
   const [formData, setFormData] = useState(initialState);
-  const [reCaptchaResponse, setCaptchaResponse] = useState(null);
   const [mailerResponse, setMailerResponse] = useState('not initiated');
+
+  // ReCaptcha
+  // const [reCaptchaResponse, setCaptchaResponse] = useState(null);
 
   const handleChange = ({ target }) => {
     const { id, value } = target;
@@ -34,9 +38,13 @@ export default function Contact() {
 
   const handleSubmit = event => {
     event.preventDefault();
+
+    /* Captcha
     if (!reCaptchaResponse) {
       return setMailerResponse('bot');
     }
+    */
+
     const { name, email, message } = {
       name: formData.name,
       email: formData.email,
@@ -120,6 +128,7 @@ export default function Contact() {
               </label>
             </div>
 
+            {/* Captcha
             <div className={classes.contact__captcha}>
               <ReCaptcha
                 sitekey={RECAPTCHA_CLIENT_ID}
@@ -129,6 +138,7 @@ export default function Contact() {
                 }
               />
             </div>
+            */}
 
             <Button onClick={handleSubmit}>{'Send ->'}</Button>
           </Fade>
