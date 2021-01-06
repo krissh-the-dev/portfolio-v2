@@ -98,6 +98,8 @@ export default function Skills() {
           <span className='path4'></span>
         </span>
 
+        <span className='logo logo-fauna'></span>
+
         <span className='logo logo-mysql'></span>
 
         <span className='logo logo-postgresql'>

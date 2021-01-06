@@ -18,6 +18,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.logo-fauna:before {
+  content: '\e906';
+  color: #4249a6;
+}
+
 .logo-apollo-graphql:before {
   content: '\e904';
 }
