@@ -60,6 +60,15 @@ const otherProjects = [
     repo: undefined
   },
   {
+    title: 'Trident',
+    type: 'Featured Project',
+    technology: 'Java',
+    description:
+      'A minimal text editor specially built to overcome major problems while programming in schools, without providing advanced features such as code completion etc.',
+    link: 'https://github.com/KrishnaMoorthy12/trident/releases/latest',
+    repo: 'https://github.com/KrishnaMoorthy12/trident'
+  },
+  {
     title: 'APK Batch Installer',
     type: 'Featured Project',
     technology: 'Java',
