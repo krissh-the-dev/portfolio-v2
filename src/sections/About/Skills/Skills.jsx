@@ -66,8 +66,6 @@ export default function Skills() {
 
         <span className='logo logo-nodejs'></span>
 
-        <span className='logo logo-gradle'></span>
-
         <span className='logo logo-express'></span>
 
         <span className='logo logo-react'></span>
@@ -94,13 +92,6 @@ export default function Skills() {
         </span>
 
         <span className='logo logo-firebase'>
-          <span className='path1'></span>
-          <span className='path2'></span>
-          <span className='path3'></span>
-          <span className='path4'></span>
-        </span>
-
-        <span className='logo logo-airtable'>
           <span className='path1'></span>
           <span className='path2'></span>
           <span className='path3'></span>
@@ -150,8 +141,6 @@ export default function Skills() {
           <span className='path27'></span>
         </span>
 
-        <span className='logo logo-auth0'></span>
-
         <span className='logo logo-figma'>
           <span className='path1'></span>
           <span className='path2'></span>
@@ -160,19 +149,6 @@ export default function Skills() {
           <span className='path5'></span>
           <span className='path6'></span>
         </span>
-
-        <span className='logo logo-c'></span>
-
-        <span className='logo logo-cpp'>
-          <span className='path1'></span>
-          <span className='path2'></span>
-          <span className='path3'></span>
-          <span className='path4'></span>
-          <span className='path5'></span>
-          <span className='path6'></span>
-        </span>
-
-        <span className='logo logo-php'></span>
       </div>
     </div>
   );
