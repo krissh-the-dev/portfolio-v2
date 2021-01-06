@@ -111,6 +111,10 @@ export default function Skills() {
           <span className='path8'></span>
         </span>
 
+        <span className='logo logo-graphql' />
+
+        <span className='logo logo-apollo-graphql' />
+
         <span className='logo logo-sequelize'>
           <span className='path1'></span>
           <span className='path2'></span>
