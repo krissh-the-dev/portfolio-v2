@@ -18,6 +18,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.logo-apollo-graphql:before {
+  content: '\e904';
+}
+.logo-graphql:before {
+  content: '\e905';
+  color: #e535ab;
+}
 .logo-airtable .path1:before {
   content: '\e900';
   color: rgb(255, 204, 0);
@@ -36,43 +43,6 @@
   content: '\e903';
   margin-left: -1em;
   color: rgb(198, 40, 66);
-}
-.logo-auth0:before {
-  content: '\e904';
-  color: #eb5424;
-}
-.logo-c:before {
-  content: '\e905';
-  color: #03599c;
-}
-.logo-cpp .path1:before {
-  content: '\e906';
-  color: rgb(92, 141, 188);
-}
-.logo-cpp .path2:before {
-  content: '\e907';
-  margin-left: -0.888671875em;
-  color: rgb(26, 70, 116);
-}
-.logo-cpp .path3:before {
-  content: '\e908';
-  margin-left: -0.888671875em;
-  color: rgb(26, 70, 116);
-}
-.logo-cpp .path4:before {
-  content: '\e909';
-  margin-left: -0.888671875em;
-  color: rgb(27, 89, 142);
-}
-.logo-cpp .path5:before {
-  content: '\e90a';
-  margin-left: -0.888671875em;
-  color: rgb(255, 255, 255);
-}
-.logo-cpp .path6:before {
-  content: '\e90b';
-  margin-left: -0.888671875em;
-  color: rgb(255, 255, 255);
 }
 .logo-css .path1:before {
   content: '\e90c';
@@ -137,9 +107,6 @@
 .logo-git:before {
   content: '\e919';
   color: #f34f29;
-}
-.logo-gradle:before {
-  content: '\e91a';
 }
 .logo-html .path1:before {
   content: '\e91b';
@@ -291,10 +258,6 @@
 .logo-nodejs:before {
   content: '\e93a';
   color: #8cc84b;
-}
-.logo-php:before {
-  content: '\e93b';
-  color: #6181b6;
 }
 .logo-postgresql .path1:before {
   content: '\e93c';
