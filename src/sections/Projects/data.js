@@ -1,5 +1,5 @@
 import { CollegemateLogo, CollegemateDark } from '../../images/Collegemate';
-import { TridentLogo, TridentLight } from '../../images/Trident';
+import { SFPImageSmall, SFPImageLarge, SFPLogo } from '../../images/7days50projects';
 import { AubitLogo, AubitMobile } from '../../images/Aubit';
 import { LeetCodeLogo, LeetCode } from '../../images/LeetCode';
 
@@ -26,27 +26,20 @@ const collegemate = {
   repo: undefined
 };
 
-const trident = {
-  title: 'Trident',
+const $7d50p = {
+  title: '7 Days 50 Projects',
   type: 'Featured project',
-  logo: TridentLogo,
+  logo: SFPLogo,
   images: {
-    light: { small: TridentLight, large: TridentLight },
-    dark: { small: TridentLight, large: TridentLight }
+    light: { small: SFPImageSmall, large: SFPImageLarge },
+    dark: { small: SFPImageSmall, large: SFPImageLarge }
   },
   description:
-    'A pretty code editor built with Java swing. Specially developed to overcome major problems while programming in their schools, without providing advanced features such as code completion etc.',
-  features: [
-    'Language recognition',
-    'Syntax highlighting (not released)',
-    'Customization options',
-    'Auto save',
-    'Compiling and executing',
-    'Cross platform'
-  ],
-  techStack: ['Java', 'Swing', 'Gradle'],
-  link: 'https://krishnamoorthy12.github.io/trident/',
-  repo: 'https://github.com/KrishnaMoorthy12/trident'
+    'A fun challenge, to complete a collection of 50 projects within 7 days, inspired from Brad Traversy and Florin Pop’s ‘50 Projects 50 Days’. Completed 20 projects and made contributions to 5+ other projects. Some projects I really like, that I made:',
+  features: ['Theme clock', 'Testimonials', 'Movie app', 'Double click like'],
+  techStack: ['Next JS', 'styled-components', 'TypeScript'],
+  link: 'https://7days50projects.vercel.app/',
+  repo: 'https://github.com/benxene/7days-50projects'
 };
 
 const aubit = {
@@ -82,5 +75,5 @@ const leetCode = {
     'https://chrome.google.com/webstore/detail/leetcode-time-tracker/obcihoolahbncgakepoceagnjnfgghhl?hl=en&authuser=0'
 };
 
-const data = [collegemate, leetCode, aubit, trident];
+const data = [collegemate, leetCode, aubit, $7d50p];
 export default data;
