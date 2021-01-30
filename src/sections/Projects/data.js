@@ -54,7 +54,7 @@ const aubit = {
     'The unofficial website of University College of Engineering, BIT Campus, Tiruchirappalli. The website is still under development and will be approved upon completion to be the official website. Built with React.',
   features: ['Modern design', 'Online Form downloads', 'Reusable web components', 'Image Gallery'],
   techStack: ['React', 'SCSS'],
-  link: 'https://au-bit.netlify.app/',
+  link: 'https://aubit.netlify.app/',
   repo: undefined
 };
 
