@@ -39,7 +39,7 @@ I don't want credits for any of your work. Your heart knows what's right :) _Att
 
         npm install
 
-5.  Create a `.env` file in the project root directory with the following variables: ` REACT_APP_RECAPTCHA`, `REACT_APP_SERVICE_ID`, `REACT_APP_TEMPLATE_ID`, `REACT_APP_TOKEN`, `REACT_APP_USER_ID`
+5.  Create a `.env` file in the project root directory with the following variables: `REACT_APP_RECAPTCHA`, `REACT_APP_SERVICE_ID`, `REACT_APP_TEMPLATE_ID`, `REACT_APP_TOKEN`, `REACT_APP_USER_ID`
 
 6.  Start the development server by using the command:
 
@@ -97,6 +97,6 @@ Here's a useful article by by Abhishek Jakhar on `freeCodeCamp` that describes t
 
 For our site to function properly, you also need to add the environment variables by going into Site Settings > Build & Deploy > Environment.
 
-# References
+## References
 
 Also coming soon 😪
