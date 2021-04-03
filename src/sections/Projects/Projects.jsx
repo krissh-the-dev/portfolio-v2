@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './projects.module.scss';
 
-import { Project } from '../../Components';
+import { Project } from '../../components';
 import data from './data';
 
 export default function MyWork() {

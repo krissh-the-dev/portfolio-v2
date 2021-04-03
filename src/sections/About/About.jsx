@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 import { KrishSmall, KrishMedium, KrishLarge } from '../../images/Krish';
 import Skills from './Skills';
-import { Link } from '../../Components';
+import { Link } from '../../components';
 import SocialLinks from '../Contact/SocialLinks';
 
 export default function About() {

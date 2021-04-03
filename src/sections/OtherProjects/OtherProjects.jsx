@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './otherProjects.module.scss';
 import Fade from 'react-reveal/Fade';
-import { OtherProject } from '../../Components';
+import { OtherProject } from '../../components';
 import otherProjects from './data';
 
 export default function OtherProjects() {
