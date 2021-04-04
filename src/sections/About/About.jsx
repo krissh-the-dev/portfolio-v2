@@ -2,9 +2,9 @@ import React from 'react';
 import classes from './about.module.scss';
 import Fade from 'react-reveal/Fade';
 
-import { KrishSmall, KrishMedium, KrishLarge } from '../../images/Krish';
+import { KrishSmall, KrishMedium, KrishLarge } from 'images/Krish';
+import { Link } from 'components';
 import Skills from './Skills';
-import { Link } from '../../components';
 import SocialLinks from '../Contact/SocialLinks';
 
 export default function About() {

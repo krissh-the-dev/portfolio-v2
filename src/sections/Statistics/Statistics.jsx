@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import Fade from 'react-reveal/Fade';
 
 import { getAllStats } from './data';
-import { Button, StatCard as Card } from '../../components';
+import { Button, StatCard as Card } from 'components';
 import Graph from './Graph';
 
 dotenv.config();

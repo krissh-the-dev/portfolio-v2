@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-import { Loader, Hero, About, Projects, OtherProjects, Statistics, Contact, Footer } from './sections';
-import { NavigationBar } from './components';
+import { Loader, Hero, About, Projects, OtherProjects, Statistics, Contact, Footer } from 'sections';
+import { NavigationBar } from 'components';
 
 export default function Portfolio() {
   const [isLoading, setIsLoading] = useState(true);

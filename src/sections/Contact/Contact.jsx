@@ -3,7 +3,7 @@ import Filter from 'bad-words';
 import Fade from 'react-reveal/Fade';
 import classes from './contact.module.scss';
 
-import { Button, SnackBar } from '../../components';
+import { Button, SnackBar } from 'components';
 import mail from './mailer';
 
 const filter = new Filter();
