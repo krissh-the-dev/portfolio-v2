@@ -7,7 +7,7 @@ import { Button, SnackBar } from 'components';
 import mail from './mailer';
 
 const filter = new Filter();
-filter.removeWords('god');
+filter.removeWords('hell', 'god');
 
 export default function Contact() {
   const initialState = { name: '', email: '', message: '' };
