@@ -11,14 +11,20 @@ export default function Skills() {
           <span className='path2'></span>
           <span className='path3'></span>
           <span className='path4'></span>
+
+          <span className='tooltip'>HTML</span>
         </span>
 
         <span className='logo logo-css'>
           <span className='path1'></span>
           <span className='path2'></span>
+
+          <span className='tooltip'>CSS</span>
         </span>
 
-        <span className='logo logo-sass'></span>
+        <span className='logo logo-sass'>
+          <span className='tooltip'>SASS</span>
+        </span>
 
         <span className='logo logo-styled-components'>
           <span className='path1'></span>
@@ -37,16 +43,22 @@ export default function Skills() {
           <span className='path14'></span>
           <span className='path15'></span>
           <span className='path16'></span>
+
+          <span className='tooltip'>styled-components</span>
         </span>
 
         <span className='logo logo-javascript-rounded'>
           <span className='path1'></span>
           <span className='path2'></span>
+
+          <span className='tooltip'>JavaScript</span>
         </span>
 
         <span className='logo logo-typescript'>
           <span className='path1'></span>
           <span className='path2'></span>
+
+          <span className='tooltip'>TypeScript</span>
         </span>
 
         <span className='logo logo-java'>
@@ -55,22 +67,36 @@ export default function Skills() {
           <span className='path3'></span>
           <span className='path4'></span>
           <span className='path5'></span>
+
+          <span className='tooltip'>Java</span>
         </span>
 
         <span className='logo logo-python'>
           <span className='path1'></span>
           <span className='path2'></span>
+
+          <span className='tooltip'>Python</span>
         </span>
 
-        <span className='logo logo-git'></span>
+        <span className='logo logo-git'>
+          <span className='tooltip'>Git</span>
+        </span>
 
-        <span className='logo logo-nodejs'></span>
+        <span className='logo logo-nodejs'>
+          <span className='tooltip'>Node JS</span>
+        </span>
 
-        <span className='logo logo-express'></span>
+        <span className='logo logo-express'>
+          <span className='tooltip'>Express JS</span>
+        </span>
 
-        <span className='logo logo-react'></span>
+        <span className='logo logo-react'>
+          <span className='tooltip'>React JS</span>
+        </span>
 
-        <span className='logo logo-next-js'></span>
+        <span className='logo logo-next-js'>
+          <span className='tooltip'>Next JS</span>
+        </span>
 
         <span className='logo logo-mongodb'>
           <span className='path1'></span>
@@ -89,6 +115,8 @@ export default function Skills() {
           <span className='path14'></span>
           <span className='path15'></span>
           <span className='path16'></span>
+
+          <span className='tooltip'>MongoDB</span>
         </span>
 
         <span className='logo logo-firebase'>
@@ -96,11 +124,17 @@ export default function Skills() {
           <span className='path2'></span>
           <span className='path3'></span>
           <span className='path4'></span>
+
+          <span className='tooltip'>Firebase</span>
         </span>
 
-        <span className='logo logo-fauna'></span>
+        <span className='logo logo-fauna'>
+          <span className='tooltip'>Fauna DB</span>
+        </span>
 
-        <span className='logo logo-mysql'></span>
+        <span className='logo logo-mysql'>
+          <span className='tooltip'>MySQL</span>
+        </span>
 
         <span className='logo logo-postgresql'>
           <span className='path1'></span>
@@ -111,11 +145,17 @@ export default function Skills() {
           <span className='path6'></span>
           <span className='path7'></span>
           <span className='path8'></span>
+
+          <span className='tooltip'>PostgreSQL</span>
         </span>
 
-        <span className='logo logo-graphql' />
+        <span className='logo logo-graphql'>
+          <span className='tooltip'>GraphQL</span>
+        </span>
 
-        <span className='logo logo-apollo-graphql' />
+        <span className='logo logo-apollo-graphql'>
+          <span className='tooltip'>Apollo Client</span>
+        </span>
 
         <span className='logo logo-sequelize'>
           <span className='path1'></span>
@@ -145,6 +185,8 @@ export default function Skills() {
           <span className='path25'></span>
           <span className='path26'></span>
           <span className='path27'></span>
+
+          <span className='tooltip'>Sequelize ORM</span>
         </span>
 
         <span className='logo logo-figma'>
@@ -154,6 +196,8 @@ export default function Skills() {
           <span className='path4'></span>
           <span className='path5'></span>
           <span className='path6'></span>
+
+          <span className='tooltip'>Figma</span>
         </span>
       </div>
     </div>

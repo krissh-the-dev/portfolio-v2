@@ -27,6 +27,8 @@
 
       margin: 0 2rem 2rem 0;
 
+      transition: all 0.2s;
+
       @include respond(phone) {
         margin: 0 2rem 3rem 2rem;
       }
@@ -38,7 +40,7 @@
       // transition: filter .2s;
 
       &:hover {
-        filter: brightness(110%) drop-shadow(0 0 1rem $color-primary-dark);
+        filter: brightness(110%) drop-shadow(0 0 0.5rem $color-primary-dark);
       }
     }
   }
