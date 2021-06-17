@@ -50,7 +50,7 @@
     max-height: 30rem;
     overflow-y: hidden;
     position: relative;
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
     transition: all 0.3s;
 
     @include respond(phone-large) {
@@ -75,8 +75,8 @@
       & > a {
         display: inline-flex;
         align-items: center;
-        padding: 1.2rem;
-        border-radius: 0.3rem;
+        padding: 1.2rem 2rem;
+        border-radius: 0.4rem;
         text-align: center;
         background-color: rgba($color-slate-dark-2, 0.8);
         text-decoration: none;
