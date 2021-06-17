@@ -15,11 +15,7 @@ h1 {
 
 h2 {
   font-size: 4.4rem;
-  color: $color-slate-dark-1;
-
-  @include theme(dark) {
-    color: $color-slate-light-4;
-  }
+  color: $color-slate-light-4;
 
   @include respond(phone) {
     font-size: 4rem;

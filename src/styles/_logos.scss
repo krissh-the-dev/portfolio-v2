@@ -13,9 +13,34 @@
   height: 4.5rem;
   text-align: center;
 
+  position: relative;
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  .tooltip {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $font-mono;
+    font-size: 1rem;
+    background-color: $color-slate-dark-4;
+    color: $color-white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 3px $color-primary-main;
+    text-transform: capitalize;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s linear;
+  }
+
+  &:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .logo-fauna:before {

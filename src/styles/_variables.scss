@@ -21,7 +21,7 @@ $color-tomato: #cf0000;
 $color-emerald: #00ac56;
 
 /* SHADOWS */
-$shadow-primary-all: box-shadow(0, 0, 1rem, $color-primary-main);
+$shadow-primary-all: 0, 0, 1rem, $color-primary-main;
 $shadow-subtle: 0 0.3rem 1rem rgba($color-slate-dark-5, 0.2);
 $shadow-subtle-small: 0 0.2rem 0.5rem rgba($color-slate-dark-5, 0.2);
 
