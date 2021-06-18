@@ -2,6 +2,7 @@ import { CollegemateLogo, CollegemateDark } from '../../images/Collegemate';
 import { SFPImageSmall, SFPImageLarge, SFPLogo } from '../../images/7days50projects';
 import { AubitLogo, AubitMobile } from '../../images/Aubit';
 import { LeetCodeLogo, LeetCode } from '../../images/LeetCode';
+import { InfiniteLoopClub, InfiniteLoopClubLogo } from '../../images/InfiniteLoopClub';
 
 const collegemate = {
   title: 'Collegemate',
@@ -25,6 +26,21 @@ const collegemate = {
   link: 'https://collegemate.herokuapp.com/',
   repo: undefined
 };
+
+const ilc = {
+  title: 'Infinite Loop Club website',
+  type: 'Collaborated project',
+  logo: InfiniteLoopClubLogo,
+  images: {
+    light: { small: InfiniteLoopClub, large: InfiniteLoopClub },
+    dark: { small: InfiniteLoopClub, large: InfiniteLoopClub },
+  },
+  description: 'The official website of the Infinite Loop Club of Anna University, Trichy. I have worked on both frontend and backend of this website and also designed most of the elements.',
+  features: ['Registration', 'Online ID Generation', 'Post sharing', 'Online polling system'],
+  techStack: ['React JS', 'Express JS', 'Mongo DB'],
+  link: 'https://infinite-loop-club.netlify.app/',
+  repo: 'https://github.com/Infinite-Loop-Club/club-site'
+}
 
 const $7d50p = {
   title: '7 Days 50 Projects',
@@ -75,5 +91,5 @@ const leetCode = {
     'https://chrome.google.com/webstore/detail/leetcode-time-tracker/obcihoolahbncgakepoceagnjnfgghhl?hl=en&authuser=0'
 };
 
-const data = [collegemate, leetCode, aubit, $7d50p];
+const data = [collegemate, ilc, aubit, $7d50p, leetCode];
 export default data;
