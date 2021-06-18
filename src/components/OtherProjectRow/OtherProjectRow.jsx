@@ -41,7 +41,7 @@ export default function OtherProjectRow({ title, type, technology, children, lin
           {link && (
             <Button link={link}>
               <span className='icon icon-external-link' />
-              Link
+              View
             </Button>
           )}
         </div>
