@@ -10,10 +10,6 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 
-  @include theme(dark) {
-    border-color: $color-slate-dark-2;
-  }
-
   &:hover {
     background-color: $color-slate-light-1;
 

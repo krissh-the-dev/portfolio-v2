@@ -51,7 +51,7 @@ export default function Project(props) {
             )}
             {link && (
               <a href={link} target='_blank' rel='noopener noreferrer' className='icon'>
-                &#xe906; <span className={classes.link}>Link</span>
+                &#xe906; <span className={classes.link}>View</span>
               </a>
             )}
           </figcaption>

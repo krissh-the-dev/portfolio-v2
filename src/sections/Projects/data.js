@@ -1,7 +1,7 @@
 import { CollegemateLogo, CollegemateDark } from '../../images/Collegemate';
 import { SFPImageSmall, SFPImageLarge, SFPLogo } from '../../images/7days50projects';
 import { AubitLogo, AubitMobile } from '../../images/Aubit';
-import { LeetCodeLogo, LeetCode } from '../../images/LeetCode';
+import { InfiniteLoopClub, InfiniteLoopClubLogo } from '../../images/InfiniteLoopClub';
 
 const collegemate = {
   title: 'Collegemate',
@@ -24,6 +24,22 @@ const collegemate = {
   techStack: ['React', 'Express', 'MongoDB', 'PWA'],
   link: 'https://collegemate.herokuapp.com/',
   repo: undefined
+};
+
+const ilc = {
+  title: 'Infinite Loop Club website',
+  type: 'Collaborated project',
+  logo: InfiniteLoopClubLogo,
+  images: {
+    light: { small: InfiniteLoopClub, large: InfiniteLoopClub },
+    dark: { small: InfiniteLoopClub, large: InfiniteLoopClub }
+  },
+  description:
+    'The official website of the Infinite Loop Club of Anna University, Trichy. I have worked on both frontend and backend of this website and also designed most of the elements.',
+  features: ['Registration', 'Online ID Generation', 'Post sharing', 'Online polling system'],
+  techStack: ['React JS', 'Express JS', 'Mongo DB'],
+  link: 'https://infinite-loop-club.netlify.app/',
+  repo: 'https://github.com/Infinite-Loop-Club/club-site'
 };
 
 const $7d50p = {
@@ -58,22 +74,5 @@ const aubit = {
   repo: undefined
 };
 
-const leetCode = {
-  title: 'LeetCode Time Tracker',
-  type: 'Collaborated Project',
-  logo: LeetCodeLogo,
-  images: {
-    light: { small: LeetCode, large: LeetCode },
-    dark: { small: LeetCode, large: LeetCode }
-  },
-  description:
-    'A Chrome extension to keep track of the problems solved and time taken to solve each problem in LeetCode. I have worked on the UI of the extension.',
-  features: ['Counter', 'Data visualization', 'Export as CSV', 'Filter and Find', 'Cloud sync (coming soon)'],
-  techStack: ['Chrome Extension', 'TypeScript', 'LeetCode API', 'SCSS'],
-  repo: 'https://github.com/VarthanV/LeetCode-Time-Tracker',
-  link:
-    'https://chrome.google.com/webstore/detail/leetcode-time-tracker/obcihoolahbncgakepoceagnjnfgghhl?hl=en&authuser=0'
-};
-
-const data = [collegemate, leetCode, aubit, $7d50p];
+const data = [collegemate, ilc, aubit, $7d50p];
 export default data;
