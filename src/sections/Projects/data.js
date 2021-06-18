@@ -33,14 +33,15 @@ const ilc = {
   logo: InfiniteLoopClubLogo,
   images: {
     light: { small: InfiniteLoopClub, large: InfiniteLoopClub },
-    dark: { small: InfiniteLoopClub, large: InfiniteLoopClub },
+    dark: { small: InfiniteLoopClub, large: InfiniteLoopClub }
   },
-  description: 'The official website of the Infinite Loop Club of Anna University, Trichy. I have worked on both frontend and backend of this website and also designed most of the elements.',
+  description:
+    'The official website of the Infinite Loop Club of Anna University, Trichy. I have worked on both frontend and backend of this website and also designed most of the elements.',
   features: ['Registration', 'Online ID Generation', 'Post sharing', 'Online polling system'],
   techStack: ['React JS', 'Express JS', 'Mongo DB'],
   link: 'https://infinite-loop-club.netlify.app/',
   repo: 'https://github.com/Infinite-Loop-Club/club-site'
-}
+};
 
 const $7d50p = {
   title: '7 Days 50 Projects',
