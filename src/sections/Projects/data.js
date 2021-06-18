@@ -1,7 +1,6 @@
 import { CollegemateLogo, CollegemateDark } from '../../images/Collegemate';
 import { SFPImageSmall, SFPImageLarge, SFPLogo } from '../../images/7days50projects';
 import { AubitLogo, AubitMobile } from '../../images/Aubit';
-import { LeetCodeLogo, LeetCode } from '../../images/LeetCode';
 import { InfiniteLoopClub, InfiniteLoopClubLogo } from '../../images/InfiniteLoopClub';
 
 const collegemate = {
@@ -75,22 +74,5 @@ const aubit = {
   repo: undefined
 };
 
-const leetCode = {
-  title: 'LeetCode Time Tracker',
-  type: 'Collaborated Project',
-  logo: LeetCodeLogo,
-  images: {
-    light: { small: LeetCode, large: LeetCode },
-    dark: { small: LeetCode, large: LeetCode }
-  },
-  description:
-    'A Chrome extension to keep track of the problems solved and time taken to solve each problem in LeetCode. I have worked on the UI of the extension.',
-  features: ['Counter', 'Data visualization', 'Export as CSV', 'Filter and Find', 'Cloud sync (coming soon)'],
-  techStack: ['Chrome Extension', 'TypeScript', 'LeetCode API', 'SCSS'],
-  repo: 'https://github.com/VarthanV/LeetCode-Time-Tracker',
-  link:
-    'https://chrome.google.com/webstore/detail/leetcode-time-tracker/obcihoolahbncgakepoceagnjnfgghhl?hl=en&authuser=0'
-};
-
-const data = [collegemate, ilc, aubit, $7d50p, leetCode];
+const data = [collegemate, ilc, aubit, $7d50p];
 export default data;
