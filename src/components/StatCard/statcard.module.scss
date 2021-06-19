@@ -34,8 +34,12 @@
 
   &__data {
     font-family: $font-default;
-    font-size: 5rem;
+    font-size: 4.8rem;
     color: $color-primary-dark;
+
+    @include respond(phone) {
+      font-size: 3.8rem;
+    }
 
     @include theme(dark) {
       color: $color-primary-light;
