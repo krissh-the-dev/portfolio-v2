@@ -26,6 +26,10 @@
   @include theme(dark) {
     background-color: rgba($color-slate-dark-5, 0.5);
     box-shadow: 0 0 0.5rem $color-slate-light-4;
+
+    & * {
+      color: $color-white;
+    }
   }
 
   &__text {

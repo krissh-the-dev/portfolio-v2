@@ -17,12 +17,20 @@ export default function UpdateNotification({ onUpdate }) {
   }, []);
 
   const mouseOver = () => {
-    popup.current.style.backgroundColor = 'rgba(255,255,255,.9)';
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      popup.current.style.backgroundColor = 'rgba(18,14,22,.9)';
+    } else {
+      popup.current.style.backgroundColor = 'rgba(255,255,255,.9)';
+    }
     clearTimeout(timer);
   };
 
   const mouseOut = () => {
-    popup.current.style.backgroundColor = 'rgba(255,255,255,.5)';
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      popup.current.style.backgroundColor = 'rgba(18,14,22,.5)';
+    } else {
+      popup.current.style.backgroundColor = 'rgba(255,255,255,.5)';
+    }
     const tim = setTimeout(() => {
       setIsVisible(false);
     }, 5000);

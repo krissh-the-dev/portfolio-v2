@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { Loader, Hero, About, Projects, OtherProjects, Statistics, Contact, Footer } from 'sections';
 import { NavigationBar } from 'components';
+import UpdateNotification from 'components/UpdateNotification/UpdateNotification';
 
 export default function Portfolio() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,6 +25,7 @@ export default function Portfolio() {
         <Statistics />
         <Contact />
       </main>
+      <UpdateNotification />
       <Footer />
     </>
   );
