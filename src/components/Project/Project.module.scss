@@ -27,6 +27,11 @@
     flex-direction: column;
   }
 
+  &__title {
+    line-height: 1em;
+    margin: 1rem 0;
+  }
+
   &__logo {
     position: absolute;
     bottom: 1rem;
