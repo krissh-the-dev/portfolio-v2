@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Portfolio from './Portfolio';
+import SWManager from './SWManager';
 import './styles/base.scss';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Portfolio />, document.querySelector('#root'));
-
-serviceWorker.register();
+ReactDOM.render(
+  <>
+    <Portfolio />
+    <SWManager />
+  </>,
+  document.querySelector('#root')
+);
