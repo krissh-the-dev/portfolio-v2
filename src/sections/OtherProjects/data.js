@@ -27,7 +27,7 @@ const otherProjects = [
     title: 'LeetCode Time Tracker',
     type: 'Collaborated Project',
     description:
-      'A Chrome extension to keep track of the problems solved and time taken to solve each problem in LeetCode. I have worked on the UI of the extension.',
+      'A Chrome extension to keep track of your LeetCode progress. I have worked on the UI of the extension.',
     technology: 'Chrome Extension - SCSS',
     repo: 'https://github.com/VarthanV/LeetCode-Time-Tracker',
     link:
