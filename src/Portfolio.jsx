@@ -25,7 +25,6 @@ export default function Portfolio() {
         <Statistics />
         <Contact />
       </main>
-      <UpdateNotification />
       <Footer />
     </>
   );
