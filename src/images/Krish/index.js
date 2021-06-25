@@ -1,3 +1,3 @@
-export { default as KrishSmall } from './krish-small.jpg';
-export { default as KrishMedium } from './krish-medium.jpg';
-export { default as KrishLarge } from './krish-large.jpg';
+export { default as KrishSmall } from './krish-small.webp';
+export { default as KrishMedium } from './krish-medium.webp';
+export { default as KrishLarge } from './krish-large.webp';
