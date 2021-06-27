@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Filter from 'bad-words';
 import Fade from 'react-reveal/Fade';
 import classes from './contact.module.scss';
@@ -62,6 +62,12 @@ export default function Contact() {
         setIsSending(false);
       });
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setMailerResponse('not initiated');
+    }, 13000);
+  }, [mailerResponse]);
 
   return (
     <section id='contact' className={classes.contact}>
