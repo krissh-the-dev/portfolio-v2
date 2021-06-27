@@ -5,7 +5,7 @@ h1 {
   color: $color-slate-dark-3;
 
   @include theme(dark) {
-    color: $color-slate-light-1;
+    color: $color-white;
   }
 
   @include respond(phone) {
@@ -28,7 +28,7 @@ h3 {
   color: $color-slate-dark-3;
 
   @include theme(dark) {
-    color: $color-slate-light-1;
+    color: $color-white;
   }
 
   @include respond(phone) {

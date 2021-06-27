@@ -14,7 +14,7 @@
     transition: all 0.2s;
 
     @include theme(dark) {
-      color: $color-slate-light-1;
+      color: $color-white;
     }
 
     &:not(:last-child) {
