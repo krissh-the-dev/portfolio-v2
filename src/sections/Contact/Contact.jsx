@@ -13,6 +13,7 @@ export default function Contact() {
   const initialState = { name: '', email: '', message: '' };
   const [formData, setFormData] = useState(initialState);
   const [mailerResponse, setMailerResponse] = useState('not initiated');
+  const [isSending, setIsSending] = useState(false);
 
   const handleChange = ({ target }) => {
     const { id, value } = target;
@@ -23,6 +24,10 @@ export default function Contact() {
         return { ...prevVal, [id]: value };
       }
     });
+  };
+
+  const emptyForm = () => {
+    setFormData(initialState);
   };
 
   const handleSubmit = event => {
@@ -37,11 +42,14 @@ export default function Contact() {
     if (name === '' || email === '' || message === '') {
       return setMailerResponse('error');
     }
+
+    setIsSending(true);
+
     mail({ name, email, message })
       .then(res => {
         if (res.status === 200) {
           setMailerResponse('success');
-          setFormData(initialState);
+          emptyForm();
         } else {
           setMailerResponse('error');
         }
@@ -49,6 +57,9 @@ export default function Contact() {
       .catch(err => {
         setMailerResponse('error');
         console.error(err);
+      })
+      .finally(() => {
+        setIsSending(false);
       });
   };
 
@@ -111,7 +122,9 @@ export default function Contact() {
               </label>
             </div>
 
-            <Button onClick={handleSubmit}>{'Send ->'}</Button>
+            <Button disabled={isSending} onClick={handleSubmit}>
+              {isSending ? 'Sending...' : 'Send ->'}
+            </Button>
           </Fade>
         </form>
 
