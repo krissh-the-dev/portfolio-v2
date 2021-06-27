@@ -8,7 +8,7 @@ export default function Graph({ data }) {
         <defs>
           <linearGradient id='contributions' x1='0' y1='0' x2='0' y2='1'>
             <stop offset='0%' stopColor='#8B31FF' stopOpacity={1} />
-            <stop offset='50%' stopColor='#8B31FF' stopOpacity={0.5} />
+            <stop offset='0%' stopColor='#8B31FF' stopOpacity={0.4} />
             <stop offset='100%' stopColor='#8B31FF' stopOpacity={0} />
           </linearGradient>
         </defs>
