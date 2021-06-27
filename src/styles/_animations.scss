@@ -92,3 +92,12 @@
     transform: translateY(0);
   }
 }
+
+@keyframes growHorizontal {
+  from {
+    width: 0;
+  }
+  to {
+    width: 98%; //fix
+  }
+}
