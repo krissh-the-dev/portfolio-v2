@@ -4,9 +4,9 @@
 .updateNotification {
   background-color: rgba($color-white, 0.5);
   border: 1px solid $color-primary-main;
-  border-radius: 0.5rem;
+  border-radius: $radius-small;
   box-shadow: 0 0 1rem rgba($color-primary-dark, 0.8);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur($radius-small);
 
   position: fixed;
   bottom: 2rem;

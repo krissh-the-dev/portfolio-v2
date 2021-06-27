@@ -11,7 +11,7 @@
   &__list {
     list-style: none;
     background-color: $color-white;
-    border-radius: 0.5rem;
+    border-radius: $radius-small;
     box-shadow: $shadow-subtle;
     overflow: hidden;
 

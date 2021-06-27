@@ -7,7 +7,7 @@
   align-items: left;
   background-color: $color-slate-light-1;
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: $radius-small;
   box-shadow: $shadow-subtle-small;
   cursor: default;
   transition: background-color 0.5s;
