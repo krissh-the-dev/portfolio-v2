@@ -24,7 +24,7 @@
 
   @include theme(dark) {
     border-color: $color-primary-main;
-    color: $color-slate-light-1;
+    color: $color-white;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-primary-main 50%);
   }
 
@@ -38,4 +38,43 @@
     color: $color-white;
     box-shadow: 0 0 1rem $color-primary-dark;
   }
+}
+
+@keyframes load {
+  0% {
+    background-position: 150%;
+  }
+  100% {
+    background-position: -50%;
+  }
+}
+
+.button[disabled] {
+  pointer-events: none;
+  background-position: 100%;
+  box-shadow: 0 0 0rem $color-primary-dark;
+
+  color: inherit;
+
+  background-image: linear-gradient(
+    120deg,
+    transparent 33%,
+    $color-primary-dark 33%,
+    $color-primary-dark 66%,
+    transparent 66%
+  );
+
+  @include theme(dark) {
+    background-image: linear-gradient(
+      120deg,
+      transparent 33%,
+      $color-primary-main 33%,
+      $color-primary-main 66%,
+      transparent 66%
+    );
+  }
+
+  animation-name: load;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
