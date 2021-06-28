@@ -63,7 +63,11 @@ export default function Project(props) {
 
         <div className={classes.project__details}>
           <div className={classes.sub_heading}>{type}</div>
-          <h4 className={classes.project__title}>{title}</h4>
+
+          <h4 className={classes.project__title}>
+            <a href={link}>{title}</a>
+          </h4>
+
           <p className={classes.project__description}>{children}</p>
           <Features list={features} />
           <div className={classes.project__techStack}>

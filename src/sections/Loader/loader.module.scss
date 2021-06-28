@@ -61,7 +61,7 @@
   .progress {
     width: 100%;
     margin: 0 auto;
-    border-radius: 0.5rem;
+    border-radius: $radius-small;
     height: 0.5rem;
     position: relative;
     top: 2rem;
@@ -79,7 +79,7 @@
       position: absolute;
       top: 0;
       display: block;
-      border-radius: 0.5rem;
+      border-radius: $radius-small;
       height: 0.4rem;
       width: 100%;
       left: -100%;

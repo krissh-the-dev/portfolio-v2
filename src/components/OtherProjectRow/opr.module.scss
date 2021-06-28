@@ -6,7 +6,7 @@
   flex-direction: column;
   padding: 2rem;
   border: 1px solid $color-primary-dark;
-  border-radius: 0.5rem;
+  border-radius: $radius-small;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 

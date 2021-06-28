@@ -30,6 +30,11 @@
   &__title {
     line-height: 1em;
     margin: 1rem 0;
+
+    & > a {
+      text-decoration: none;
+      color: currentColor;
+    }
   }
 
   &__logo {
@@ -55,7 +60,7 @@
     max-height: 30rem;
     overflow-y: hidden;
     position: relative;
-    border-radius: 0.5rem;
+    border-radius: $radius-small;
     transition: all 0.3s;
 
     @include respond(phone-large) {
@@ -81,7 +86,7 @@
         display: inline-flex;
         align-items: center;
         padding: 1.2rem 2rem;
-        border-radius: 0.4rem;
+        border-radius: 0.5rem;
         text-align: center;
         background-color: rgba($color-slate-dark-2, 0.8);
         text-decoration: none;
@@ -128,7 +133,7 @@
   }
 
   &__picture:hover &__image {
-    filter: blur(3px);
+    filter: blur($radius-small);
   }
 
   &__details {

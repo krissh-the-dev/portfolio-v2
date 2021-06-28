@@ -42,7 +42,7 @@
       max-height: 95%;
       align-self: center;
       object-fit: contain;
-      border-radius: 0.6rem;
+      border-radius: $radius-small;
       border: 2px solid transparent;
       box-shadow: 0 0 1rem transparent;
       transition: all 0.4s;
