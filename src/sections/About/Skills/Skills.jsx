@@ -4,7 +4,7 @@ import classes from './skills.module.scss';
 export default function Skills() {
   return (
     <div className={classes.skills}>
-      <h4 className={classes.subheading}>Skills</h4>
+      <h4 className={classes.subheading}>Proficient skills</h4>
       <div className={classes.skill_rack}>
         <span className='logo logo-html'>
           <span className='path1'></span>
@@ -86,10 +86,6 @@ export default function Skills() {
           <span className='tooltip'>Node JS</span>
         </span>
 
-        <span className='logo logo-express'>
-          <span className='tooltip'>Express JS</span>
-        </span>
-
         <span className='logo logo-react'>
           <span className='tooltip'>React JS</span>
         </span>
@@ -119,42 +115,8 @@ export default function Skills() {
           <span className='tooltip'>MongoDB</span>
         </span>
 
-        <span className='logo logo-firebase'>
-          <span className='path1'></span>
-          <span className='path2'></span>
-          <span className='path3'></span>
-          <span className='path4'></span>
-
-          <span className='tooltip'>Firebase</span>
-        </span>
-
-        <span className='logo logo-fauna'>
-          <span className='tooltip'>Fauna DB</span>
-        </span>
-
-        <span className='logo logo-mysql'>
-          <span className='tooltip'>MySQL</span>
-        </span>
-
-        <span className='logo logo-postgresql'>
-          <span className='path1'></span>
-          <span className='path2'></span>
-          <span className='path3'></span>
-          <span className='path4'></span>
-          <span className='path5'></span>
-          <span className='path6'></span>
-          <span className='path7'></span>
-          <span className='path8'></span>
-
-          <span className='tooltip'>PostgreSQL</span>
-        </span>
-
         <span className='logo logo-graphql'>
           <span className='tooltip'>GraphQL</span>
-        </span>
-
-        <span className='logo logo-apollo-graphql'>
-          <span className='tooltip'>Apollo Client</span>
         </span>
 
         <span className='logo logo-sequelize'>
