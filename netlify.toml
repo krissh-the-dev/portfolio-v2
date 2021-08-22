@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://devkrish.tech"
+  to = "https://devkrish.me"
+  status = 301
+  force = true
