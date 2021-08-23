@@ -1,0 +1,36 @@
+/* COLORS */
+
+:root {
+  --color-primary-light: hsl(266, 100%, 67%);
+  --color-primary-main: hsl(266, 100%, 60%);
+  --color-primary-dark: hsl(266, 100%, 50%);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-slate-light-1: hsl(0, 0%, 94%);
+  --color-slate-light-2: hsl(0, 0%, 86%);
+  --color-slate-light-3: hsl(0, 0%, 67%);
+  --color-slate-light-4: hsl(0, 0%, 54%);
+
+  --color-slate-dark-1: hsl(270, 2%, 20%);
+  --color-slate-dark-2: hsl(280, 4%, 14%);
+  --color-slate-dark-3: hsl(276, 8%, 12%);
+  --color-slate-dark-4: hsl(266, 13%, 10%);
+  --color-slate-dark-5: hsl(270, 22%, 7%);
+  --color-black: hsl(0, 0%, 0%);
+
+  --color-tomato: hsl(0, 100%, 41%);
+  --color-emerald: hsl(150, 100%, 34%);
+
+  /* SHADOWS */
+  --shadow-primary-all: 0 0 1rem --color-primary-main;
+  --shadow-subtle: 0 0.3rem 1rem rgba(--color-slate-dark-5, 0.2);
+  --shadow-subtle-small: 0 0.2rem 0.5rem rgba(--color-slate-dark-5, 0.2);
+
+  --radius-small: 0.6rem;
+  --margin-medium: 4rem;
+
+  --font-default: 'Calibre', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-icon: 'Icomoon', sans-serif;
+  --font-logo: 'Logo', sans-serif;
+}
