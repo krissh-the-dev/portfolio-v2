@@ -1,0 +1,45 @@
+@import '../../styles/mixins';
+
+.updateNotification {
+  background-color: rgba(var(--color-white, 0.5));
+  border: 1px solid var(--color-primary-main);
+  border-radius: var(--radius-small);
+  box-shadow: 0 0 1rem rgba(var(--color-primary-dark, 0.8));
+  backdrop-filter: blur(var(--radius-small));
+
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  max-width: 90%;
+  transform: translateX(-50%);
+  padding: 1.5rem 3rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  animation-name: fadeAppear;
+  animation-duration: 1s;
+  transition: all 0.6s;
+
+  @include theme(dark) {
+    background-color: rgba(var(--color-slate-dark-5, 0.5));
+    box-shadow: 0 0 0.5rem var(--color-slate-light-4);
+
+    & * {
+      color: var(--color-white);
+    }
+  }
+
+  &__text {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 3rem;
+  }
+}

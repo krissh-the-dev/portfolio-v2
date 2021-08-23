@@ -1,0 +1,53 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: $color-slate-light-1;
+  padding: 1rem;
+  border-radius: $radius-small;
+  box-shadow: $shadow-subtle-small;
+  cursor: default;
+  transition: background-color 0.5s;
+
+  & > * {
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    background-color: $color-primary-dark;
+
+    & > * {
+      color: $color-white;
+    }
+  }
+
+  @include theme(dark) {
+    background-color: $color-slate-dark-4;
+
+    &:hover {
+      background-color: $color-primary-main;
+    }
+  }
+
+  &__data {
+    font-family: $font-default;
+    font-size: 4.8rem;
+    color: $color-primary-dark;
+
+    @include respond(phone) {
+      font-size: 3.8rem;
+    }
+
+    @include theme(dark) {
+      color: $color-primary-light;
+    }
+  }
+
+  &__caption {
+    font-family: $font-mono;
+    font-size: 1.2rem;
+  }
+}
