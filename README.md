@@ -102,3 +102,17 @@ For our site to function properly, you also need to add the environment variable
 ## References
 
 Also coming soon 😪
+
+## Shameless kangs with no attribution:
+
+| S. No | GitHub Profile                              | Repository | Site Link |
+|-------|---------------------------------------------|------------|-----------|
+|     1 | [Manas Kumar](https://github.com/supermanas)| https://github.com/supermanas/web | https://web-two-phi.vercel.app/  |
+
+--------
+
+> "Once a Bird asked a Bee: After constant hard-work, you prepare honey. But people come and steal it. Do you not feel sad ?
+
+> Wonderful reply by Bee: Never... Because only thing these people can do is to steal 'my honey'... Not the 'art of making honey'...
+
+> In this world, _**anyone can copy your CREATIONS but not your TALENT**_."
