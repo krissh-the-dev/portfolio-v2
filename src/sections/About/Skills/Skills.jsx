@@ -22,31 +22,6 @@ export default function Skills() {
           <span className='tooltip'>CSS</span>
         </span>
 
-        <span className='logo logo-sass'>
-          <span className='tooltip'>SASS</span>
-        </span>
-
-        <span className='logo logo-styled-components'>
-          <span className='path1'></span>
-          <span className='path2'></span>
-          <span className='path3'></span>
-          <span className='path4'></span>
-          <span className='path5'></span>
-          <span className='path6'></span>
-          <span className='path7'></span>
-          <span className='path8'></span>
-          <span className='path9'></span>
-          <span className='path10'></span>
-          <span className='path11'></span>
-          <span className='path12'></span>
-          <span className='path13'></span>
-          <span className='path14'></span>
-          <span className='path15'></span>
-          <span className='path16'></span>
-
-          <span className='tooltip'>styled-components</span>
-        </span>
-
         <span className='logo logo-javascript-rounded'>
           <span className='path1'></span>
           <span className='path2'></span>
@@ -86,12 +61,49 @@ export default function Skills() {
           <span className='tooltip'>Node JS</span>
         </span>
 
+        <span className="logo icon-jestjsio-icon">
+          <span className='tooltip'>Jest</span>
+        </span>
+
+        <span className="logo icon-express">
+          <span className='tooltip'>Express JS</span>
+        </span>
+
+        <span className="logo icon-nestjs-icon">
+          <span className='tooltip'>Nest JS</span>
+        </span>
+
         <span className='logo logo-react'>
           <span className='tooltip'>React JS</span>
         </span>
 
         <span className='logo logo-next-js'>
           <span className='tooltip'>Next JS</span>
+        </span>
+
+        <span className='logo logo-sass'>
+          <span className='tooltip'>SASS</span>
+        </span>
+
+        <span className='logo logo-styled-components'>
+          <span className='path1'></span>
+          <span className='path2'></span>
+          <span className='path3'></span>
+          <span className='path4'></span>
+          <span className='path5'></span>
+          <span className='path6'></span>
+          <span className='path7'></span>
+          <span className='path8'></span>
+          <span className='path9'></span>
+          <span className='path10'></span>
+          <span className='path11'></span>
+          <span className='path12'></span>
+          <span className='path13'></span>
+          <span className='path14'></span>
+          <span className='path15'></span>
+          <span className='path16'></span>
+
+          <span className='tooltip'>styled-components</span>
         </span>
 
         <span className='logo logo-mongodb'>
@@ -113,10 +125,6 @@ export default function Skills() {
           <span className='path16'></span>
 
           <span className='tooltip'>MongoDB</span>
-        </span>
-
-        <span className='logo logo-graphql'>
-          <span className='tooltip'>GraphQL</span>
         </span>
 
         <span className='logo logo-sequelize'>
