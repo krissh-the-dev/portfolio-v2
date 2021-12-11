@@ -120,7 +120,7 @@
 
     @include respond(phone-large) {
       position: fixed;
-      right: 0;
+      right: -10%; // quick fix for weird bug
       top: 8.1rem;
       height: calc(100vh + 1px);
       padding-top: 4rem;
