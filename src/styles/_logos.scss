@@ -43,17 +43,13 @@
   }
 }
 
-.logo-fauna:before {
-  content: '\e906';
-  color: #4249a6;
-}
-
-.logo-apollo-graphql:before {
-  content: '\e904';
-}
-.logo-graphql:before {
+.logo-jestjsio-icon:before {
   content: '\e905';
-  color: #e535ab;
+  color: #99424f;
+}
+.logo-nestjs-icon:before {
+  content: '\e906';
+  color: #ea2845;
 }
 .logo-airtable .path1:before {
   content: '\e900';
@@ -74,6 +70,10 @@
   margin-left: -1em;
   color: rgb(198, 40, 66);
 }
+.logo-auth0:before {
+  content: '\e904';
+  color: #eb5424;
+}
 .logo-css .path1:before {
   content: '\e90c';
   color: rgb(33, 150, 243);
@@ -87,7 +87,6 @@
   content: '\e90e';
 }
 .logo-figma .path1:before {
-  content: '\e90f';
   color: rgb(51, 51, 51);
 }
 .logo-figma .path2:before {
@@ -114,25 +113,6 @@
   content: '\e914';
   margin-left: -1em;
   color: rgb(26, 188, 254);
-}
-.logo-firebase .path1:before {
-  content: '\e915';
-  color: rgb(255, 160, 0);
-}
-.logo-firebase .path2:before {
-  content: '\e916';
-  margin-left: -1em;
-  color: rgb(245, 127, 23);
-}
-.logo-firebase .path3:before {
-  content: '\e917';
-  margin-left: -1em;
-  color: rgb(255, 202, 40);
-}
-.logo-firebase .path4:before {
-  content: '\e918';
-  margin-left: -1em;
-  color: rgb(255, 160, 0);
 }
 .logo-git:before {
   content: '\e919';
@@ -289,44 +269,9 @@
   content: '\e93a';
   color: #8cc84b;
 }
-.logo-postgresql .path1:before {
-  content: '\e93c';
-  color: rgb(255, 255, 255);
-}
-.logo-postgresql .path2:before {
-  content: '\e93d';
-  margin-left: -1em;
-  color: rgb(2, 119, 189);
-}
-.logo-postgresql .path3:before {
-  content: '\e93e';
-  margin-left: -1em;
-  color: rgb(2, 119, 189);
-}
-.logo-postgresql .path4:before {
-  content: '\e93f';
-  margin-left: -1em;
-  color: rgb(2, 119, 189);
-}
-.logo-postgresql .path5:before {
-  content: '\e940';
-  margin-left: -1em;
-  color: rgb(2, 119, 189);
-}
-.logo-postgresql .path6:before {
-  content: '\e941';
-  margin-left: -1em;
-  color: rgb(2, 119, 189);
-}
-.logo-postgresql .path7:before {
-  content: '\e942';
-  margin-left: -1em;
-  color: rgb(2, 119, 189);
-}
-.logo-postgresql .path8:before {
-  content: '\e943';
-  margin-left: -1em;
-  color: rgb(2, 119, 189);
+.logo-php:before {
+  content: '\e93b';
+  color: #6181b6;
 }
 .logo-python .path1:before {
   content: '\e944';
