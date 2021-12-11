@@ -61,15 +61,15 @@ export default function Skills() {
           <span className='tooltip'>Node JS</span>
         </span>
 
-        <span className="logo icon-jestjsio-icon">
+        <span className='logo logo-jestjsio-icon'>
           <span className='tooltip'>Jest</span>
         </span>
 
-        <span className="logo icon-express">
+        <span className='logo logo-express'>
           <span className='tooltip'>Express JS</span>
         </span>
 
-        <span className="logo icon-nestjs-icon">
+        <span className='logo logo-nestjs-icon'>
           <span className='tooltip'>Nest JS</span>
         </span>
 
@@ -127,6 +127,10 @@ export default function Skills() {
           <span className='tooltip'>MongoDB</span>
         </span>
 
+        <span className='logo logo-mysql'>
+          <span className='tooltip'>MySQL</span>
+        </span>
+
         <span className='logo logo-sequelize'>
           <span className='path1'></span>
           <span className='path2'></span>
@@ -157,17 +161,6 @@ export default function Skills() {
           <span className='path27'></span>
 
           <span className='tooltip'>Sequelize ORM</span>
-        </span>
-
-        <span className='logo logo-figma'>
-          <span className='path1'></span>
-          <span className='path2'></span>
-          <span className='path3'></span>
-          <span className='path4'></span>
-          <span className='path5'></span>
-          <span className='path6'></span>
-
-          <span className='tooltip'>Figma</span>
         </span>
       </div>
     </div>
