@@ -43,527 +43,472 @@
   }
 }
 
-.logo-fauna:before {
-  content: '\e906';
-  color: #4249a6;
+.icon-jestjsio-icon:before {
+  content: "\e905";
+  color: #99424f;
 }
-
-.logo-apollo-graphql:before {
-  content: '\e904';
+.icon-nestjs-icon:before {
+  content: "\e906";
+  color: #ea2845;
 }
-.logo-graphql:before {
-  content: '\e905';
-  color: #e535ab;
-}
-.logo-airtable .path1:before {
-  content: '\e900';
+.icon-airtable .path1:before {
+  content: "\e900";
   color: rgb(255, 204, 0);
 }
-.logo-airtable .path2:before {
-  content: '\e901';
+.icon-airtable .path2:before {
+  content: "\e901";
   margin-left: -1em;
   color: rgb(49, 194, 242);
 }
-.logo-airtable .path3:before {
-  content: '\e902';
+.icon-airtable .path3:before {
+  content: "\e902";
   margin-left: -1em;
   color: rgb(237, 48, 73);
 }
-.logo-airtable .path4:before {
-  content: '\e903';
+.icon-airtable .path4:before {
+  content: "\e903";
   margin-left: -1em;
   color: rgb(198, 40, 66);
 }
-.logo-css .path1:before {
-  content: '\e90c';
+.icon-auth0:before {
+  content: "\e904";
+  color: #eb5424;
+}
+.icon-css .path1:before {
+  content: "\e90c";
   color: rgb(33, 150, 243);
 }
-.logo-css .path2:before {
-  content: '\e90d';
+.icon-css .path2:before {
+  content: "\e90d";
   margin-left: -1em;
   color: rgb(250, 250, 250);
 }
-.logo-express:before {
-  content: '\e90e';
+.icon-express:before {
+  content: "\e90e";
 }
-.logo-figma .path1:before {
-  content: '\e90f';
+.icon-figma .path1:before {
   color: rgb(51, 51, 51);
 }
-.logo-figma .path2:before {
-  content: '\e910';
+.icon-figma .path2:before {
+  content: "\e910";
   margin-left: -1em;
   color: rgb(10, 207, 131);
 }
-.logo-figma .path3:before {
-  content: '\e911';
+.icon-figma .path3:before {
+  content: "\e911";
   margin-left: -1em;
   color: rgb(162, 89, 255);
 }
-.logo-figma .path4:before {
-  content: '\e912';
+.icon-figma .path4:before {
+  content: "\e912";
   margin-left: -1em;
   color: rgb(242, 78, 30);
 }
-.logo-figma .path5:before {
-  content: '\e913';
+.icon-figma .path5:before {
+  content: "\e913";
   margin-left: -1em;
   color: rgb(255, 114, 98);
 }
-.logo-figma .path6:before {
-  content: '\e914';
+.icon-figma .path6:before {
+  content: "\e914";
   margin-left: -1em;
   color: rgb(26, 188, 254);
 }
-.logo-firebase .path1:before {
-  content: '\e915';
-  color: rgb(255, 160, 0);
-}
-.logo-firebase .path2:before {
-  content: '\e916';
-  margin-left: -1em;
-  color: rgb(245, 127, 23);
-}
-.logo-firebase .path3:before {
-  content: '\e917';
-  margin-left: -1em;
-  color: rgb(255, 202, 40);
-}
-.logo-firebase .path4:before {
-  content: '\e918';
-  margin-left: -1em;
-  color: rgb(255, 160, 0);
-}
-.logo-git:before {
-  content: '\e919';
+.icon-git:before {
+  content: "\e919";
   color: #f34f29;
 }
-.logo-html .path1:before {
-  content: '\e91b';
+.icon-html .path1:before {
+  content: "\e91b";
   color: rgb(227, 79, 38);
 }
-.logo-html .path2:before {
-  content: '\e91c';
+.icon-html .path2:before {
+  content: "\e91c";
   margin-left: -1em;
   color: rgb(239, 101, 42);
 }
-.logo-html .path3:before {
-  content: '\e91d';
+.icon-html .path3:before {
+  content: "\e91d";
   margin-left: -1em;
   color: rgb(235, 235, 235);
 }
-.logo-html .path4:before {
-  content: '\e91e';
+.icon-html .path4:before {
+  content: "\e91e";
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
-.logo-java .path1:before {
-  content: '\e91f';
+.icon-java .path1:before {
+  content: "\e91f";
   color: rgb(83, 130, 161);
 }
-.logo-java .path2:before {
-  content: '\e920';
+.icon-java .path2:before {
+  content: "\e920";
   margin-left: -0.740234375em;
   color: rgb(231, 111, 0);
 }
-.logo-java .path3:before {
-  content: '\e921';
+.icon-java .path3:before {
+  content: "\e921";
   margin-left: -0.740234375em;
   color: rgb(83, 130, 161);
 }
-.logo-java .path4:before {
-  content: '\e922';
+.icon-java .path4:before {
+  content: "\e922";
   margin-left: -0.740234375em;
   color: rgb(231, 111, 0);
 }
-.logo-java .path5:before {
-  content: '\e923';
+.icon-java .path5:before {
+  content: "\e923";
   margin-left: -0.740234375em;
   color: rgb(83, 130, 161);
 }
-.logo-javascript .path1:before {
-  content: '\e924';
+.icon-javascript .path1:before {
+  content: "\e924";
   color: rgb(240, 219, 79);
 }
-.logo-javascript .path2:before {
-  content: '\e925';
+.icon-javascript .path2:before {
+  content: "\e925";
   margin-left: -1em;
   color: rgb(50, 51, 48);
 }
-.logo-javascript-rounded .path1:before {
-  content: '\e926';
+.icon-javascript-rounded .path1:before {
+  content: "\e926";
   color: rgb(247, 223, 30);
 }
-.logo-javascript-rounded .path2:before {
-  content: '\e927';
+.icon-javascript-rounded .path2:before {
+  content: "\e927";
   margin-left: -1em;
   color: rgb(0, 0, 0);
 }
-.logo-mongodb .path1:before {
-  content: '\e928';
+.icon-mongodb .path1:before {
+  content: "\e928";
   color: rgb(67, 153, 52);
 }
-.logo-mongodb .path2:before {
-  content: '\e929';
+.icon-mongodb .path2:before {
+  content: "\e929";
   margin-left: -1em;
   color: rgb(69, 165, 56);
 }
-.logo-mongodb .path3:before {
-  content: '\e92a';
+.icon-mongodb .path3:before {
+  content: "\e92a";
   margin-left: -1em;
   color: rgb(70, 160, 55);
 }
-.logo-mongodb .path4:before {
-  content: '\e92b';
+.icon-mongodb .path4:before {
+  content: "\e92b";
   margin-left: -1em;
   color: rgb(64, 148, 51);
 }
-.logo-mongodb .path5:before {
-  content: '\e92c';
+.icon-mongodb .path5:before {
+  content: "\e92c";
   margin-left: -1em;
   color: rgb(79, 170, 65);
 }
-.logo-mongodb .path6:before {
-  content: '\e92d';
+.icon-mongodb .path6:before {
+  content: "\e92d";
   margin-left: -1em;
   color: rgb(74, 167, 60);
 }
-.logo-mongodb .path7:before {
-  content: '\e92e';
+.icon-mongodb .path7:before {
+  content: "\e92e";
   margin-left: -1em;
   color: rgb(87, 174, 71);
 }
-.logo-mongodb .path8:before {
-  content: '\e92f';
+.icon-mongodb .path8:before {
+  content: "\e92f";
   margin-left: -1em;
   color: rgb(96, 178, 79);
 }
-.logo-mongodb .path9:before {
-  content: '\e930';
+.icon-mongodb .path9:before {
+  content: "\e930";
   margin-left: -1em;
   color: rgb(169, 170, 136);
 }
-.logo-mongodb .path10:before {
-  content: '\e931';
+.icon-mongodb .path10:before {
+  content: "\e931";
   margin-left: -1em;
   color: rgb(182, 181, 152);
 }
-.logo-mongodb .path11:before {
-  content: '\e932';
+.icon-mongodb .path11:before {
+  content: "\e932";
   margin-left: -1em;
   color: rgb(194, 193, 167);
 }
-.logo-mongodb .path12:before {
-  content: '\e933';
+.icon-mongodb .path12:before {
+  content: "\e933";
   margin-left: -1em;
   color: rgb(206, 205, 183);
 }
-.logo-mongodb .path13:before {
-  content: '\e934';
+.icon-mongodb .path13:before {
+  content: "\e934";
   margin-left: -1em;
   color: rgb(219, 218, 199);
 }
-.logo-mongodb .path14:before {
-  content: '\e935';
+.icon-mongodb .path14:before {
+  content: "\e935";
   margin-left: -1em;
   color: rgb(235, 233, 220);
 }
-.logo-mongodb .path15:before {
-  content: '\e936';
+.icon-mongodb .path15:before {
+  content: "\e936";
   margin-left: -1em;
   color: rgb(206, 205, 183);
 }
-.logo-mongodb .path16:before {
-  content: '\e937';
+.icon-mongodb .path16:before {
+  content: "\e937";
   margin-left: -1em;
   color: rgb(79, 170, 65);
 }
-.logo-mysql:before {
-  content: '\e938';
+.icon-mysql:before {
+  content: "\e938";
   color: #00618a;
 }
-.logo-next-js:before {
-  content: '\e939';
+.icon-next-js:before {
+  content: "\e939";
 }
-.logo-nodejs:before {
-  content: '\e93a';
+.icon-nodejs:before {
+  content: "\e93a";
   color: #8cc84b;
 }
-.logo-postgresql .path1:before {
-  content: '\e93c';
-  color: rgb(255, 255, 255);
+.icon-php:before {
+  content: "\e93b";
+  color: #6181b6;
 }
-.logo-postgresql .path2:before {
-  content: '\e93d';
-  margin-left: -1em;
+.icon-python .path1:before {
+  content: "\e944";
   color: rgb(2, 119, 189);
 }
-.logo-postgresql .path3:before {
-  content: '\e93e';
-  margin-left: -1em;
-  color: rgb(2, 119, 189);
-}
-.logo-postgresql .path4:before {
-  content: '\e93f';
-  margin-left: -1em;
-  color: rgb(2, 119, 189);
-}
-.logo-postgresql .path5:before {
-  content: '\e940';
-  margin-left: -1em;
-  color: rgb(2, 119, 189);
-}
-.logo-postgresql .path6:before {
-  content: '\e941';
-  margin-left: -1em;
-  color: rgb(2, 119, 189);
-}
-.logo-postgresql .path7:before {
-  content: '\e942';
-  margin-left: -1em;
-  color: rgb(2, 119, 189);
-}
-.logo-postgresql .path8:before {
-  content: '\e943';
-  margin-left: -1em;
-  color: rgb(2, 119, 189);
-}
-.logo-python .path1:before {
-  content: '\e944';
-  color: rgb(2, 119, 189);
-}
-.logo-python .path2:before {
-  content: '\e945';
+.icon-python .path2:before {
+  content: "\e945";
   margin-left: -1em;
   color: rgb(255, 193, 7);
 }
-.logo-react:before {
-  content: '\e946';
+.icon-react:before {
+  content: "\e946";
   color: #61dafb;
 }
-.logo-sass:before {
-  content: '\e947';
+.icon-sass:before {
+  content: "\e947";
   color: #cb6699;
 }
-.logo-sequelize .path1:before {
-  content: '\e948';
+.icon-sequelize .path1:before {
+  content: "\e948";
   color: rgb(47, 64, 106);
 }
-.logo-sequelize .path2:before {
-  content: '\e949';
+.icon-sequelize .path2:before {
+  content: "\e949";
   margin-left: -1em;
   color: rgb(35, 121, 189);
 }
-.logo-sequelize .path3:before {
-  content: '\e94a';
+.icon-sequelize .path3:before {
+  content: "\e94a";
   margin-left: -1em;
   color: rgb(3, 175, 239);
 }
-.logo-sequelize .path4:before {
-  content: '\e94b';
+.icon-sequelize .path4:before {
+  content: "\e94b";
   margin-left: -1em;
   color: rgb(47, 64, 106);
 }
-.logo-sequelize .path5:before {
-  content: '\e94c';
+.icon-sequelize .path5:before {
+  content: "\e94c";
   margin-left: -1em;
   color: rgb(35, 121, 189);
 }
-.logo-sequelize .path6:before {
-  content: '\e94d';
+.icon-sequelize .path6:before {
+  content: "\e94d";
   margin-left: -1em;
   color: rgb(3, 175, 239);
 }
-.logo-sequelize .path7:before {
-  content: '\e94e';
+.icon-sequelize .path7:before {
+  content: "\e94e";
   margin-left: -1em;
   color: rgb(47, 64, 106);
 }
-.logo-sequelize .path8:before {
-  content: '\e94f';
+.icon-sequelize .path8:before {
+  content: "\e94f";
   margin-left: -1em;
   color: rgb(35, 121, 189);
 }
-.logo-sequelize .path9:before {
-  content: '\e950';
+.icon-sequelize .path9:before {
+  content: "\e950";
   margin-left: -1em;
   color: rgb(3, 175, 239);
 }
-.logo-sequelize .path10:before {
-  content: '\e951';
+.icon-sequelize .path10:before {
+  content: "\e951";
   margin-left: -1em;
   color: rgb(47, 64, 106);
 }
-.logo-sequelize .path11:before {
-  content: '\e952';
+.icon-sequelize .path11:before {
+  content: "\e952";
   margin-left: -1em;
   color: rgb(35, 121, 189);
 }
-.logo-sequelize .path12:before {
-  content: '\e953';
+.icon-sequelize .path12:before {
+  content: "\e953";
   margin-left: -1em;
   color: rgb(3, 175, 239);
 }
-.logo-sequelize .path13:before {
-  content: '\e954';
+.icon-sequelize .path13:before {
+  content: "\e954";
   margin-left: -1em;
   color: rgb(47, 64, 106);
 }
-.logo-sequelize .path14:before {
-  content: '\e955';
+.icon-sequelize .path14:before {
+  content: "\e955";
   margin-left: -1em;
   color: rgb(35, 121, 189);
 }
-.logo-sequelize .path15:before {
-  content: '\e956';
+.icon-sequelize .path15:before {
+  content: "\e956";
   margin-left: -1em;
   color: rgb(3, 175, 239);
 }
-.logo-sequelize .path16:before {
-  content: '\e957';
+.icon-sequelize .path16:before {
+  content: "\e957";
   margin-left: -1em;
   color: rgb(47, 64, 106);
 }
-.logo-sequelize .path17:before {
-  content: '\e958';
+.icon-sequelize .path17:before {
+  content: "\e958";
   margin-left: -1em;
   color: rgb(35, 121, 189);
 }
-.logo-sequelize .path18:before {
-  content: '\e959';
+.icon-sequelize .path18:before {
+  content: "\e959";
   margin-left: -1em;
   color: rgb(3, 175, 239);
 }
-.logo-sequelize .path19:before {
-  content: '\e95a';
+.icon-sequelize .path19:before {
+  content: "\e95a";
   margin-left: -1em;
   color: rgb(47, 64, 106);
 }
-.logo-sequelize .path20:before {
-  content: '\e95b';
+.icon-sequelize .path20:before {
+  content: "\e95b";
   margin-left: -1em;
   color: rgb(35, 121, 189);
 }
-.logo-sequelize .path21:before {
-  content: '\e95c';
+.icon-sequelize .path21:before {
+  content: "\e95c";
   margin-left: -1em;
   color: rgb(3, 175, 239);
 }
-.logo-sequelize .path22:before {
-  content: '\e95d';
+.icon-sequelize .path22:before {
+  content: "\e95d";
   margin-left: -1em;
   color: rgb(47, 64, 106);
 }
-.logo-sequelize .path23:before {
-  content: '\e95e';
+.icon-sequelize .path23:before {
+  content: "\e95e";
   margin-left: -1em;
   color: rgb(35, 121, 189);
 }
-.logo-sequelize .path24:before {
-  content: '\e95f';
+.icon-sequelize .path24:before {
+  content: "\e95f";
   margin-left: -1em;
   color: rgb(3, 175, 239);
 }
-.logo-sequelize .path25:before {
-  content: '\e960';
+.icon-sequelize .path25:before {
+  content: "\e960";
   margin-left: -1em;
   color: rgb(47, 64, 106);
 }
-.logo-sequelize .path26:before {
-  content: '\e961';
+.icon-sequelize .path26:before {
+  content: "\e961";
   margin-left: -1em;
   color: rgb(35, 121, 189);
 }
-.logo-sequelize .path27:before {
-  content: '\e962';
+.icon-sequelize .path27:before {
+  content: "\e962";
   margin-left: -1em;
   color: rgb(3, 175, 239);
 }
-.logo-styled-components .path1:before {
-  content: '\e963';
+.icon-styled-components .path1:before {
+  content: "\e963";
   color: rgb(237, 90, 129);
 }
-.logo-styled-components .path2:before {
-  content: '\e964';
+.icon-styled-components .path2:before {
+  content: "\e964";
   margin-left: -1em;
   color: rgb(249, 105, 137);
 }
-.logo-styled-components .path3:before {
-  content: '\e965';
+.icon-styled-components .path3:before {
+  content: "\e965";
   margin-left: -1em;
   color: rgb(244, 212, 78);
 }
-.logo-styled-components .path4:before {
-  content: '\e966';
+.icon-styled-components .path4:before {
+  content: "\e966";
   margin-left: -1em;
   color: rgb(232, 200, 66);
 }
-.logo-styled-components .path5:before {
-  content: '\e967';
+.icon-styled-components .path5:before {
+  content: "\e967";
   margin-left: -1em;
   color: rgb(244, 212, 78);
 }
-.logo-styled-components .path6:before {
-  content: '\e968';
+.icon-styled-components .path6:before {
+  content: "\e968";
   margin-left: -1em;
   color: rgb(232, 200, 66);
 }
-.logo-styled-components .path7:before {
-  content: '\e969';
+.icon-styled-components .path7:before {
+  content: "\e969";
   margin-left: -1em;
   color: rgb(244, 212, 78);
 }
-.logo-styled-components .path8:before {
-  content: '\e96a';
+.icon-styled-components .path8:before {
+  content: "\e96a";
   margin-left: -1em;
   color: rgb(249, 105, 137);
 }
-.logo-styled-components .path9:before {
-  content: '\e96b';
+.icon-styled-components .path9:before {
+  content: "\e96b";
   margin-left: -1em;
   color: rgb(237, 90, 129);
 }
-.logo-styled-components .path10:before {
-  content: '\e96c';
+.icon-styled-components .path10:before {
+  content: "\e96c";
   margin-left: -1em;
   color: rgb(249, 105, 137);
 }
-.logo-styled-components .path11:before {
-  content: '\e96d';
+.icon-styled-components .path11:before {
+  content: "\e96d";
   margin-left: -1em;
   color: rgb(237, 90, 129);
 }
-.logo-styled-components .path12:before {
-  content: '\e96e';
+.icon-styled-components .path12:before {
+  content: "\e96e";
   margin-left: -1em;
   color: rgb(232, 200, 66);
 }
-.logo-styled-components .path13:before {
-  content: '\e96f';
+.icon-styled-components .path13:before {
+  content: "\e96f";
   margin-left: -1em;
   color: rgb(249, 105, 137);
 }
-.logo-styled-components .path14:before {
-  content: '\e970';
+.icon-styled-components .path14:before {
+  content: "\e970";
   margin-left: -1em;
   color: rgb(237, 90, 129);
 }
-.logo-styled-components .path15:before {
-  content: '\e971';
+.icon-styled-components .path15:before {
+  content: "\e971";
   margin-left: -1em;
   color: rgb(249, 105, 137);
 }
-.logo-styled-components .path16:before {
-  content: '\e972';
+.icon-styled-components .path16:before {
+  content: "\e972";
   margin-left: -1em;
   color: rgb(237, 90, 129);
 }
-.logo-typescript .path1:before {
-  content: '\e973';
+.icon-typescript .path1:before {
+  content: "\e973";
   color: rgb(49, 120, 198);
 }
-.logo-typescript .path2:before {
-  content: '\e974';
+.icon-typescript .path2:before {
+  content: "\e974";
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
