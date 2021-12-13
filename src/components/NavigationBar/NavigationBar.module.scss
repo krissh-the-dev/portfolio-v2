@@ -112,6 +112,10 @@
     list-style: none;
     box-shadow: none;
 
+    & > li {
+      font-size: inherit;
+    }
+
     &_container {
       @include respond(phone-large) {
         order: 1;
