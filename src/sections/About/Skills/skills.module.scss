@@ -3,8 +3,6 @@
 
 .skills {
   .subheading {
-    margin-bottom: 1rem;
-
     @include respond(phone) {
       text-align: center;
       margin-bottom: 3rem;

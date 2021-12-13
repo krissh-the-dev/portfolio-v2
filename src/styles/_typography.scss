@@ -1,5 +1,16 @@
 @import './mixins';
 
+* {
+  line-height: 1;
+}
+
+h2,
+h3,
+h4 {
+  margin-top: 0.2em;
+  margin-bottom: 0.8em;
+}
+
 h1 {
   font-size: 6rem;
   color: $color-slate-dark-3;
@@ -24,7 +35,6 @@ h2 {
 
 h3 {
   font-size: 5rem;
-  margin-bottom: 1.3rem;
   color: $color-slate-dark-3;
 
   @include theme(dark) {
@@ -70,20 +80,14 @@ h6 {
 
 p,
 div,
-body {
-  font-size: 2rem;
+body,
+li {
+  font-size: 1.7rem;
+  line-height: 1.6em;
   color: $color-slate-dark-4;
 
   @include theme(dark) {
-    color: $color-slate-light-1;
-  }
-}
-
-li {
-  color: $color-slate-dark-3;
-
-  @include theme(dark) {
-    color: $color-slate-light-1;
+    color: $color-slate-light-2;
   }
 }
 
