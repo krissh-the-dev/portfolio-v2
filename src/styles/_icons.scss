@@ -14,70 +14,60 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-thin-right:before {
+.icon-code:before {
   content: '\e900';
 }
-
-.icon-people_outline:before {
+.icon-user-outline:before {
   content: '\e901';
 }
-
-.icon-slack:before {
+.icon-arrow-right:before {
   content: '\e902';
 }
-
+.icon-check:before {
+  content: '\e906';
+}
+.icon-chevron-right:before {
+  content: '\e907';
+}
 .icon-download:before {
   content: '\e903';
 }
-
-.icon-star:before {
+.icon-external-link:before {
   content: '\e904';
 }
-
-.icon-link-2:before {
+.icon-facebook:before {
   content: '\e905';
 }
-
-.icon-external-link:before {
-  content: '\e906';
-}
-
-.icon-linkedin:before {
-  content: '\e907';
-}
-
 .icon-github:before {
   content: '\e908';
 }
-
-.icon-chevron-right:before {
-  content: '\e909';
-}
-
-.icon-linkedin1:before {
-  content: '\e90a';
-}
-
-.icon-send:before {
+.icon-globe:before {
   content: '\e90b';
 }
-
-.icon-mail:before {
-  content: '\e90c';
-}
-
-.icon-facebook:before {
-  content: '\e90d';
-}
-
-.icon-twitter:before {
+.icon-instagram:before {
   content: '\e90e';
 }
-
-.icon-code-fork:before {
+.icon-link:before {
+  content: '\e909';
+}
+.icon-link-2:before {
   content: '\e90f';
 }
-
-.icon-code:before {
+.icon-linkedin:before {
+  content: '\e90a';
+}
+.icon-mail:before {
   content: '\e910';
+}
+.icon-send:before {
+  content: '\e90c';
+}
+.icon-slack:before {
+  content: '\e90d';
+}
+.icon-star:before {
+  content: '\e911';
+}
+.icon-twitter:before {
+  content: '\e912';
 }

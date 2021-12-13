@@ -46,12 +46,12 @@ export default function Project(props) {
           <figcaption className={classes.caption}>
             {repo && (
               <a href={repo} target='_blank' rel='noopener noreferrer' className='icon'>
-                &#xe910; <span className={classes.link}>Repo</span>
+                &#xe900; <span className={classes.link}>Repo</span>
               </a>
             )}
             {link && (
               <a href={link} target='_blank' rel='noopener noreferrer' className='icon'>
-                &#xe906; <span className={classes.link}>View</span>
+                &#xe904; <span className={classes.link}>View</span>
               </a>
             )}
           </figcaption>
