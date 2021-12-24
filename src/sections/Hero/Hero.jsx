@@ -6,12 +6,23 @@ export default function Hero() {
   return (
     <section className={classes.hero}>
       <div className={classes.container}>
-        <h5 className={classes.intro}>Hi, my name is</h5>
+        <h5 className={classes.intro}>
+          <span role='img' aria-label='wave emoji'>
+            👋
+          </span>
+          Hi, my name is
+        </h5>
         <h1 className={classes.hero__name}>
           <span className={classes.emphasize}>Krishna</span>
           <span> Moorthy</span>
         </h1>
-        <h2 className={classes.info}>UI/ UX designer & Full stack developer</h2>
+        <h2 className={classes.info}>
+          I build awesome looking and fully functional web applications using TypeScript and a lot of coffee{' '}
+          <span role='img' aria-label='coffee emoji'>
+            ☕
+          </span>
+          .
+        </h2>
       </div>
 
       <div role='img' className={classes.waterMark}>

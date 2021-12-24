@@ -19,21 +19,24 @@ export default function About() {
                 <span role='img' aria-label='wave emoji'>
                   👋
                 </span>{' '}
-                Hello, world! I am Krish, a software engineer from Chennai, India.
+                Hello, world! I am Krish, a full-stack engineer from Chennai, India.
               </p>
               <p className={classes.description}>
                 I love to design and code{' '}
                 <span role='img' aria-label='code emoji'>
                   👨🏼‍💻
                 </span>
-                . I build high-quality applications for the web. I concentrate on writing clean and understandable code.
+                . I build high-quality applications for the web. I concentrate on writing clean, understandable and
+                testable code.
+              </p>
+              <p className={classes.description}>
                 Currently, I'm pursuing my undergrads{' '}
                 <span role='img' aria-label='code graduate'>
                   👨‍🎓
                 </span>{' '}
-                in Computer Science Engineering at{' '}
-                <Link to='http://aubit.edu.in'>University College of Engineering, Trichy</Link>. I love to work in a
-                team.
+                in Computer Science Engineering at the{' '}
+                <Link to='http://aubit.edu.in'>University College of Engineering, Trichy</Link>. I love working in and
+                as a team. I'm always looking for opportunities to learn and grow.
               </p>
               <p className={classes.description}>
                 Other than coding, I'm passionate about Astronomy{' '}
@@ -44,7 +47,7 @@ export default function About() {
                 <span role='img' aria-label='cycling emoji'>
                   🚴‍♂️
                 </span>
-                . I like to cook in my leisure time. I love cats{' '}
+                . But I'm not able to put much time in it 🙂. I like to cook in my leisure time. I love cats{' '}
                 <span role='img' aria-label='cat face emoji'>
                   😺
                 </span>{' '}
