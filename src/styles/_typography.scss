@@ -29,7 +29,7 @@ h2 {
   color: $color-slate-light-4;
 
   @include respond(phone) {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
   }
 }
 
@@ -42,7 +42,7 @@ h3 {
   }
 
   @include respond(phone) {
-    font-size: 3.2rem;
+    font-size: 3.4rem;
   }
 }
 
@@ -55,7 +55,7 @@ h4 {
   }
 
   @include respond(phone) {
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
 }
 
