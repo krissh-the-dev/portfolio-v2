@@ -32,6 +32,28 @@
     color: inherit;
   }
 
+  &__skip {
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.4ex;
+    font-weight: bold;
+    padding: 1.2rem 2rem;
+    background-color: $color-primary-dark;
+    color: $color-white;
+    border-radius: $radius-small;
+    left: 0;
+    top: 0;
+    transform: translateY(-200%);
+    transition: all 0.4s;
+
+    &:focus {
+      outline: none;
+      transform: translateY(50%);
+      box-shadow: 0 0 0.5rem rgba($color-primary-dark, 0.5);
+    }
+  }
+
   &__logo {
     height: 3rem;
     object-fit: contain;
