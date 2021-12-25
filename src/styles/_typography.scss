@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4.4rem;
+  font-size: 4.6rem;
   color: $color-slate-light-4;
 
   @include respond(phone) {
@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 4.2rem;
   color: $color-slate-dark-3;
 
   @include theme(dark) {
@@ -47,11 +47,11 @@ h3 {
 }
 
 h4 {
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   color: $color-slate-dark-3;
 
   @include theme(dark) {
-    color: $color-slate-light-1;
+    color: $color-slate-light-2;
   }
 
   @include respond(phone) {
