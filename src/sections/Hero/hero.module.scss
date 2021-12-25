@@ -52,7 +52,9 @@
   }
 
   .info {
-    font-size: 3rem;
+    font-size: 2.6rem;
+    max-width: 80rem;
+    line-height: 1.15em;
 
     animation-name: fadeAppear;
     animation-duration: 1.8s;
