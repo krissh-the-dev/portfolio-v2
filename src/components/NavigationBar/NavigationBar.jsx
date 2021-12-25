@@ -34,6 +34,10 @@ export default function NavigationBar() {
     <nav className={classes.nav} style={navStyle}>
       <Fade top delay={4000} duration={500}>
         <div className={classes.container}>
+          <a href='#about' className={classes.nav__skip}>
+            Skip to main content
+          </a>
+
           {/* eslint-disable-next-line */}
           <a href='#' className={classes.nav__brand}>
             <img
