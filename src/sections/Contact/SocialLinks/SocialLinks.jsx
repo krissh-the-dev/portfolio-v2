@@ -16,9 +16,6 @@ export default function SocialLinks() {
       <a href='https://linkedin.com/in/akrishnamoorthy007' className='icon'>
         &#xe90a;
       </a>
-      <a href='https://fb.com/akrishnamoorthy007' className='icon'>
-        &#xe905;
-      </a>
       <a href='https://instagram.com/cat_man_krish' className='icon'>
         &#xe90e;
       </a>
