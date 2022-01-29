@@ -43,11 +43,11 @@ export default function About() {
                 <span role='img' aria-label='galaxy emoji'>
                   🌌
                 </span>{' '}
-                and bicycling{' '}
-                <span role='img' aria-label='cycling emoji'>
-                  🚴‍♂️
+                and cooking{' '}
+                <span role='img' aria-label='cook emoji'>
+                  🧑🏼‍🍳
                 </span>
-                . But I'm not able to put much time in it 🙂. I like to cook in my leisure time. I love cats{' '}
+                . I love cats{' '}
                 <span role='img' aria-label='cat face emoji'>
                   😺
                 </span>{' '}
