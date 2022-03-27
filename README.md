@@ -1,7 +1,11 @@
+
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine)
+
 # Portfolio v2
 
 [
 ![Netlify Status](https://api.netlify.com/api/v1/badges/36e0d159-6a65-40f1-9910-36bc4b2d67c1/deploy-status)](https://app.netlify.com/sites/modest-kare-bf32da/deploys)
+[![Declare variables, not war](https://img.shields.io/badge/declare%20variables-not%20war-red?style=flat-square)](https://vshymanskyy.github.io/StandWithUkraine)
 
 The second iteration of my personal portfolio site.
 
