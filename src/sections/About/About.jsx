@@ -31,8 +31,10 @@ export default function About() {
               </p>
               <p className={classes.description}>
                 Currently, I'm working as a Software Developer at{' '}
-                <Link to='https://zoho.com'>Zoho Corporation Pvt. Ltd.</Link> I pursued my
-                undergrads{' '}
+                <Link style={{ marginRight: 0 }} to='https://zoho.com'>
+                  Zoho Corporation Pvt. Ltd.
+                </Link>{' '}
+                I pursued my undergrads{' '}
                 <span role='img' aria-label='code graduate'>
                   👨‍🎓
                 </span>{' '}
