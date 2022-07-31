@@ -26,8 +26,8 @@ export default function About() {
                 <span role='img' aria-label='code emoji'>
                   👨🏼‍💻
                 </span>
-                . I build high-quality applications for the web. I concentrate on writing clean,
-                maintainable and testable code.
+                . I build high-quality applications for the web. I concentrate on writing clean, maintainable and
+                testable code.
               </p>
               <p className={classes.description}>
                 Currently, I'm working as a Software Developer at{' '}
@@ -39,8 +39,8 @@ export default function About() {
                   👨‍🎓
                 </span>{' '}
                 in Computer Science Engineering at the{' '}
-                <Link to='http://aubit.edu.in'>University College of Engineering, Trichy</Link>. I'm
-                always looking for new opportunities to learn and grow.
+                <Link to='http://aubit.edu.in'>University College of Engineering, Trichy</Link>. I'm always looking for
+                new opportunities to learn and grow.
               </p>
               <p className={classes.description}>
                 Other than coding, I'm passionate about Astronomy{' '}
