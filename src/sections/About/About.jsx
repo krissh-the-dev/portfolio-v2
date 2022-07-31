@@ -37,9 +37,8 @@ export default function About() {
                   👨‍🎓
                 </span>{' '}
                 in Computer Science Engineering at the{' '}
-                <Link to='http://aubit.edu.in'>University College of Engineering, Trichy</Link>. I
-                love working in and as a team. I'm always looking for new opportunities to learn and
-                grow.
+                <Link to='http://aubit.edu.in'>University College of Engineering, Trichy</Link>. I'm
+                always looking for new opportunities to learn and grow.
               </p>
               <p className={classes.description}>
                 Other than coding, I'm passionate about Astronomy{' '}
