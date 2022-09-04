@@ -1,2 +1,2 @@
-export * as TSSLogo from './TSSLogo';
-export * as TheSecretStore from './ProjectsPage';
+export * as TSSLogo from './TSSLogo.png';
+export * as TheSecretStore from './ProjectsPage.png';
