@@ -1,4 +1,3 @@
-import { AubitLogo, AubitMobile } from '../../images/Aubit';
 import { CollegemateDark, CollegemateLogo } from '../../images/Collegemate';
 import { TSSLogo, TheSecretStore } from '../../images/TheSecretStore';
 import { InfiniteLoopClub, InfiniteLoopClubLogo } from '../../images/InfiniteLoopClub';
