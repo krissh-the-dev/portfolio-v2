@@ -82,21 +82,5 @@ const $7d50p = {
   repo: 'https://github.com/benxene/7days-50projects'
 };
 
-const aubit = {
-  title: 'AU-BIT Unofficial website',
-  type: 'Collaborated project',
-  logo: AubitLogo,
-  images: {
-    light: { small: AubitMobile, large: AubitMobile },
-    dark: { small: AubitMobile, large: AubitMobile }
-  },
-  description:
-    'The unofficial website of University College of Engineering, BIT Campus, Tiruchirappalli. The website is still under development and will be approved upon completion to be the official website. Built with React.',
-  features: ['Modern design', 'Online Form downloads', 'Reusable web components', 'Image Gallery'],
-  techStack: ['React', 'SCSS'],
-  link: 'https://aubit.netlify.app/',
-  repo: undefined
-};
-
-const data = [collegemate, tss, ilc, aubit, $7d50p];
+const data = [collegemate, tss, ilc, $7d50p];
 export default data;

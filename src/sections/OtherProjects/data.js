@@ -16,6 +16,16 @@ const otherProjects = [
     repo: undefined
   },
   {
+    title: 'AU-BIT Unofficial website',
+    type: 'Collaborated project',
+    description:
+      'The unofficial website of University College of Engineering, BIT Campus, Tiruchirappalli. The website is still under development and will be approved upon completion to be the official website. Built with React.',
+    features: ['Modern design', 'Online Form downloads', 'Reusable web components', 'Image Gallery'],
+    technology: 'React JS',
+    link: 'https://aubit.netlify.app/',
+    repo: undefined
+  },
+  {
     title: 'YA Image Converter',
     type: 'Collaborated project',
     technology: 'Java Swing',
