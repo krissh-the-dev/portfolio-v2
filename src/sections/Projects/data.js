@@ -1,7 +1,8 @@
-import { CollegemateLogo, CollegemateDark } from '../../images/Collegemate';
-import { SFPImageSmall, SFPImageLarge, SFPLogo } from '../../images/7days50projects';
 import { AubitLogo, AubitMobile } from '../../images/Aubit';
+import { CollegemateDark, CollegemateLogo } from '../../images/Collegemate';
+import { TSSLogo, TheSecretStore } from '../../images/TheSecretStore';
 import { InfiniteLoopClub, InfiniteLoopClubLogo } from '../../images/InfiniteLoopClub';
+import { SFPImageLarge, SFPImageSmall, SFPLogo } from '../../images/7days50projects';
 
 const collegemate = {
   title: 'Collegemate',
@@ -25,6 +26,19 @@ const collegemate = {
   link: 'https://collegemate.herokuapp.com/',
   repo: undefined
 };
+
+const tss = {
+  title: 'The Secret Store',
+  type: 'Featured Project',
+  logo: TSSLogo,
+  images: { small: TheSecretStore, large: TheSecretStore },
+  dark: { small: TheSecretStore, large: TheSecretStore },
+  description: 'The Secret Store is a platform to share and synchronize your project configuration environment variables with your team without having to send a bunch of e-mails back and forth with simple commands like in git. It\'s Forever FOSS (Free and Open Source Software). You can fork and create your copy, and utilize it for your personal / internal use within your organization.',
+  features: ['Command Line Interface', 'AES 256 Encryption', 'Google OAuth', 'Token Based Authentication', 'Granular Permissions', 'Simple commands inspired by Git'],
+  techStack: ['Nx Monorepo', 'Nest JS', 'React JS'],
+  link: undefined,
+  repo: 'https://github.com/the-secret-store/monorepo'
+}
 
 const ilc = {
   title: 'Infinite Loop Club website',
@@ -74,5 +88,5 @@ const aubit = {
   repo: undefined
 };
 
-const data = [collegemate, ilc, aubit, $7d50p];
+const data = [collegemate, tss, ilc, aubit, $7d50p];
 export default data;
