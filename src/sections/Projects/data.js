@@ -31,8 +31,10 @@ const tss = {
   title: 'The Secret Store',
   type: 'Featured Project',
   logo: TSSLogo,
-  images: { small: TheSecretStore, large: TheSecretStore },
-  dark: { small: TheSecretStore, large: TheSecretStore },
+  images: {
+    light: { small: TheSecretStore, large: TheSecretStore },
+    dark: { small: TheSecretStore, large: TheSecretStore },
+  },
   description: 'The Secret Store is a platform to share and synchronize your project configuration environment variables with your team without having to send a bunch of e-mails back and forth with simple commands like in git. It\'s Forever FOSS (Free and Open Source Software). You can fork and create your copy, and utilize it for your personal / internal use within your organization.',
   features: ['Command Line Interface', 'AES 256 Encryption', 'Google OAuth', 'Token Based Authentication', 'Granular Permissions', 'Simple commands inspired by Git'],
   techStack: ['Nx Monorepo', 'Nest JS', 'React JS'],
