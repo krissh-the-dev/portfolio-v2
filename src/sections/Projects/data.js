@@ -1,7 +1,7 @@
-import { CollegemateLogo, CollegemateDark } from '../../images/Collegemate';
-import { SFPImageSmall, SFPImageLarge, SFPLogo } from '../../images/7days50projects';
-import { AubitLogo, AubitMobile } from '../../images/Aubit';
+import { CollegemateDark, CollegemateLogo } from '../../images/Collegemate';
+import { TSSLogo, TheSecretStore } from '../../images/TheSecretStore';
 import { InfiniteLoopClub, InfiniteLoopClubLogo } from '../../images/InfiniteLoopClub';
+import { SFPImageLarge, SFPImageSmall, SFPLogo } from '../../images/7days50projects';
 
 const collegemate = {
   title: 'Collegemate',
@@ -24,6 +24,29 @@ const collegemate = {
   techStack: ['React', 'Express', 'MongoDB', 'PWA'],
   link: 'https://collegemate.herokuapp.com/',
   repo: undefined
+};
+
+const tss = {
+  title: 'The Secret Store',
+  type: 'Featured Project',
+  logo: TSSLogo,
+  images: {
+    light: { small: TheSecretStore, large: TheSecretStore },
+    dark: { small: TheSecretStore, large: TheSecretStore }
+  },
+  description:
+    'The Secret Store is a platform to share and synchronize your project configuration environment variables with your team without having to send a bunch of e-mails back and forth with simple commands like in git. You can fork and create your copy, and utilize it for your personal / internal use within your organization.',
+  features: [
+    'Command Line Interface',
+    'AES 256 Encryption',
+    'Google OAuth',
+    'Token Based Authentication',
+    'Granular Permissions',
+    'Simple commands inspired by Git'
+  ],
+  techStack: ['Nx Monorepo', 'Nest JS', 'React JS'],
+  link: undefined,
+  repo: 'https://github.com/the-secret-store/monorepo'
 };
 
 const ilc = {
@@ -58,21 +81,5 @@ const $7d50p = {
   repo: 'https://github.com/benxene/7days-50projects'
 };
 
-const aubit = {
-  title: 'AU-BIT Unofficial website',
-  type: 'Collaborated project',
-  logo: AubitLogo,
-  images: {
-    light: { small: AubitMobile, large: AubitMobile },
-    dark: { small: AubitMobile, large: AubitMobile }
-  },
-  description:
-    'The unofficial website of University College of Engineering, BIT Campus, Tiruchirappalli. The website is still under development and will be approved upon completion to be the official website. Built with React.',
-  features: ['Modern design', 'Online Form downloads', 'Reusable web components', 'Image Gallery'],
-  techStack: ['React', 'SCSS'],
-  link: 'https://aubit.netlify.app/',
-  repo: undefined
-};
-
-const data = [collegemate, ilc, aubit, $7d50p];
+const data = [collegemate, tss, ilc, $7d50p];
 export default data;
