@@ -38,7 +38,7 @@ const tss = {
   techStack: ['Nx Monorepo', 'Nest JS', 'React JS'],
   link: undefined,
   repo: 'https://github.com/the-secret-store/monorepo'
-}
+};
 
 const ilc = {
   title: 'Infinite Loop Club website',
