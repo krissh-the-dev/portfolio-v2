@@ -10,7 +10,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-reveal": "^1.2.2",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^5.0.1",
     "recharts": "^1.8.5",
     "workbox-core": "^5.1.4",
     "workbox-expiration": "^5.1.4",
