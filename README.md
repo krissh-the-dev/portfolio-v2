@@ -99,7 +99,3 @@ As you would've already noticed (didn't you see the netlify status badge above?)
 Here's a useful article by by Abhishek Jakhar on `freeCodeCamp` that describes the process: [Click me!](https://www.freecodecamp.org/news/how-to-deploy-a-react-application-to-netlify-363b8a98a985/)
 
 For our site to function properly, you also need to add the environment variables by going into Site Settings > Build & Deploy > Environment.
-
-## References
-
-Also coming soon 😪
